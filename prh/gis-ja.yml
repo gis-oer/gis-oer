@@ -1,0 +1,92 @@
+# prh version
+version: 1
+rules:
+
+# 校正ルールの書き方は以下を参照してください
+# https://github.com/prh/prh/blob/master/misc/prh.yml
+
+  - expected: MMQGIS
+
+  - expected: Qgis2threejs
+
+  - expected: PostGIS
+    pattern: /[PpＰｐ][OoＯｏ][SsＳｓ][TtＴｔ][ 　]*[GgＧｇ][IiＩｉ][SsＳｓ]/
+
+  - expected: PostgreSQL
+    pattern: /[PpＰｐ][OoＯｏ][SsＳｓ][TtＴｔ][GgＧｇ][RrＲｒ][EeＥｅ][ 　]*[SsＳｓ][QqＱｑ][LlＬｌ]/
+    specs:
+      - from: postgre　SＱL
+        to: PostgreSQL
+
+  # https://www.esrij.com/getting-started/learn-more/shapefile/
+  - expected: シェープファイル
+    patterns:
+      - /シ[エェ]イプフ[アァ]イル/
+      - /[sS]hape[ 　]ファイル/
+      - /[sS]hape[ ][fF]ile/
+
+    specs:
+      - from: シェイプファイル
+        to: シェープファイル
+
+  - expected: Shapefile
+
+  - expected: KML
+
+  - expected: GML
+
+  - expected: GeoJSON
+
+  - expected: GeoTIFF
+
+  - expected: ESRI
+
+  - expected: Web GIS
+    pattern: /[WwＷｗ][EeＥｅ][BbＢｂ][ 　]*[GgＧｇ][IiＩｉ][SsＳｓ]/
+    specs:
+      - from: webgis
+        to: Web GIS
+
+  - expected: pgAdmin III
+    pattern: /[PpＰｐ][GgＧｇ][AaＡａ][DdＤｄ][MmＭｍ][IiＩｉ][NnＮｎ][ 　]*([3３ⅲⅢ]|iii|III)/
+    specs:
+      - from: pgAdminⅲ
+        to: pgAdmin III
+
+  - expected: Moran's I
+    pattern: /[Mm]oran['‘’]s[ 　]*[Iil]/
+
+  - expected: Geary's C
+    pattern: /[Gg]eary['‘’]s[ 　]*[Cc]/
+
+  - expected: GeoDa
+    pattern: /[GgＧｇ][EeＥｅ][OoＯｏ][ 　]*[DdＤｄ][AaＡａ]/
+
+  - expected: Python
+
+  - expected: Cesium
+
+  - expected: WebGL
+    pattern: /web( )?gl/i
+
+  - expected: Google Earth
+    pattern: /google( )?earth/i
+
+  - expected: Leaflet
+
+  - expected: QGIS2Leaflet
+
+  - expected: QGIS
+    pattern: /([QqＱｑ][ 　]*[GgＧｇ][IiＩｉ][SsＳｓ])(?!2threejs)/
+    specs:
+      - from: q gis
+        to:   QGIS
+      - from: q 　 gis
+        to:   QGIS
+      - from: Qgis2threejs
+        to: Qgis2threejs
+
+  - expected: GIS
+    pattern: /gis(?!2threejs)/i
+
+  - expected: OpenStreetMap

@@ -1,0 +1,14 @@
+{
+    "title": "GIS実習用オープン教材",
+    "author": "© GIS Open Educational Contents WG, CC BY-SA 4.0",
+    "gitbook": ">= 3.0.0",
+    "plugins": [
+        "-sharing",
+        "splitter",
+        "collapsible-menu",
+        "creativecommons"
+    ],
+    "styles": {
+        "website": "styles/website.css"
+    }
+}

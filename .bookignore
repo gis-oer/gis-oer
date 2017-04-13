@@ -1,0 +1,5 @@
+.bookignore
+.editorconfig
+.gitignore
+.textlintrc
+package.json
