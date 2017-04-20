@@ -52,10 +52,10 @@
 ![QGIS2Leaf](pic/leafpic_3.png)
 `Web(W)>qgis2leaf>Exports a QGIS Project to a working leaflet webmap`
 1. Get Layers をクリックしてレイヤを追加する。
-② Basemapを選択する（複数選択できる）。
-③ htmlを含んだファイルの出力先を指定する。
-④ Webページのタイトル、マップのタイトル、マップのサブタイトルを入力する。
-⑤ OK をクリックする。
+2. Basemapを選択する（複数選択できる）。
+3. htmlを含んだファイルの出力先を指定する。
+4. Webページのタイトル、マップのタイトル、マップのサブタイトルを入力する。
+5. OK をクリックする。
 ※レイヤ名が日本語だとエラーがでる。
 
 ![QGIS2Leaf](pic/leafpic_4.png)

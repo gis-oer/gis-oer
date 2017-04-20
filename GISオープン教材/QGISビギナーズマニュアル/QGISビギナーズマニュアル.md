@@ -74,13 +74,13 @@ QGISをダウンロードするため、[QGIS](http://qgis.org/ja/site/index.htm
 
 ![ボタンA](pic/Qpic4.png)
 1.QGISファイルを保存
-②名前をつけてQGISファイルを保存
-③地図移動
-④地図の拡大と縮小
-⑤選択領域にズーム
-⑥動作の前後移動
-⑦地物情報表示
-⑧選択と選択取り消し
+2.名前をつけてQGISファイルを保存
+3.地図移動
+4.地図の拡大と縮小
+5.選択領域にズーム
+6.動作の前後移動
+7.地物情報表示
+8.選択と選択取り消し
 ⑨長さ、面積計測（手動）
 ⑩レイヤ編集
 ⑪ベクタレイヤの読み込み
@@ -244,12 +244,12 @@ web>タイルレイヤプラグインから、プラグインを起動する。�
 プリントコンポーザには、以下のような機能がある。
 ![プリントコンポーザ](pic/Qpic21.png)
 1.アイテムの選択と移動
-②地図の移動
-③地図の追加
-④画像の追加
-⑤凡例の追加
-⑥縮尺バーの追加
-⑦地図の更新
+2.地図の移動
+3.地図の追加
+4.画像の追加
+5.凡例の追加
+6.縮尺バーの追加
+7.地図の更新
 
 ※アイテムの削除は編集から行う。
 
@@ -331,7 +331,7 @@ CSVは、カンマで区切られたデータ形式である。座標値をも�
 1.[http://qgis.org/ja/site/about/index.html](http://qgis.org/ja/site/about/index.html)
 
 - QGISとPythonについて詳しく勉強したい方　 PyQGIS 開発者用 Cookbook
-②[http://docs.qgis.org/2.2/ja/docs/pyqgis_developer_cookbook/](http://docs.qgis.org/2.2/ja/docs/pyqgis_developer_cookbook/)
+2.[http://docs.qgis.org/2.2/ja/docs/pyqgis_developer_cookbook/](http://docs.qgis.org/2.2/ja/docs/pyqgis_developer_cookbook/)
 
 [▲メニューへもどる]
 
