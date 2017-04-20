@@ -21,8 +21,8 @@
 
 
 **スライド教材**
-スライドのダウンロードは[こちら]
-[こちら]:../../../../../raw/master/GISオープン教材/インターネットの活用に関する教材/CartoDBでWebMAPを作成/CartoDBでWebMAPを作成.pptx
+
+スライドのダウンロードは[こちら](../../../../../raw/master/GISオープン教材/インターネットの活用に関する教材/CartoDBでWebMAPを作成/CartoDBでWebMAPを作成.pptx)
 --------
 
 ## CartoDBとは？

@@ -21,11 +21,13 @@
 * [参考ページの紹介](#参考ページの紹介)
 
 **使用データ**
+
 　実習をはじめる前に、以下のデータをダウンロードしてください。
 
 * [福知山豪雨災害聞き取り調査データ]　([福知山豪雨災害防災マップ](http://opentextmap.org/library/?p=2808)　© 福知山豪雨災害防災マップ を加工し作成）
 
 **スライド教材**
+
 スライドのダウンロードは[こちら](https://raw.githubusercontent.com/yamauchi-inochu/demo/master/GIS%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E6%95%99%E6%9D%90/QGIS%E3%83%93%E3%82%AE%E3%83%8A%E3%83%BC%E3%82%BA%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/QGIS%E3%83%93%E3%82%AE%E3%83%8A%E3%83%BC%E3%82%BA%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB.pptx)
 
 ----------
@@ -73,19 +75,19 @@ QGISをダウンロードするため、[QGIS](http://qgis.org/ja/site/index.htm
 　以下では、QGISで主に使用するボタンについて解説しています。
 
 ![ボタンA](pic/Qpic4.png)
-1.QGISファイルを保存
-2.名前をつけてQGISファイルを保存
-3.地図移動
-4.地図の拡大と縮小
-5.選択領域にズーム
-6.動作の前後移動
-7.地物情報表示
-8.選択と選択取り消し
-⑨長さ、面積計測（手動）
-⑩レイヤ編集
-⑪ベクタレイヤの読み込み
-⑫ラスタレイヤの読み込み
-⑬テキストファイルの読み込み
+1. QGISファイルを保存
+2. 名前をつけてQGISファイルを保存
+3. 地図移動
+4. 地図の拡大と縮小
+5. 選択領域にズーム
+6. 動作の前後移動
+7. 地物情報表示
+8. 選択と選択取り消し
+9. 長さ、面積計測（手動）
+10. レイヤ編集
+11. ベクタレイヤの読み込み
+12. ラスタレイヤの読み込み
+13. テキストファイルの読み込み
 
 ![ボタンB](pic/Qpic5.png)
 
@@ -243,13 +245,13 @@ web>タイルレイヤプラグインから、プラグインを起動する。�
 ### プリントコンポーザ
 プリントコンポーザには、以下のような機能がある。
 ![プリントコンポーザ](pic/Qpic21.png)
-1.アイテムの選択と移動
-2.地図の移動
-3.地図の追加
-4.画像の追加
-5.凡例の追加
-6.縮尺バーの追加
-7.地図の更新
+1. アイテムの選択と移動
+2. 地図の移動
+3. 地図の追加
+4. 画像の追加
+5. 凡例の追加
+6. 縮尺バーの追加
+7. 地図の更新
 
 ※アイテムの削除は編集から行う。
 
@@ -328,10 +330,10 @@ CSVは、カンマで区切られたデータ形式である。座標値をも�
 ## 参考ページの紹介
 
 - QGISについて詳しく勉強したい方　QGISユーザーガイド
-1.[http://qgis.org/ja/site/about/index.html](http://qgis.org/ja/site/about/index.html)
+1. [http://qgis.org/ja/site/about/index.html](http://qgis.org/ja/site/about/index.html)
 
 - QGISとPythonについて詳しく勉強したい方　 PyQGIS 開発者用 Cookbook
-2.[http://docs.qgis.org/2.2/ja/docs/pyqgis_developer_cookbook/](http://docs.qgis.org/2.2/ja/docs/pyqgis_developer_cookbook/)
+2. [http://docs.qgis.org/2.2/ja/docs/pyqgis_developer_cookbook/](http://docs.qgis.org/2.2/ja/docs/pyqgis_developer_cookbook/)
 
 [▲メニューへもどる]
 
