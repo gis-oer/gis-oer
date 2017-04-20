@@ -116,7 +116,7 @@ cesiumWidget.camera.flyTo({   
 
 ## KMLの作成と読み込み
 ### Google EarthでKMLを作成→Cesiumで読み込み
-①　Google Earth proでシェープファイルを読み込む。
+1.　Google Earth proでシェープファイルを読み込む。
 ファイル＞開く　（想定浸水区域と一次避難所のshape）
 
 ②　取得したアイテムにスタイルテンプレートを適用（スタイルを調整）。

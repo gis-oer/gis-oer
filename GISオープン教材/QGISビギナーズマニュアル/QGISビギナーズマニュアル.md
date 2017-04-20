@@ -73,7 +73,7 @@ QGISをダウンロードするため、[QGIS](http://qgis.org/ja/site/index.htm
 　以下では、QGISで主に使用するボタンについて解説しています。
 
 ![ボタンA](pic/Qpic4.png)
-①QGISファイルを保存
+1.QGISファイルを保存
 ②名前をつけてQGISファイルを保存
 ③地図移動
 ④地図の拡大と縮小
@@ -243,7 +243,7 @@ web>タイルレイヤプラグインから、プラグインを起動する。�
 ### プリントコンポーザ
 プリントコンポーザには、以下のような機能がある。
 ![プリントコンポーザ](pic/Qpic21.png)
-①アイテムの選択と移動
+1.アイテムの選択と移動
 ②地図の移動
 ③地図の追加
 ④画像の追加
@@ -328,7 +328,7 @@ CSVは、カンマで区切られたデータ形式である。座標値をも�
 ## 参考ページの紹介
 
 - QGISについて詳しく勉強したい方　QGISユーザーガイド
-①[http://qgis.org/ja/site/about/index.html](http://qgis.org/ja/site/about/index.html)
+1.[http://qgis.org/ja/site/about/index.html](http://qgis.org/ja/site/about/index.html)
 
 - QGISとPythonについて詳しく勉強したい方　 PyQGIS 開発者用 Cookbook
 ②[http://docs.qgis.org/2.2/ja/docs/pyqgis_developer_cookbook/](http://docs.qgis.org/2.2/ja/docs/pyqgis_developer_cookbook/)
