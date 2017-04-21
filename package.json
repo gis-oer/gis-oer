@@ -1,6 +1,10 @@
 {
-  "name": "demo",
+  "name": "gis-oer",
   "version": "0.0.0",
+  "keywords":[
+    "GIS",
+    "OER"
+    ],
   "description": "科学研究費補助金　基盤研究(A) 「GISの標準コアカリキュラムと知識体系を踏まえた実習用オープン教材の開発」プロジェクトにおいて開発した、**「GISオープン教材(試験公開版)」** の公開用リポジトリです。",
   "devDependencies": {
     "gitbook-cli": "^2.3.0",
@@ -18,11 +22,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yamauchi-inochu/demo.git"
+    "url": "git+https://github.com/gis-oer/gis-oer.git"
   },
-  "author": "",
+  "author": "GIS-Open Educational Resources WG",
   "bugs": {
-    "url": "https://github.com/yamauchi-inochu/demo/issues"
+    "url": "https://github.com/gis-oer/gis-oer/issues"
   },
-  "homepage": "https://github.com/yamauchi-inochu/demo#readme"
+  "homepage": "https://github.com/gis-oer/gis-oer#readme"
 }
