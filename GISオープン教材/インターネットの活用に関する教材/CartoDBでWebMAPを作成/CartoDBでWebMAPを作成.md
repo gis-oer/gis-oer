@@ -33,7 +33,6 @@
 - 時系列データのなど表現が多様
 
 [▲メニューへもどる]
-[▲メニューへもどる]:CartoDBでWebMAPを作成.md#menu
 
 ## アカウント取得
 ![アカウント取得](pic/cartopic_1.png)
@@ -102,7 +101,7 @@ Get the link からURLをコピーし、ブラウザで検索する。
 Apply queryをクリックして、コードを実行する。
 ＳＱＬから、上のコードを入力し、想定浸水区域内の一時避難所を抽出する。
 
-```
+```SQL
 SELECT
     flood_assumed_area.SAFIELD001,refuge.SAFIELD004 ,refuge.the_geom
 FROM flood_assumed_area
@@ -129,4 +128,6 @@ create dataset from query をクリックし、+ボタンから新規に作成�
 
 #### ライセンスに関する注意事項
 本教材で利用しているキャプチャ画像の出典やクレジットについては、[その他のライセンスについて]よりご確認ください。
+
 [その他のライセンスについて]:../../その他のライセンスについて.md
+[▲メニューへもどる]:CartoDBでWebMAPを作成.md#menu
