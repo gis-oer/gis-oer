@@ -140,8 +140,7 @@ Sourceファイルの中のApp.jsをテキストエディタで開く。
 ポイントをクリックすると、KMLの属性データが反映されていない。
 
 ### KMLの書き換え
-![KMLの書き換え](pic/cesiumpic_25.png)
-ポイントレイヤの上で右クリックし、名前をつけて場所を保存から新規にKMLを保存する。
+GoogleEarthから、ポイントレイヤの上で右クリックし、名前をつけて場所を保存から新規にKMLを保存する。
 
 ![KMLの書き換え](pic/cesiumpic_26.png)
 <BalloonStyle></BalloonStyle>を削除する（2箇所）。
