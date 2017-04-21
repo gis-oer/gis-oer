@@ -164,8 +164,7 @@ GoogleEarthから、ポイントレイヤの上で右クリックし、名前を
 ![KMLの書き換え](pic/cesiumpic_30.png)
 Cesiumで表示すると、ポイントの情報が表示できる。
 
-使用した凡例の画像は[ここをクリック]。
-[ここをクリック]:pic/cesiumpic_hanrei.png
+凡例の画像は[ここをクリック](./pic/cesiumpic_hanrei.png)
 
 ![KMLの書き換え](pic/cesiumpic_32.png)
 ポイントをクリックすると凡例も表示できるようになった。
