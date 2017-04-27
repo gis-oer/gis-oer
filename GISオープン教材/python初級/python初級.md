@@ -1,12 +1,12 @@
 # QGIS+Python初級
 　本教材は、QGIS+Python入門の教材です。以下では、QGISのPythonモジュールとコンソール機能を利用した処理について解説します。Pythonの入門書などで基礎を学んでから、本教材をすすめると学習がしやすいです。Pythonコンソールの使用法については、[QGISビギナーズマニュアル](../QGISビギナーズマニュアル/QGISビギナーズマニュアル.md)を参考にしてください。
 
->本教材は、[OSGeo財団日本支部　QGISセミナー・中級編 Ver. 2.4版](http://www.slideshare.net/FOSS4G_MEXT/qgis-39125122)を参考に作成しています。
-
 
 **Menu**
 * [エンコーディング変換](#エンコーディング変換)
 * [座標変換](#座標変換)
+> 上記の教材は、[OSGeo財団日本支部　QGISセミナー・中級編 Ver. 2.4版](http://www.slideshare.net/FOSS4G_MEXT/qgis-39125122)を参考に作成しています。
+
 * [値の検索と書き出し](#値の検索と書き出し)
 
 ## エンコーディング変換
@@ -105,7 +105,9 @@ import os
 os.chdir("/Users/h.yamauchi/Desktop/su")
 
 # csvの読み込み
-aed = pd.read_csv("aedu.csv")# 読み込んだCSVの表示
+aed = pd.read_csv("aedu.csv")
+
+# 読み込んだCSVの表示
 print aed
 
 # 値の検索とデータフレームへの書き込み
