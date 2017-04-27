@@ -7,6 +7,7 @@
 **Menu**
 * [エンコーディング変換](#エンコーディング変換)
 * [座標変換](#座標変換)
+* [値の検索と書き出し](#値の検索と書き出し)
 
 ## エンコーディング変換
 　以下では、複数のデータのエンコーディングを一括で変換する手法について解説します。Shift-JISのデータをutf-8に変換しています。この処理を行う前にQGISでエンコーディングをShift-JISに指定し、適当なデータを読み込んでおいてください（データの読み込みのエンコーディングをShift-JISにするため）。
@@ -36,8 +37,7 @@ layersからデータを一つずつとりだし、`for`文でデータ数分の
 ループ処理の間は、`for`以下をタブで字下げする。
 以下のように設定し、レイヤを書き出す。
 
-```pyhon
-
+```python
 for layer in layers:
     print("Input: "+ layer)
     #名前の設定
@@ -82,3 +82,40 @@ for file in files:
 ```
 
 書き出したデータをQGISで読み込み、座標変換ができているか確認する。
+
+## 値の検索と書き出し
+　PythonによるCSVファイルの文字列の検索と書き出しは、以下のように行うことができる。また、以下はQGISを使用していない。
+
+※ 日本語が含まれている場合、CSVのエンコードをUTF-8にしておく
+
+
+```python
+
+# pandasをインストールする
+pip install pandas
+
+# pythonを立ち上げる
+python
+
+# ディレクトリの指定（os）、csv読み込み(pandas)のモジュールを読み込む
+import pandas as pd
+import os
+
+# 作業ディレクトリの指定
+os.chdir("/Users/h.yamauchi/Desktop/su")
+
+# csvの読み込み
+aed = pd.read_csv("aedu.csv")# 読み込んだCSVの表示
+print aed
+
+# 値の検索とデータフレームへの書き込み
+aed.query("syubetsu == '金融機関'") 
+aedcsv = aed.query("syubetsu == '金融機関'") 
+print aedcsv
+
+# csvに書き出す
+aedcsv.to_csv("test.csv")
+
+```
+
+※　書き出されたデータは、utf-8のため、日本語が含まれていると文字化けがおきる（テキストエディタ等で変換が必要）
