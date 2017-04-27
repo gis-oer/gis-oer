@@ -102,17 +102,17 @@ import pandas as pd
 import os
 
 # 作業ディレクトリの指定
-os.chdir("/Users/h.yamauchi/Desktop/su")
+os.chdir("作業ディレクトリのパス")
 
-# csvの読み込み
-aed = pd.read_csv("aedu.csv")
+# aedにcsvを読み込む
+aed = pd.read_csv("データ名.csv")
 
 # 読み込んだCSVの表示
 print aed
 
-# 値の検索とデータフレームへの書き込み
-aed.query("syubetsu == '金融機関'") 
-aedcsv = aed.query("syubetsu == '金融機関'") 
+# 値の検索とaedcsvへの書き込み
+aed.query("列名 == '検索したい値'") 
+aedcsv = aed.query("列名 == '検索したい値'") 
 print aedcsv
 
 # csvに書き出す
