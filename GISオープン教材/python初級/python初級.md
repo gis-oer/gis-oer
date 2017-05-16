@@ -83,6 +83,20 @@ for file in files:
 
 書き出したデータをQGISで読み込み、座標変換ができているか確認する。
 
+## ジオメトリの表示
+　以下では、QGISのPythonコンソールを用いてポリゴンデータのジオメトリを取得する手法について解説しています。
+> [QGIS Tutorials and Tips](QGIS Tutorials and Tips)の[Getting Started With Python Programming](http://www.qgistutorials.com/en/docs/getting_started_with_pyqgis.html)を参考に作成
+
+```python
+#pythonコンソールを開きレイヤウィンドウでレイヤを選択しておく
+ly = iface.activeLayer()
+
+#ジオメトリを取得して表示する
+for geom in ly.getFeatures():
+    geometry = geom.geometry()
+    print geometry.asPolygon()
+```
+
 ## 値の検索と書き出し
 　PythonによるCSVファイルの文字列の検索と書き出しは、以下のように行うことができる。また、以下はQGISを使用していない。
 
