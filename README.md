@@ -16,7 +16,7 @@
 　大学のカリキュラムに合わせて利用する場合は、[こちら](./GISオープン教材/課題/README.md)をご利用ください。
 
 ### GitBook形式での提供
-　本教材は、閲覧や操作性に優れた[GIS-OER  book](https://gis-oer.github.io/gitbook/book_3.1/)での提供を行っています。
+　本教材は、閲覧や操作性に優れた[GIS-OER  book](https://gis-oer.github.io/gitbook/book/)での提供を行っています。
 
 ## ライセンス
 　本教材は、**© GIS Open Educational Resources WG, CC BY-SA 4.0**　で提供しています。教材の利用（閲覧、使用、複製、配布、改変など）については、[利用規約]をご確認ください。
