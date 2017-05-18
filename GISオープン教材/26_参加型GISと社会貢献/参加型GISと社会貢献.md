@@ -251,3 +251,4 @@ https://www.youtube.com/watch?v=WjNawjN53lw&feature=youtu.be/ を参照する。
 [OSM Tasking Manager]:http://tasks.hotosm.org/
 [▲メニューへもどる]:参加型GISと社会貢献.md#menu
 [課題ページ]:../課題/課題ページ/参加型GISと社会貢献.md
+<h2 style="background-color:#F8F5FD;text-align:center;">教材の利用に関するアンケート</h2>　本プロジェクトでは、教材の改良を目的とした任意アンケートを実施しています。ご回答いただける方は、**[アンケート](https://customform.jp/form/input/14328/)** にお進みください。ご協力のほどよろしくお願いいたします。<br><br>※ 本アンケートの成果は、教材の改良のほか、学会での発表等の研究目的でも利用します。また、本アンケートでは、個人が特定できるような質問は設けておりません。
