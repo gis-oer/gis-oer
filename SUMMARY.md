@@ -185,7 +185,8 @@
 
 
 * [動画教材（野外調査）](GISオープン教材/野外/README.md)
-    * [UAV](GISオープン教材/野外/movies/movie.md#UAV)
+    * [UAV](GISオープン教材/野外/uav/uav.md)
+    * [3Dプリンタ](GISオープン教材/野外/3Dプリンタ/3Dプリンタ.md)
 
 
 * [講義用教材](GISオープン教材/既存資料/README.md)

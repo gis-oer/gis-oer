@@ -5,5 +5,5 @@
 
 ## 動画教材一覧
 
-- [UAV](movies/movie.md#UAV)
-- [3Dプリンター](#3Dプリンター)
+- [UAV](./uav/uav.md)
+- [3Dプリンタ](./3Dプリンタ/3Dプリンタ.md)
