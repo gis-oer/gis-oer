@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf8">
+    <title></title>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf8"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <style>
+    svg{width:700px; height:700px; border:1px; background-color: white; text-align: left;}
+    path{fill:white; stroke:black; stroke-width:0.25;}
+    h1,p {text-align: left;}
+    </style>
+  </head>
+  <body>
+    <h1>熊本県球磨郡相良村の人口マップ</h1>
+      <p>地図をクリックすると人口が表示されます。<br>※濃い緑の地域には、人が住んでいません。</p>
+    <svg id ="myGraph"></svg>
+    <script>
+     var w = 500;
+     var l = 500;
+     var path = d3.geo.path()
+      .projection(d3.geo.mercator()
+        .center([131.00,32.26])
+        .scale(100000)
+    )
+
+    d3.json("./data/s2.json",function(error, pref){
+      d3.select("#myGraph")
+        .selectAll("path")
+        .data(pref.features)
+        .enter()
+        .append("path")
+        .attr("d",path)
+        .style("fill",function(d,i){
+            if(d.properties.JINKO=="0"){
+              return "#298A08";
+            }
+            return "#CEF6CE";
+          })
+        .on('click', function(d){
+            alert(d.properties.MOJI+"の人口は"+d.properties.JINKO+"人です。")
+        })
+        .on('mouseover', function(){
+          d3.select(this)
+          .style("fill","yellow")
+        })
+        .on("mouseout", function(d,i){
+        d3.select(this)
+          .style("fill",function(d,i){
+            if(d.properties.JINKO=="0"){
+              return "#298A08";
+            }
+            return "#CEF6CE";
+          })
+        })
+    });
+
+    </script>
+  </body>
+</html>
