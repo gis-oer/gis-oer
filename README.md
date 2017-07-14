@@ -1,10 +1,8 @@
 # 「GISの実習用オープン教材」(試験公開版)
 
-[![Build Status](https://travis-ci.org/gis-oer/gis-oer.svg?branch=master)](https://travis-ci.org/gis-oer/gis-oer)
-
 　科学研究費補助金　基盤研究(A) 「GISの標準コアカリキュラムと知識体系を踏まえた実習用オープン教材の開発」プロジェクトにおいて開発した、**「GISオープン教材(試験公開版)」** の公開用リポジトリです。
 
-![gis](https://raw.githubusercontent.com/yamauchi-inochu/demo/gh-pages/home/img/top.png)
+![gis](./topimage.png)
 
 ## 本プロジェクトについて
 　プロジェクトは、GIS(Geographic Information System)教育の充実のため、大学の実習授業や個人の自主学習等で利用できる実習用の教材を開発し、オープンな活用を推進することを目的としたものです。詳しくは、[本プロジェクトについて](./本プロジェクトについて.md)をご参照ください。
