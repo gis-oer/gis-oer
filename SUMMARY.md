@@ -150,7 +150,7 @@
   * [CartoDB](GISオープン教材/インターネットの活用に関する教材/CartoDB/CartoDB.md)
   * [Cesium](GISオープン教材/インターネットの活用に関する教材/Cesium/Cesium.md)
   * [Googleマイマップ](GISオープン教材/インターネットの活用に関する教材/Googleマイマップ/Googleマイマップ.md)
-  * [Leaflet](GISオープン教材/インターネットの活用に関する教材/Leaflet/Leaflet.md)
+  * [Leaflet](GISオープン教材/インターネットの活用に関する教材/LeafLet/LeafLet.md)
   * [地理院地図](GISオープン教材/インターネットの活用に関する教材/地理院地図/地理院地図.md)
   * [D3.js](GISオープン教材/インターネットの活用に関する教材/D3.js/D3.js.md)
   * [GitHubビギナーズマニュアル](GISオープン教材/インターネットの活用に関する教材/GitHubビギナーズマニュアル/GitHubビギナーズマニュアル.md)
