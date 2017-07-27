@@ -146,16 +146,16 @@
   * [OSMを利用したクライシスマッピング](GISオープン教材/26_参加型GISと社会貢献/参加型GISと社会貢献.md#OSMを利用したクライシスマッピング)
 
 
-* [WEB GIS実習用教材一覧](GISオープン教材/インターネットの活用に関する教材/README.md)
-  * [CartoDBでWebMAPを作成](GISオープン教材/インターネットの活用に関する教材/CartoDBでWebMAPを作成.CartoDBでWebMAPを作成md)
-  * [Cesiumによるデータの可視化](GISオープン教材/インターネットの活用に関する教材/Cesiumによるデータの可視化/Cesiumによるデータの可視化.md)
-  * [czml入門](GISオープン教材/インターネットの活用に関する教材/czml入門/czml入門.md)
+* [WEB GIS入門教材一覧](GISオープン教材/インターネットの活用に関する教材/README.md)
+  * [CartoDB](GISオープン教材/インターネットの活用に関する教材/CartoDB/CartoDB.md)
+  * [Cesium](GISオープン教材/インターネットの活用に関する教材/Cesium/Cesium.md)
+  * [Googleマイマップ](GISオープン教材/インターネットの活用に関する教材/Googleマイマップ/Googleマイマップ.md)
+  * [Leaflet](GISオープン教材/インターネットの活用に関する教材/Leaflet/Leaflet.md)
+  * [地理院地図](GISオープン教材/インターネットの活用に関する教材/地理院地図/地理院地図.md)
+  * [D3.js](GISオープン教材/インターネットの活用に関する教材/D3.js/D3.js.md)
   * [GitHubビギナーズマニュアル](GISオープン教材/インターネットの活用に関する教材/GitHubビギナーズマニュアル/GitHubビギナーズマニュアル.md)
-  * [Google マイマップの活用](GISオープン教材/インターネットの活用に関する教材/Google マイマップの活用/Google マイマップの活用.md)
-  * [OpenStreetMAPとクライシスマッピング](GISオープン教材/インターネットの活用に関する教材/OpenStreetMAPとクライシスマッピング/OpenStreetMAPとクライシスマッピング.md)
-  * [QGISとLeafletの連携](GISオープン教材/インターネットの活用に関する教材/QGISとLeafletの連携/QGISとLeafletの連携.md)
-  * [地理院地図の活用](GISオープン教材/インターネットの活用に関する教材/地理院地図の活用/地理院地図の活用.md)
-
+  * [czml](GISオープン教材/インターネットの活用に関する教材/czml/czml.md)
+  * [kml](GISオープン教材/インターネットの活用に関する教材/kml/kml.md)
 
 * [課題ページ](GISオープン教材/課題/README.md)
   * [地形環境分析のためのQGIS入門](GISオープン教材/課題/課題ページ/1day実習コース/1day実習コース.md)
