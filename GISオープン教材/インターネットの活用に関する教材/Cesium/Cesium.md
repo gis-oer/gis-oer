@@ -15,7 +15,7 @@
 
 **使用データ**
 
-* [KMLサンプル]()
+* [KMLサンプル](https://github.com/gis-oer/datasets/blob/master/vector/kml/cesium/echizen_map.kmz?raw=true)
 
 > [越前市オープンデータ] 越前市防災安全課　一次避難場所（風水害）、浸水想定区域（風水害）のデータを加工し、利用。
 
