@@ -4,19 +4,20 @@
 ## 教材一覧
 
 ### WEB MAP作成入門
-- [CartoDB](./CartoDB/CartoDB.md#CartoDB)
+- [Carto](./Carto/Carto.md)
 - [Cesium](./Cesium/Cesium.md#Cesium)
-- [Googleマイマップ](./Googleマイマップ/Googleマイマップ.md#Googleマイマップ)
-- [LeafLet](./LeafLet/LeafLet.md#LeafLet)
-- [地理院地図](./地理院地図/地理院地図.md#地理院地図)
-- [D3.js](./D3.js/D3.js.md#D3.js)
+- [Googleマイマップ](./Googleマイマップ/Googleマイマップ.md)
+- [LeafLet](./LeafLet/LeafLet.md)
+- [LeafLet](./OpenLayers3/OpenLayers3.md)
+- [地理院地図](./地理院地図/地理院地図.md)
+- [D3.js](./D3.js/D3.js.md)
 
 ### データ作成入門
-- [CZML](./CZML/CZML.md#CZML)
-- [KML](./KML/KML.md#KML)
+- [CZML](./CZML/CZML.md)
+- [KML](./KML/KML.md)
 
 ### GitHub
-- [GitHubビギナーズマニュアル](./GitHubビギナーズマニュアル/GitHubビギナーズマニュアル.md#GitHubビギナーズマニュアル)
+- [GitHubビギナーズマニュアル](./GitHubビギナーズマニュアル/GitHubビギナーズマニュアル.md)
 
 ### データ解析入門:準備中
 - [GoogleEarthEngine](#)

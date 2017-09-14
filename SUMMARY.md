@@ -147,15 +147,16 @@
 
 
 * [WEB GIS入門教材一覧](GISオープン教材/インターネットの活用に関する教材/README.md)
-  * [CartoDB](GISオープン教材/インターネットの活用に関する教材/CartoDB/CartoDB.md)
+  * [Carto](GISオープン教材/インターネットの活用に関する教材/Carto/Carto.md)
   * [Cesium](GISオープン教材/インターネットの活用に関する教材/Cesium/Cesium.md)
   * [Googleマイマップ](GISオープン教材/インターネットの活用に関する教材/Googleマイマップ/Googleマイマップ.md)
   * [Leaflet](GISオープン教材/インターネットの活用に関する教材/LeafLet/LeafLet.md)
+  * [OpenLayers3](GISオープン教材/インターネットの活用に関する教材/OpenLayers3/OpenLayers3.md)
   * [地理院地図](GISオープン教材/インターネットの活用に関する教材/地理院地図/地理院地図.md)
   * [D3.js](GISオープン教材/インターネットの活用に関する教材/D3.js/D3.js.md)
   * [GitHubビギナーズマニュアル](GISオープン教材/インターネットの活用に関する教材/GitHubビギナーズマニュアル/GitHubビギナーズマニュアル.md)
-  * [czml](GISオープン教材/インターネットの活用に関する教材/czml/czml.md)
-  * [kml](GISオープン教材/インターネットの活用に関する教材/kml/kml.md)
+  * [CZML](GISオープン教材/インターネットの活用に関する教材/CZML/CZML.md)
+  * [KML](GISオープン教材/インターネットの活用に関する教材/KML/KML.md)
 
 
 * [課題ページ](GISオープン教材/課題/README.md)
@@ -185,7 +186,7 @@
     * [第14回・参加型GISと社会貢献](GISオープン教材/課題/課題ページ/参加型GISと社会貢献.md)
 
 
-* [動画教材（野外調査）](GISオープン教材/野外/README.md)
+* [GISと関連した機材の活用](GISオープン教材/野外/README.md)
     * [UAV](GISオープン教材/野外/UAV/uav.md)
     * [3Dプリンタ](GISオープン教材/野外/3Dプリンタ/3Dプリンタ.md)
 
