@@ -1,6 +1,5 @@
 # Leaflet入門
-本教材は、QGISとLeafletを用いてWEB地図を公開するための実習用教材です。QGISでデータを読み込み、プラグインからLeafletを用いてWEB地図を作成します。ローカルでデータを整えた後に、GitHubによるWEB地図の公開を行います。
-講義用教材として、[地理情報科学教育用スライド（GIScスライド）]の4章が参考になります。
+本教材は、QGISのプラグインであるQGIS2WEBを用いて、OpenLayers3でWEB地図を作成するための実習用教材です。以下の教材に従って、[完成例](https://yamauchi-inochu.github.io/ol3-test/index.html)のようなWEB地図が作成できれば実習完了です。この実習には、Atom等のテキストエディタが必要です。
 
 本教材を使用する際は、[利用規約]をご確認いただき、これらの条件に同意された場合にのみご利用下さい。
 
@@ -8,12 +7,10 @@
 [利用規約]:../../../../master/利用規約.md
 **Menu**
 ------
-* [利用するデータをダウンロードする](#利用するデータをダウンロードする)
-* [QGISでスタイルを調整する](#QGISでスタイルを調整する)
-* [プラグインを読み込む](#プラグインを読み込む)
-* [qgis2leafを起動する](#qgis2leafを起動する)
+* [OpenLayers3とは？](#OpenLayers3とは)
+* [レイヤのスタイル調整とプラグインのインポート](#レイヤのスタイル調整とプラグインのインポート)
+* [qgis2webを起動する](#qgis2leafを起動する)
 * [index.htmlを編集する](#index.htmlを編集する)
-* [GitHubでwebにアップロードする](#GitHubでwebにアップロードする)
 
 **使用データ**
 
@@ -27,74 +24,107 @@
 
 ---
 
-## 利用するデータをダウンロードする
+## OpenLayers3とは？
 
-越前市が公開している浸水想定区域と一次避難所のシェープファイルを[オープンデータ越前！]からダウンロードする。
-[オープンデータ越前！]:浸水想定区域と一次避難所のシェープファイルをダウンロードする。
 
-[▲メニューへもどる]
-
-## QGISでスタイルを調整する
-![QGISで調整](pic/leafpic_1.png)
-ダウンロードしたファイルを読み込みスタイルを調整する。
-※　想定浸水区域は、3つのファイルをマージ後、想定浸水深（SAFIELD001）でディゾルブしておく
-
-[▲メニューへもどる]
-
-## プラグインを読み込む
-プラグインの管理とインストールから、「GQIS2Leaf」を検索し、インストールする。
+## レイヤのスタイル調整とプラグインのインポート
+QGISに実習用データを読み込み、スタイルを調整する。次に、プラグインの管理とインストールから、「QGIS2WEB」を検索し、インストールする。
 ![QGISで調整](pic/leafpic_2.png)
 
 [▲メニューへもどる]
 
-## QGIS2Leafを起動する
+## qgis2webを起動する
+`Web(W)>qgis2web`をクリックする。以下のような設定を行い、`Update preview`をした後、`Export`をクリックする。
 ![QGIS2Leaf](pic/leafpic_3.png)
-`Web(W)>qgis2leaf>Exports a QGIS Project to a working leaflet webmap`
-1. Get Layers をクリックしてレイヤを追加する。
-2. Basemapを選択する（複数選択できる）。
-3. htmlを含んだファイルの出力先を指定する。
-4. Webページのタイトル、マップのタイトル、マップのサブタイトルを入力する。
-5. OK をクリックする。
-※レイヤ名が日本語だとエラーがでる。
 
+①　レイヤをクリックしたときのポップアップの設定を行う。②　ズームレベルや計測機能などを設定する。ここで、ファイルの出力先を変更しておくと良い。　③　Basemapを選択する（複数選択は、 Ctrlキーを押しながら行う）
+
+ローカルで、index.htmlファイルを開き中身を確認する。
 ![QGIS2Leaf](pic/leafpic_4.png)
-ローカルで、htmlファイルを開き中身を確認する。
-Basemapの追加、レイヤの透過、凡例の日本語化など、マップを調整する。
 
 [▲メニューへもどる]
 
 ## index.htmlを編集する
+以下では、エクスポートしたindex.htmlを編集し、凡例の日本語化、Basemapの追加、レイヤの透過手法について解説しています。各機能の詳しい解説は、[完成例](https://yamauchi-inochu.github.io/ol3-test/index.html)のコードを参考にしてください。
 
-#### 凡例の変更
-![凡例の変更](pic/leafpic_5.png)
-index.htmlをテキストエディタで開き、文を書き換える
+### 凡例の変更(地図の切り替えウィンドウ)
+layer.jsをテキストエディタで開き、//の個所を書き換える
 
-#### ベースマップ（地理院地図）の追加
-![ベースマップ](pic/leafpic_6.png)
-index.htmlを開き文を付け加える。
+```JavaScript
+var lyr_flood_assumed_area = new ol.layer.Vector({
+                source:jsonSource_flood_assumed_area,
+                style: style_flood_assumed_area,
+                title: "想定浸水区域"
+            });var format_refugefirststage = new ol.format.GeoJSON();
+var features_refugefirststage = format_refugefirststage.readFeatures(geojson_refugefirststage,
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_refugefirststage = new ol.source.Vector();
+jsonSource_refugefirststage.addFeatures(features_refugefirststage);var lyr_refugefirststage = new ol.layer.Vector({
+                source:jsonSource_refugefirststage,
+                style: style_refugefirststage,
+                title: "一次避難所"
+            });
+```
 
-![ベースマップ](pic/leafpic_7.png)
-index.htmlを開き、編集内容を確認する。
+### ポップアップの編集
+layersフォルダにあるlayers.jsを開き、テキストエディタの置換機能を用いて、フィールド名を日本語にする。`no label`を `inline label`に書き換える。
 
-#### ポリゴンを透過する
-![ベースマップ](pic/leafpic_8.png)
-fillOpacity: ‘1.0’を0.7に変更し、weight:を0に変更する。
-これにより、ある程度透過性を持っていて、境界線のないポリゴンが表示できる。
+```JavaScript
+lyr_flood_assumed_area.set('fieldLabels', {'SAUID': 'inline label', 'SAUPDATE': 'inline label', 'SAFIELD000': 'inline label', 'SAFIELD001': 'inline label', });
+lyr_refugefirststage.set('fieldLabels', {'SAFIELD003': 'inline label', 'SAFIELD004': 'inline label', 'SAFIELD005': 'inline label', 'SAFIELD006': 'inline label', 'test': 'inline label', });
+```
 
-[▲メニューへもどる]
 
-## GitHubでwebにアップロードする
-![アップロード](pic/leafpic_9.png)
-リポジトリを作成後、ローカルにcloneする。
-ローカルにcloneしたリポジトリ（フォルダ）に、QGIS2Leafで出力したフォルダを移動する。
-クライアントソフトを起動し、Webにアップロードする。
 
-![アップロード](pic/leafpic_10.png)
-アップロードしたファイルをブラウザで開くと、マップが表示される。
+### ベースマップの追加
+var baseLayerに地理院地図を追加する。
+
+```JavaScript
+var baseLayer = new ol.layer.Group({
+    'title': 'Base maps',
+    layers: [
+
+  new ol.layer.Tile({
+      'title': 'OSM',
+      'type': 'base',
+      source: new ol.source.OSM()
+  }),
+  new ol.layer.Tile({
+      'title': 'Stamen Terrain',
+      'type': 'base',
+      source: new ol.source.Stamen({
+          layer: 'terrain'
+      })
+  }),//以下を追加
+
+  new ol.layer.Tile({
+    'title': '地理院地図',
+    'type': 'base',
+              source: new ol.source.XYZ({
+                attributions: [attribution],
+                url: 'http://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png'
+              })
+            })
+  ]
+});
+```
+
+### ポリゴンを透過する
+stylesフォルダのflood_assumed_area_style.jsを開き、透過‘1.0’を0.7に変更する。
+
+```JavaScript
+var size = 0;function categories_flood_assumed_area(feature, value) {
+                 switch(value) {case "0.0-0.5":
+	return [ new ol.style.Style({
+         fill: new ol.style.Fill({color: ‘rgba(161,231,253,0.7)’}) //1.0から0.7にする
+    })];  //以下、省略
+
 
 ```
-http://（ユーザー名）.github.io/echizen/echizen_map/index.html
-```
+
+### 表示の確認
+index.htmlをブラウザで開き、編集内容を確認する。
+![QGIS2Leaf](pic/leafpic_10.png)
 
 [▲メニューへもどる]
 
