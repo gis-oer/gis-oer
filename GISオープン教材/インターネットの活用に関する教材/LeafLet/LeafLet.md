@@ -26,9 +26,10 @@
 ---
 
 ## Leafletとは？
+Leafletは、WEB地図の作成のためのオープンソースJavaScriptライブラリです。シンプルなコーディングで容易に、モバイルやデスクトップの表示に対応したWEB地図が作成できます。全体のファイルサイズが軽いことや様々な地図表現（マーカやタイル読み込み）ができることが特徴です。Leafletに関する詳しい解説は、以下のリンクを参照してください。
 
-
-
+> [LeafLet公式](http://leafletjs.com/)
+> [Wikipedia](https://ja.wikipedia.org/wiki/Leaflet)
 
 
 [▲メニューへもどる]

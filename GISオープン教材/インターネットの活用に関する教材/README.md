@@ -8,7 +8,7 @@
 - [Cesium](./Cesium/Cesium.md#Cesium)
 - [Googleマイマップ](./Googleマイマップ/Googleマイマップ.md)
 - [LeafLet](./LeafLet/LeafLet.md)
-- [LeafLet](./OpenLayers3/OpenLayers3.md)
+- [OpenLayers](./OpenLayers/OpenLayers.md)
 - [地理院地図](./地理院地図/地理院地図.md)
 - [D3.js](./D3.js/D3.js.md)
 
