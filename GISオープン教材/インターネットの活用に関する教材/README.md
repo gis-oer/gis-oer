@@ -1,14 +1,13 @@
 # WebGIS実習用教材
-　この教材は、Web GISの実習用教材です。GIS初学者向けの教材ではない教材が含まれている点に注意して利用してください。また、この教材では、GitHubを利用して解説している場合があります。GitHubについては、[GitHubビギナーズマニュアル]を参照してください。
+　この教材は、Web GISの実習用教材です。アプリケーションやライブラリを用いてWEB地図を作成する手法やデータの作成手法について解説しています。プログラミングの基礎やサーバーの設定については解説していません。この教材では、GitHubのGh-pagesを利用して解説している場合があります。GitHubについては、[GitHubビギナーズマニュアル]を参照してください。
 
 ## 教材一覧
 
 ### WEB MAP作成入門
-- [Carto](./Carto/Carto.md)
-- [Cesium](./Cesium/Cesium.md#Cesium)
+- [Carto](./CartoDB/Carto.md#Carto)
+- [Cesium](./Cesium/Cesium.md)
 - [Googleマイマップ](./Googleマイマップ/Googleマイマップ.md)
 - [LeafLet](./LeafLet/LeafLet.md)
-- [OpenLayers](./OpenLayers/OpenLayers.md)
 - [地理院地図](./地理院地図/地理院地図.md)
 - [D3.js](./D3.js/D3.js.md)
 
@@ -16,12 +15,17 @@
 - [CZML](./CZML/CZML.md)
 - [KML](./KML/KML.md)
 
-### GitHub
-- [GitHubビギナーズマニュアル](./GitHubビギナーズマニュアル/GitHubビギナーズマニュアル.md)
-
 ### データ解析入門:準備中
 - [GoogleEarthEngine](#)
 
 ### SNSからのデータ取得と処理:準備中
 - [twitter](#)
 - [テキストマインイグ](#)
+
+### 地図タイルの作成入門:準備中
+- [ラスタタイル](./)
+
+### GitHub
+- [GitHubビギナーズマニュアル](./GitHubビギナーズマニュアル/GitHubビギナーズマニュアル.md)
+
+ [GitHubビギナーズマニュアル]:./GitHubビギナーズマニュアル/GitHubビギナーズマニュアル.md
