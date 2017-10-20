@@ -6,8 +6,20 @@
         "-sharing",
         "splitter",
         "collapsible-menu",
-        "creativecommons"
+        "creativecommons",
+        "favicon"
     ],
+    "pluginsConfig": {
+    "favicon":{
+        "shortcut": "./img/favicon.ico",
+        "bookmark": "./img/favicon.ico",
+        "appleTouch": "./img/favicon.ico",
+        "appleTouchMore": {
+            "120x120": "./img/favicon.ico",
+            "180x180": "./img/favicon.ico"
+        }
+    }
+},
     "styles": {
         "website": "styles/website.css"
     }

@@ -29,7 +29,7 @@
 
 **スライド教材**
 
-スライドのダウンロードは[こちら](../../../../../raw/master/GISオープン教材/インターネットの活用に関する教材/OpenStreetMAPとクライシスマッピング/OpenStreetMapとクライシスマッピング.pptx)
+スライドのダウンロードは[こちら](../../../../raw/master/GISオープン教材/26_参加型GISと社会貢献/参加型GISと社会貢献.pptx)
 
 ----------
 
@@ -250,5 +250,5 @@ https://www.youtube.com/watch?v=WjNawjN53lw&feature=youtu.be/ を参照する。
 [OpenStreetMap]:http://www.openstreetmap.org
 [OSM Tasking Manager]:http://tasks.hotosm.org/
 [▲メニューへもどる]:参加型GISと社会貢献.md#menu
-[課題ページ]:../課題/課題ページ/参加型GISと社会貢献.md
+[課題ページ]:../課題/課題_参加型GISと社会貢献.md
 <h2 style="background-color:#F8F5FD;text-align:center;">教材の利用に関するアンケート</h2>　本プロジェクトでは、教材の改良を目的とした任意アンケートを実施しています。ご協力いただける方は、<a href="https://customform.jp/form/input/14328/">アンケート</a>にお進みください。ご協力のほどよろしくお願いいたします。<br><br>※ 本アンケートの成果は、教材の改良のほか、学会での発表等の研究目的でも利用します。また、本アンケートでは、個人が特定できるような質問は設けておりません。

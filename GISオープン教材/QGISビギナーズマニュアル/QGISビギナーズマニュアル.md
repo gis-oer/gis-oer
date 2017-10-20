@@ -28,7 +28,7 @@
 
 **スライド教材**
 
-スライドのダウンロードは[こちら](https://raw.githubusercontent.com/yamauchi-inochu/demo/master/GIS%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E6%95%99%E6%9D%90/QGIS%E3%83%93%E3%82%AE%E3%83%8A%E3%83%BC%E3%82%BA%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/QGIS%E3%83%93%E3%82%AE%E3%83%8A%E3%83%BC%E3%82%BA%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB.pptx)
+スライドのダウンロードは[こちら](../../../../raw/master/GISオープン教材/QGISビギナーズマニュアル/QGISビギナーズマニュアル.pptx)
 
 ----------
 
@@ -355,7 +355,7 @@ CSVは、カンマで区切られたデータ形式である。座標値をも�
 [福知山豪雨災害聞き取り調査データ]:https://github.com/yamauchi-inochu/demo/raw/master/GISオープン教材/課題/sample/fkuchiyama_sample.zip
 [QGIS API Documentation]:http://www.qgis.org/api/index.html
 [その他のライセンスについて]:../その他のライセンスについて.md
-[課題ページ]:../課題/課題ページ/GIS入門.md
+[課題ページ]:../課題/課題_GIS入門.md
 [利用規約]:../../../master/利用規約.md
 [GISの基本概念]:../01_GISの基本概念/GISの基本概念.md
 <h2 style="background-color:#F8F5FD;text-align:center;">教材の利用に関するアンケート</h2>　本プロジェクトでは、教材の改良を目的とした任意アンケートを実施しています。ご協力いただける方は、<a href="https://customform.jp/form/input/14328/">アンケート</a>にお進みください。ご協力のほどよろしくお願いいたします。<br><br>※ 本アンケートの成果は、教材の改良のほか、学会での発表等の研究目的でも利用します。また、本アンケートでは、個人が特定できるような質問は設けておりません。
