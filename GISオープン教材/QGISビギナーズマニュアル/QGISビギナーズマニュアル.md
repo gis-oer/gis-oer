@@ -352,7 +352,7 @@ CSVは、カンマで区切られたデータ形式である。座標値をも�
 [既存データの地図データと属性データ]:../07_既存データの地図データと属性データ/既存データの地図データと属性データ.md
 [空間データの結合・修正]:../10_空間データの結合・修正/空間データの結合・修正.md
 [ラスタデータの分析]:../15_ラスタデータの分析/ラスタデータの分析.md
-[福知山豪雨災害聞き取り調査データ]:https://github.com/yamauchi-inochu/demo/raw/master/GISオープン教材/課題/sample/fkuchiyama_sample.zip
+[福知山豪雨災害聞き取り調査データ]:https://github.com/gis-oer/datasets/raw/master/vector/fkuchiyama_sample.zip
 [QGIS API Documentation]:http://www.qgis.org/api/index.html
 [その他のライセンスについて]:../その他のライセンスについて.md
 [課題ページ]:../課題/課題_GIS入門.md
