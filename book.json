@@ -13,7 +13,7 @@
     "favicon":{
         "shortcut": "./img/favicon.ico",
         "bookmark": "./img/favicon.ico",
-        "appleTouch": "./img/favicon.ico",
+        "appleTouch": "./img/apple-touch-icon.png",
         "appleTouchMore": {
             "120x120": "./img/favicon.ico",
             "180x180": "./img/favicon.ico"
