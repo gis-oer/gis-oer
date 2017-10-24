@@ -218,7 +218,7 @@ Web：背景地図の設定やweb地図の書き出しができる（プラグ�
 プラグイン＞プラグインの管理とインストールからTileLayerPluginを検索し、プラグインのインストールをクリックする。
 ![TileLayerPlugin](pic/Qpic16-1.png)
 
-インストールが完了したら、地理院タイルをまとめた[gsi-tiles.zip](https://raw.githubusercontent.com/yamauchi-inochu/demo/master/GIS%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E6%95%99%E6%9D%90/%E8%AA%B2%E9%A1%8C/sample/gsi-tiles.zip)をダウンロードし、任意の場所に保存し、.zipを解凍する。  
+インストールが完了したら、地理院タイルをまとめた[gsi-tiles.zip](https://github.com/gis-oer/datasets/raw/master/Tile/gsi-tiles.zip)をダウンロードし、任意の場所に保存し、.zipを解凍する。  
 
 web>タイルレイヤプラグインから、プラグインを起動する。タイルレイヤプラグインの設定をクリックし、解凍したgsi-tilesフォルダを外部レイヤディレクトリに指定する。OKをクリックすると、地理院タイルの一覧が表示される。地理院タイルを使用する際は、[地理院タイルの利用規約](http://maps.gsi.go.jp/help/use.html)に従ってください。
 ![TileLayerPlugin](pic/Qpic16-2.png)
