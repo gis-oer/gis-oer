@@ -15,7 +15,7 @@
 
 **使用データ**
 
-* [実習データ]()
+* [実習データ](https://github.com/gis-oer/datasets/raw/master/vector/echizen.zip)
 > [越前市オープンデータ] 越前市防災安全課　一次避難場所（風水害）、浸水想定区域（風水害）のデータを加工し、利用。
 
 [越前市オープンデータ]:http://www.city.echizen.lg.jp/office/010/021/open-data-echizen.html
