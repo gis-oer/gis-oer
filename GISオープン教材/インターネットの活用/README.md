@@ -10,6 +10,7 @@
 - [LeafLet](./LeafLet/LeafLet.md)
 - [地理院地図](./地理院地図/地理院地図.md)
 - [D3.js](./D3.js/D3.js.md)
+- [OpenLayers](./OpenLayers/OpenLayers.md)
 
 ### データ作成入門
 - [CZML](./CZML/CZML.md)
@@ -27,5 +28,3 @@
 
 ### GitHub
 - [GitHubビギナーズマニュアル](./GitHubビギナーズマニュアル/GitHubビギナーズマニュアル.md)
-
- [GitHubビギナーズマニュアル]:./GitHubビギナーズマニュアル/GitHubビギナーズマニュアル.md
