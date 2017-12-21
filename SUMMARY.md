@@ -158,6 +158,7 @@
   * [GitHubビギナーズマニュアル](GISオープン教材/インターネットの活用/GitHubビギナーズマニュアル/GitHubビギナーズマニュアル.md)
   * [CZML](GISオープン教材/インターネットの活用/CZML/CZML.md)
   * [KML](GISオープン教材/インターネットの活用/KML/KML.md)
+  * [GeoJSON](GISオープン教材/インターネットの活用/GeoJSON/GeoJSON.md)
 
 
 * [課題ページ（全14回）](GISオープン教材/課題/README.md)
