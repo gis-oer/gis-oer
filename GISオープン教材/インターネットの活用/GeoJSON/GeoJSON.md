@@ -46,7 +46,7 @@ GeoJSONで1地点のポイントレイヤを作成する際は、以下のよう
 * 上記の"crs"は、Named CRSとし、"properties"からWGS84を指定した
 * "coordinates"は、経度、緯度、（高度）の順で並べる
 
-作成したファイルをGitHubなどのビューワーで表示すると[完成例1]のようになる。
+作成したファイルをGitHubなどのビューワーで表示すると[完成例1]()のようになる。
 
 ※ GeoJSONは、QGIS等でもインポートできるため、実習環境に合わせて適切なものを使用すると良い。
 
@@ -252,10 +252,10 @@ GeoJSONで1地点のポイントレイヤを作成する際は、以下のよう
 
 [その他のライセンスについて]:../../その他のライセンスについて.md
 [▲メニューへもどる]:GeoJSON.md#menu
-[完成例1]:(https://github.com/gis-oer/datasets/blob/master/vector/geojson/sample1.geojson)
-[完成例2]:(https://github.com/gis-oer/datasets/blob/master/vector/geojson/sample2.geojson)
-[完成例3]:(https://github.com/gis-oer/datasets/blob/master/vector/geojson/sample3.geojson)
-[完成例4]:(https://github.com/gis-oer/datasets/blob/master/vector/geojson/sample4.geojson)
-[完成例5]:(https://github.com/gis-oer/datasets/blob/master/vector/geojson/sample5.geojson)
-[完成例6]:(https://github.com/gis-oer/datasets/blob/master/vector/geojson/sample6.geojson)
-[完成例6]:(https://github.com/gis-oer/datasets/blob/master/vector/geojson/sample7.geojson)
+[完成例1]:https://github.com/gis-oer/datasets/blob/master/vector/geojson/sample1.geojson
+[完成例2]:https://github.com/gis-oer/datasets/blob/master/vector/geojson/sample2.geojson
+[完成例3]:https://github.com/gis-oer/datasets/blob/master/vector/geojson/sample3.geojson
+[完成例4]:https://github.com/gis-oer/datasets/blob/master/vector/geojson/sample4.geojson
+[完成例5]:https://github.com/gis-oer/datasets/blob/master/vector/geojson/sample5.geojson
+[完成例6]:https://github.com/gis-oer/datasets/blob/master/vector/geojson/sample6.geojson
+[完成例7]:https://github.com/gis-oer/datasets/blob/master/vector/geojson/sample7.geojson
