@@ -4,15 +4,15 @@
 
 **Menu**
 --------
-* [QGIS入門](#QGIS入門)
-* [GRASS入門](#GRASS入門)
+* QGIS入門
+* GRASS入門
 
 ### 使用データ
 * [fkuchiyama_sample.zip](https://github.com/gis-oer/datasets/raw/master/vector/fkuchiyama_sample.zip)　([福知山豪雨災害防災マップ](http://opentextmap.org/library/?p=2808)　© 福知山豪雨災害防災マップ を加工し作成）
 
 * 国土地理院「 基盤地図情報　数値標高モデル　5ｍメッシュ　高松周辺（513440）」
 
-## <a name="QGIS入門"></a>QGIS入門
+## QGIS入門
 　この実習は、QGISとサンプルデータを用いたデータの可視化や地図のレイアウトに関するものです。QGISは、無償で利用できるオープンソースのGISです。[QGISビギナーズマニュアル]を参考にインストールした後、実習を進めてください。本課題と対応する教材は、[QGISビギナーズマニュアル]です。
 
 ### 課題
@@ -40,7 +40,7 @@
 
 ------
 
-## <a name="GRASS入門"></a>GRASS入門
+## GRASS入門
 　この実習は、GRASS GISと基盤地図情報の5mDEMを用いて、標高区分をした地図を作成します。GRASS GISは、無償で利用できるオープンソースのGISです。[GRASSビギナーズマニュアル]を参考にインストールした後、実習を進めてください。QGISのインストールも必要です。
 
 ### 課題
