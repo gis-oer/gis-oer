@@ -1,5 +1,5 @@
 # Cesium入門
-　本教材は、Cesiumを用いて空間データを表示する手法について解説しています。以下の教材に従って、[完成例](https://yamauchi-inochu.github.io/cesium-test/Apps/HelloWorld.html)のようなWEB地図が作成できれば実習完了です。Cesiumの表示は、GitHubとクライアントソフトを用いて行っています。GitHub等の基本的な操作法についての解説はしていません。CZMLについての解説は、[CZML]の教材を参照ください。本教材を使用する際は、[利用規約]をご確認いただき、これらの条件に同意された場合にのみご利用下さい。
+　本教材は、Cesiumを用いて空間データを表示する手法について解説しています。以下の教材に従って、[完成例](https://yamauchi-inochu.github.io/cesium-test/Apps/HelloWorld.html)のようなWEB地図が作成できれば実習完了です。Cesiumの表示は、GitHubとクライアントソフトを用いて行っています。GitHub等の操作法や基本的なプログラミングについての解説はしていません。CZMLについての解説は、[CZML]の教材を参照ください。本教材を使用する際は、[利用規約]をご確認いただき、これらの条件に同意された場合にのみご利用下さい。
 
 [利用規約]:../../../../master/利用規約.md
 [CZML]:../../インターネットの活用に関する教材/czml/czml.md
@@ -9,6 +9,7 @@
 * [Cesiumとは](#Cesiumとは)
 * [Cesiumを体験する](#Cesiumを体験する)
 * [ダウンロード](#ダウンロード)
+* [地図を表示する](#地図を表示する)
 * [レイヤを追加する](#レイヤを追加する)
 * [視点を変更する](#視点を変更する)
 * [kmlの作成と読み込み](#kmlの作成と読み込み)
@@ -28,15 +29,15 @@
 --------
 
 ## Cesiumとは
-- CesiumはWebGLを用いたライブラリ
+- Cesium(Cesiumjs)はWebGLを用いたライブラリ
 - 2Dだけでなく、3D表示ができる
 - 球体のため、世界規模のデータの表示に適している
-- 時系列データの表示も可能
+- 時系列データの表現も可能
 
 [▲メニューへもどる]
 
 ## Cesiumを体験する
-[Cesiumの公式サイト]をブラウザで開き、ページ下段のGet HelloWorld.jsの[PLAY WITH THIS CODE]クリックし、Cesium画面を表示する。
+[Cesiumの公式サイト]をブラウザで開き、ページ下段のGet HelloWorld.jsの[PLAY WITH THIS CODE]クリックし、Cesiumを表示する。
 ![Cesiumを体験する](pic/cesiumpic_1.png)
 
 ![Cesiumを体験する](pic/cesiumpic_2.png)
@@ -50,34 +51,77 @@
 
 [▲メニューへもどる]
 
-## Cesiumのダウンロード
-Cesiumのホームページの`Downloads`から、ダウンロードする。
+## ダウンロード
+Cesiumのホームページの`Downloads`をクリックし、ダウンロードする。
 ![ダウンロード](pic/cesiumpic_5.png)
 
-以下では、GitHubでリポジトリを作成して、ダウンロードしたCesiumをローカルからPushして、webで表示しています。
 
-![ダウンロード](pic/cesiumpic_7.png)
+以下では、GitHubでリポジトリを作成して、ダウンロードしたCesiumをローカルからPushして、webで表示しています。Apps>HellowWord.htmlを参考に必要のないファイルを減らしてから、Pushするとスムーズです。下記のようにNodejsの環境下でローカルから実行することも可能です。外部のデータを読み込まずコードのテストのみ行う場合は、上記したトップページの[PLAY WITH THIS CODE]のページが便利です。
 
-GitHubに新規のリポジトリを作成し、解凍した「cesium」をアップロードする。リポジトリのgh-pagesを設定し、インターネット上でダウンロードしたCesiumを表示する（下記のアドレスにアクセスする）。
+### GitHub
+GitHubに新規のリポジトリを作成し、解凍したcesiumのフォルダをアップロードする。リポジトリのgh-pagesを設定し、インターネット上でダウンロードしたCesiumを表示する（下記のアドレスにアクセスする）。
 
 ```
 http://（ユーザー名）.github.io/gis-oer_cesium/Apps/HelloWorld.html
 ```
 ![ダウンロード](pic/cesiumpic_9.png)
 
+### Nodejs
+```
+# ダウンロードしたファイルのあるディレクトリへ移動
+$ cd ./desktop/downloadfile
+
+# npmから、node_modulesを追加
+$ npm install
+
+# ローカルサーバを起動する
+$ node server.js
+```
 
 [▲メニューへもどる]
 
+## 地図を表示する
+以下では、`Apps>HellowWord.html`を編集しながら、Cesiumの基本操作について解説しています。最初にダウンロードしたCesiumのフォルダを開き、Apps>HellowWord.htmlをテキストエディたで開く。以下のように、<body>内にCesiumを読み込むコードである`var viewer = new Cesium.Viewer('cesiumContainer');`があることを確認する。
+
+
+```html
+<body>
+  <script>
+    var viewer = new Cesium.Viewer('cesiumContainer');
+  </script>
+</body>
+```
+
+※デフォルトではBing Mapsが表示される。デフォルト地図は、しばらくたつと表示されなくなるため、長期で利用する場合は、Bing Maps API keyが必要となる。
+
+### 機能のオン、オフ
+Cesiumの基本機能は、以下のようにTrueとFalseで管理する。baseLayerPickerやhomeButtonなどは、デフォルトでオンになっている機能もある。
+
+>詳しくは、Cesiumのドキュメント[(Viewerの項目)](https://cesiumjs.org/Cesium/Build/Documentation/Viewer.html)を参照。
+
+```
+var viewer = new Cesium.Viewer('cesiumContainer', {
+  baseLayerPicker: true,
+  timeline : false,
+  animation : false,
+  homeButton: false,
+  vrButton: true,
+  geocoder:false,
+  sceneModePicker:false,
+  navigationHelpButton:false
+});
+
+```
 
 ## レイヤを追加する
-以下では、Cesiumにデータを追加する手法について、'Apps>HellowWord.html'を編集します。また、以下のレイヤの追加は、越前市の周辺で行っています。
+以下では、Cesiumに空間座標をもつデータを記述する手法について、'Apps>HellowWord.html'を編集しながら解説します。
 
 ### ポイントを追加する
-以下のコードのように、ポイントの色や位置が設定できる。
+以下のようにすると、ポイントの色や位置が設定できる。
 
 ```JavaScript
 <script>
-var viewer = new Cesium.Viewer('cesiumContainer');　//Cesiumの読み込み
+var viewer = new Cesium.Viewer('cesiumContainer');　
 
 var point = viewer.entities.add({
       name:"福井市", //レイヤ名
@@ -98,7 +142,7 @@ var point = viewer.entities.add({
 
 
 ### ラインを追加する
-ポイントの追加を参考に、以下のように記載するとラインが作成できる。
+ポイントの追加を参考に、以下のようにするとラインが作成できる。
 
 ```JavaScript
 var viewer = new Cesium.Viewer('cesiumContainer');
@@ -127,7 +171,7 @@ viewer.zoomTo(viewer.entities);
 
 
 ### ポリゴンを追加する
-ポイントの追加を参考に、以下のように記載するとポリゴンが作成できる。
+ポイントの追加を参考に、以下のようにするとポリゴンが作成できる。
 
 ```JavaScript
 var polygon = viewer.entities.add({
@@ -174,7 +218,7 @@ viewer.camera.flyTo({   
 
 
 ## KMLの作成と読み込み
-以下では、KMLを作成し、Cesiumで表示する手法について解説しています。KMLの作成は、GoogleEarthで行っています。
+以下では、KML(KMZ)を作成し、Cesiumで表示する手法について解説しています。KMZの作成は、GoogleEarthで行っています。
 
 ### Google EarthでKMLを作成
 1. Google Earth proでシェープファイルを読み込む。
@@ -191,7 +235,7 @@ viewer.camera.flyTo({   
 フォルダーを移動して、フォルダの中にポリゴンとポイントのデータをまとめる。
 
 ### KML読み込み
-KMLをCesiumのディレクトリに移動し、下記のように、HellowWord.htmlの一部を編集する。
+作成したKMZファイルをKMLフォルダにまとめ、Cesiumのディレクトリに移動し、下記のように、HellowWord.htmlの一部を編集する。
 
 ```JavaScript
 viewer.dataSources.add(Cesium.KmlDataSource.load("./KML/echizen_map.kmz"));
@@ -199,11 +243,10 @@ viewer.dataSources.add(Cesium.KmlDataSource.load("./KML/echizen_map.kmz"));
 
 
 ![KML読み込み](pic/cesiumpic_24.png)
-クライアントソフトを通してアップロードし、Webで確認すると↑のように表示される。
-ポイントをクリックすると、KMLの属性データが反映されていない。
+クライアントソフトを通してアップロードし、Webで確認すると↑のように表示される。しかし、ポイントをクリックしても、KMLの属性情報が反映さない。
 
 ### KMLの書き換え
-GoogleEarthから、ポイントレイヤの上で右クリックし、名前をつけて場所を保存から新規にKMLを保存する。
+GoogleEarthから、ポイントレイヤの上で右クリックし、名前をつけて場所を保存から新規にKML(KMZとしない)を保存する。
 
 <BalloonStyle></BalloonStyle>を削除する（2箇所）。
 ![KMLの書き換え](pic/cesiumpic_26.png)
@@ -230,10 +273,11 @@ GoogleEarthから、ポイントレイヤの上で右クリックし、名前を
 Cesiumで表示すると、ポイントの情報が表示できる。
 ![KMLの書き換え](pic/cesiumpic_30.png)
 
-ポイントをクリックすると凡例も表示できるようになった。
+ポイントをクリックすると凡例も表示できるようになっている。
 ![KMLの書き換え](pic/cesiumpic_32.png)
 
 [▲メニューへもどる]
+
 
 #### ライセンスに関する注意事項
 本教材で利用しているキャプチャ画像の出典やクレジットについては、[その他のライセンスについて]よりご確認ください。
