@@ -100,6 +100,203 @@ index.htmlをブラウザで開き、編集内容を確認する。
 
 [▲メニューへもどる]
 
+## LeafLetのダウンロードと使い方
+以下では、QGISのプラグインを使わずに、LeafLetを用いて簡単なWEB地図を作成する手法について解説します。
+
+※ この教材を作成するにあたって、[Leaflet](http://leafletjs.com/)のTutorials、Docsを参考にした。
+
+### 導入
+LeafLetを利用する手法はいくつかあるが、以下では、ダウンロード版を用いて解説している。[Leafletのページ](http://leafletjs.com/)から、Leafletのzipファイルをダウンロードし、解凍したフォルダ内に以下の内容でindex.htmlを作成する。
+
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico"/>
+  <link rel="stylesheet" href="./leaflet.css" />
+  <script src="./leaflet.js"></script>
+</head>
+<body>
+  <!--表示する地図の範囲を記載-->
+  <div id="map0" style="width: 500px; height: 500px;"></div>
+  <script>
+  </script>
+</body>
+
+</html>
+```
+
+### 背景地図の表示
+作成したindex.htmlの<body>内を以下のように、編集して地図を読み込む。以下では背景地図として国土地理院の地理院タイル（標準地図）を利用した。
+
+
+
+```html
+<body>
+  <div id="map0" style="width: 500px; height: 500px;"></div>
+  <script>
+    var map1 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>"
+    });
+//map0に表示する地図の緯度経度、ズームレベル、タイルを設定する
+    var map = L.map('map0',{
+      center:[36.0, 138.7],
+      zoom:13,
+      layers:[map1]
+});
+</script>
+</body>
+
+```
+
+複数の背景地図を読み込み、切り替えて表示するには以下のようにする。
+
+```html
+<script>
+
+//地図1の設定
+var map1 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {
+maxZoom: 18,
+attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>"
+});
+
+//地図2の設定
+var map2 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg', {
+maxZoom: 18,
+attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>"
+});
+
+//地図1をベースマップに設定する
+var map = L.map('map0',{
+	center:[36.0, 138.7],
+	zoom:13,
+	layers:[map1]
+});
+
+var maps = {
+"標準地図": map1,
+"写真（2007～）":map2
+};
+
+// 地図1と地図2を切り替え表示するためのウィンドウを追加する
+L.control.layers(maps).addTo(map);
+
+</script>
+```
+
+### 点（マーカー）、線、面データの作成
+以下では座標値をもつ点、線、面のデータを記述し、地図上に表示する手法について解説しています。
+
+```html
+<script>
+
+//点（マーカー）の追加（ポップアップの追加）
+L.marker([36.0, 138.7]).bindPopup('この地点の座標は、36.0, 138.7です').addTo(map);
+
+//複数点の追加
+L.marker([36.0, 138.7]).bindPopup('この地点の座標は、36.0, 138.7です').addTo(map);
+L.marker([36.0, 138.8]).bindPopup('この地点の座標は、36.0, 138.8です').addTo(map);
+L.marker([36.0, 138.9]).bindPopup('この地点の座標は、36.0, 138.9です').addTo(map);
+
+
+//面の追加(塗りつぶし色、透過度を指定)
+L.polygon([
+    [36.0, 138.7],
+    [36.0, 138.9],
+		[36.05, 138.9],
+		[36.05, 138.7]
+], {color:'pink',fillOpacity:0.5}).bindPopup('これは、ポリゴンです。').addTo(map);
+
+//線の追加(線の色、太さを指定)、面と線の描画順に注意する
+L.polyline([
+    [36.0, 138.7],
+    [36.05, 138.8],
+    [36.0, 138.9],
+		[36.0, 138.7]
+], {color: 'yellow',weight: 3.0}).bindPopup('これは、ラインです。').addTo(map);
+
+</script>
+```
+
+上のコードを利用して、グループ化したMarkerと他のレイヤを、チェックリストから選択表示できるようにする。
+
+```JavaScript
+//L.layerGroup()でマーカーをグループ化する
+var markers = L.layerGroup();
+
+L.marker([36.0, 138.7]).bindPopup('この地点の座標は、36.0, 138.7です').addTo(markers);
+L.marker([36.0, 138.9]).bindPopup('この地点の座標は、36.0, 138.8です').addTo(markers);
+L.marker([36.05, 138.9]).bindPopup('この地点の座標は、36.0, 138.9です').addTo(markers);
+L.marker([36.05, 138.7]).bindPopup('この地点の座標は、36.0, 138.9です').addTo(markers);
+
+
+var polygon =
+  L.polygon([
+    [36.0, 138.7],
+    [36.0, 138.9],
+		[36.05, 138.9],
+		[36.05, 138.7]
+], {color:'pink',fillOpacity:0.5}).bindPopup('これは、ポリゴンです。');
+
+var polyline =
+  L.polyline([
+    [36.0, 138.7],
+    [36.05, 138.8],
+    [36.0, 138.9],
+		[36.0, 138.7]
+], {color: 'yellow',weight: 3}).bindPopup('これは、ラインです。');
+
+//layersに最初に表示するレイヤを設定する
+var map = L.map('map0',{
+	center:[36.0, 138.7],
+	zoom:13,
+	layers:[map1,markers,polyline,polygon]
+});
+
+
+var layers = {
+	"ポイント": markers,
+	"ライン":polyline,
+	"ポリゴン":polygon
+};
+
+
+var basemaps = {
+"標準地図": map1,
+"写真（2007～）":map2
+};
+
+//レイヤを選択して表示できるようにする
+L.control.layers(basemaps,layers).addTo(map);
+
+```
+
+### スケールの表示
+スケールは、以下のように記述することで表示できます。
+
+```Javascript
+L.control.scale({imperial: false}).addTo(map);
+
+```
+
+### 外部ファイルの追加
+jQueryを利用して、GeoJsonのファイルを読み込む。
+
+```Javascript
+//GeoJSONの読み込みポイント
+//クリックすると属性が表示されるようにする
+$.getJSON("tokyo23ku-cvs.geojson", function (data) {
+    L.geoJson(data).bindPopup(function (layer) {
+    return layer.feature.properties.name;
+}).addTo(map)
+});
+```
+
 #### ライセンスに関する注意事項
 本教材で利用しているキャプチャ画像の出典やクレジットについては、[その他のライセンスについて]よりご確認ください。
 
