@@ -1,96 +1,224 @@
 # CZML入門
-本教材は、Cesiumで利用できるCZMLファイルの利用手法について解説したものです。Cesium viewerを用いて、データの表示、時間によるアニメーションなどを行います。
-コードの解説は[スライド教材]を参照して下さい。
+本教材は、Cesiumで利用できるCZMLファイルの作成手法について解説したものです。[完成例](https://yamauchi-inochu.github.io/cesium-test/Apps/czml.html)のようなデータの作成やアニメーション表示などを行います。この教材は、[cesiumのサンプルページ](https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/index.html)を参考に作成したものである。
 
 本教材を使用する際は、[利用規約]をご確認いただき、これらの条件に同意された場合にのみご利用下さい。
 
-[スライド教材]:../../../../../raw/master/GISオープン教材/インターネットの活用に関する教材/czml/czml.pptx
+
 [利用規約]:../../../../master/利用規約.md
 
 **Menu**
 -------
 * [CZMLとは?](#CZMLとは?)
-* [CZMLでポリゴンを表示する](#CZMLでポリゴンを表示する)
-* [Cesiumで実装する](#Cesiumで実装する)
+* [点線面の作成](#点線面の作成)
+* [実装する](#実装する)
 * [オリジナルのアイコンによるポイント表示](#オリジナルのアイコンによるポイント表示)
-* [時間によるアイコンの移動](#時間によるアイコンの移動)
+* [アニメーション](#アニメーション)
 
 ------
 ## <a name="CZMLとは?"></a>CZMLとは?
 
-* CZMLは、Cesiumでデータを表現する際に利用できる。
-* JSON形式を基本としているため、軽量。
-* 時間の経過による地物変化を表現できる。
-* 読み書きしやすく、コンパクトに記述できる。
-* オープンフォーマット
-* CZMLの活用や詳細については、GitHubで公開している。
-
+* CZMLは、Cesiumでの空間データの表現に適したデータ形式
+* JSON形式を基本としているため、軽量
+* 3次元のデータや時間データの表現が多彩
 > https://github.com/AnalyticalGraphicsInc/cesium/wiki/CZML-Guideを参考に作成
 
-## <a name="CZMLでポリゴンを表示する"></a>CZMLでポリゴンを表示する
-### 東京駅から半径25ｋｍ圏をCZMLで作成する
-以下のコードをコピーし、テキストファイルを作成する。
-拡張子を.czmlとして保存する。
-
-
-```
-[{
-   "id" : "document",
-   "name" : "CZML",
-   "version" : "1.0"
- },
- {
-   "id" : "shape1",
-   "name" : "TOKYO",
-   "position" : {
-     "cartographicDegrees" : [139.77, 35.68, 20000.0]
-   },
-   "ellipse" : {
-     "semiMinorAxis" : 50000.0,
-     "semiMajorAxis" : 50000.0,
-     "height" : 20000,
-     "material" : {
-       "solidColor" : {
-         "color" : {
-           "rgba" : [0, 255, 0, 100]
-         }
-       }
-     },
-     "outline" : true,
-     "outlineColor" : {
-       "rgba" : [255, 0, 0, 0]
-     }
-   }
- }]
-
-```
-
-![表示](pic/czmlpic_1.png)
-
-[ビューワー]を開き.czmlをドラックアンドドロップする。
-東京駅から25km圏が表示できた（高さを保持していることを確認しておく）。
+## <a name="点線面の作成"></a>点線面の作成
+### 点の作成
+以下のコードをコピーし、拡張子を.czmlとしたテキストファイルを作成する。作成したファイルをcesiumの[ビューワー]にドラックアンドドロップするとデータが表示される。
 
 [ビューワー]:http://cesiumjs.org/Cesium/Build/Apps/CesiumViewer/index.html
 
-### 3Dポリゴンの作成
+```
+[{
+  "id" : "document",
+  "name" : "Nihon Sankei",
+  "version" : "1.0"
+}, {
+  "id" : "1",
+  "name" : "Matsusima",
+  "description" : "ここは松島です",
+  "position" : {
+    "cartographicDegrees": [141.064,38.366,100]
+  },
+  "point": {
+     "color": {
+         "rgba": [255, 0, 0, 255]
+     },
+     "pixelSize": 8
+   }
+ }
+]
+```
+#### ポイント
+- "description" : ポイントをクリックするとここに記載したものが表示できる
+- "cartographicDegrees": [経度,緯度,高さ]の順で指定する
+- "point": 点の色（[R, G, B, 透過度]）、大きさを指定する
+
+
+### 複数点の作成
+複数点を作成する場合は、以下のように記述する。
+
+```
+[{
+  "id" : "document",
+  "name" : "Nihon Sankei",
+  "version" : "1.0"
+}, {
+  "id" : "1",
+  "name" : "Matsusima",
+  "description" : "ここは松島です",
+  "position" : {
+    "cartographicDegrees": [141.064,38.366,100]
+  },
+  "point": {
+     "color": {
+         "rgba": [255, 0, 0, 255]
+     },
+     "pixelSize": 8
+   }
+ },{
+   "id" : "2",
+   "name" : "Amanohashidate",
+   "description" : "ここは天橋立です",
+   "position" : {
+     "cartographicDegrees": [135.190,35.567,100]
+   },
+   "point": {
+      "color": {
+          "rgba": [0, 255, 0, 255]
+      },
+      "pixelSize": 8
+    }
+ },{
+   "id" : "3",
+   "name" : "Miyajima",
+   "description" : "ここは宮島です",
+   "position" : {
+     "cartographicDegrees": [132.318,34.297,100]
+   },
+   "point": {
+      "color": {
+          "rgba": [0, 0, 255, 255]
+      },
+      "pixelSize": 8
+    }
+ }
+]
+```
+
+
+### 線の作成
+
+```
+[{
+  "id" : "document",
+  "name" : "line",
+  "version" : "1.0"
+},{
+  "id" : "0",
+  "name" : "line",
+  "description" : "ライン",
+  "polyline" : {
+      "positions" : {
+          "cartographicDegrees" : [
+              141.064,38.366,0,
+              135.190,35.567,0,
+              132.318,34.297,0
+          ]
+      },
+      "material" : {
+          "solidColor" : {
+              "color" : {
+                  "rgba" : [255, 255, 255, 100]
+              }
+          }
+      },
+      "width" : 0.5
+  }
+}
+]
+```
+
+### 面の作成
+
+```
+[{
+  "id" : "document",
+  "name" : "polygon",
+  "version" : "1.0"
+},{
+  "id" : "1",
+  "name" : "Matsushima area",
+  "description" : "松島とその周辺の観光地",
+  "polygon" : {
+      "positions" : {
+          "cartographicDegrees" : [
+            140.94532,38.337405,0,
+            141.061363,38.238789,0,
+            141.215858,38.341713,0,
+            141.099129,38.439652,0
+            140.94532,38.337405,0]
+      },
+      "material" : {
+          "solidColor" : {
+              "color" : {
+                  "rgba" : [255, 0, 0, 100]
+              }
+          }
+      }
+  }
+},{
+"id" : "2",
+"name" : "Amanohashidate area",
+"description" : "天橋立とその周辺の観光地",
+"polygon" : {
+    "positions" : {
+        "cartographicDegrees" : [
+          135.14831542968753,35.58920198716242,0, 135.14488220214847,35.54619518601583,0, 135.20942687988284,35.544519165584674,0, 135.21080017089847,35.586968406786504,0, 135.14831542968753,35.58920198716242,0]
+    },
+    "material" : {
+        "solidColor" : {
+            "color" : {
+                "rgba" : [0, 255, 0, 100]
+            }
+        }
+    }
+}
+},{
+"id" : "3",
+"name" : "Miyajima area",
+"description" : "宮島とその周辺の観光地",
+"polygon" : {
+    "positions" : {
+        "cartographicDegrees" : [
+          132.24929809570315,34.31650345811414,0, 132.24826812744143,34.225704902867896,0, 132.38250732421878,34.22769216967081,0, 132.38216400146487,34.31650194389378,0, 132.24929809570315,34.31650345811414,0]
+    },
+    "material" : {
+        "solidColor" : {
+            "color" : {
+                "rgba" : [0, 0, 255, 100]
+            }
+        }
+    }
+}
+}
+
+]
+```
+
+### 3Dポリゴン
+ポリゴンを立体化する場合は、以下のようにする。
 
 ```
 "extrudedHeight" : {
-      "number" : 20000.0
-    },
-    "rotation" : {
-      "number" : 0.8
-    },
+"number" : 500
+}
 ```
 
-"height" : 20000,を削除し上のコードを追加する。
+### その他の表現
+円ポリゴンの作成などその他の表現については、[cesiumのサンプルページ](https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/index.html)が詳しい
 
-![表示](pic/czmlpic_2.png)
-
-ビューワーを開き.czmlをドラックアンドドロップする。
-3Dポリゴンが作図できたことを確認する。
-
-## <a name="Cesiumで実装する"></a>Cesiumで実装する
+## <a name="実装する"></a>実装する
 ![表示](pic/czmlpic_3.png)
 
 ```
@@ -131,75 +259,115 @@ var viewer = new Cesium.Viewer('cesiumContainer');
 viewer.dataSources.add(Cesium.CzmlDataSource.load(czml));
 ```
 ## オリジナルのアイコンによるポイント表示
-PowerPointやペイントなどを利用し、図を作成する（拡張子は`.png` or `.jpg`）
-サイズは200×200ピクセル程度で作成する。
-![表示](pic/czmlpic_4.png)
-作成した画像をGitHubなどでwebにあげておく。
-画像のurlを取得する。
-GitHubの場合は、RAWをクリックしURLをコピーする。
+PowerPointやペイントなどを利用し、図を作成する（拡張子は`.png` or `.jpg`）。作成した画像は、GitHubなどでwebにあげておき、画像のurlを取得する。billboardを用いて、オリジナルのアイコンを読み込む。
 
 ```
 [{
     "id" : "document",
-    "name" : "sample",
+    "name" : "marker",
     "version" : "1.0"
   }, {
-    "id" : "point",
-    "name" : "名称を記述する",
-    "description" : "ポイントの詳細を記述する。",
+    "id" : "1",
+    "name" : "marker",
+    "description" : "マーカーの練習。",
     "billboard" : {
       "image" : "コピーしたURLを貼り付ける",
       "scale" : 0.2
-    },
-    "label" : {
-      "fillColor" : {
-        "rgba" : [0, 0, 0, 255]
-      },
-      "font" : "12pt Lucida Console",
-      "horizontalOrigin" : "CENTER",
-      "outlineColor" : {
-        "rgba":[0, 0, 0, 255]
-      },
-      "outlineWidth" : 1.2,
-      "pixelOffset" : {
-        "cartesian2" : [0, 25]
-      },
-      "style" : "FILL_AND_OUTLINE",
-      "text" : "テスト"
     },
     "position" : {
       "cartographicDegrees": [
         133.672028,33.544614,200
       ] }}]
 ```
-コードをコピーし必要な箇所(日本語の箇所)
-を変更後、.czmlで保存する。
 
+### ラベルを追加する
+
+ポイントにラベルを追加する際は、以下のようにする。
+```
+"label" : {
+  "fillColor" : {
+    "rgba" : [0, 0, 0, 255]
+  },
+  "font" : "12pt Lucida Console",
+  "horizontalOrigin" : "CENTER",
+  "outlineColor" : {
+    "rgba":[0, 0, 0, 255]
+  },
+  "outlineWidth" : 1.2,
+  "pixelOffset" : {
+    "cartesian2" : [0, 25]
+  },
+  "style" : "FILL_AND_OUTLINE",
+  "text" : "テスト"
+}
+```
 ![表示](pic/czmlpic_5.png)
 
-ビューワーを開き.czmlをドラックアンドドロップする。
-作成したイメージが位置情報を持って表示されている。
 
-## 時間によるアイコンの移動
+## アニメーション
+Cesiumでは、CZMLで設定した時間の値を使ったデータ表現が可能です。以下では、"availability"と"epoch"（"position"内にある）に値を設定して、アイコンをアニメーションで表現しています。
+
+
+```
+var animation =
+[{
+  "id" : "document",
+  "name" : "name",
+  "version" : "1.0"
+},{
+  "id" : "1",
+  "name" : "animation",
+  "description" : "動きます",
+  "availability":"2018-03-13T12:00:00Z/2018-03-13T12:01:00Z",
+  "billboard" : {
+    "image" : "imageURL.png",
+    "scale" : 0.3
+  },
+  "position" : {
+    "epoch":"2018-03-13T12:00:00Z",
+    "cartographicDegrees": [0,139,35,0,
+                            5,141.064,38.366,0,
+                            6,140.94532,38.337405,0,
+                            7,141.061363,38.238789,0,
+                            8,141.215858,38.341713,0,
+                            9,141.099129,38.439652,0,
+                            10,140.94532,38.337405,0,
+                            15,135.190,35.567,0,
+                            16,135.14831542968753,35.58920198716242,0, 17,135.14488220214847,35.54619518601583,0, 18,135.20942687988284,35.544519165584674,0, 19,135.21080017089847,35.586968406786504,0, 20,135.14831542968753,35.58920198716242,0,
+                            25,132.318,34.297,0,
+                            26,132.24929809570315,34.31650345811414,0, 27,132.24826812744143,34.225704902867896,0, 28,132.38250732421878,34.22769216967081,0, 29,132.38216400146487,34.31650194389378,0,
+                            30,132.24929809570315,34.31650345811414,0
+                          ]
+  }
+}
+];
+```
+#### ポイント
+- "availability":タイムスケールバーの開始時間と終了時間
+- "epoch":データ表示の開始時間
+- "cartographicDegrees": [時間,経度,緯度,高さ] ＝> 開始からx秒のときの経緯度と標高
+
+
+### GPXファイルの活用
+GPXファイルを利用する際に、以下のようにすると簡単にデータを作成できる。まず、QGISに.gpxファイルをドラックアンドドロップし、「ベクタレイヤに名前をつけて保存する」から、CSVファイルで保存する。
 
 ![表示](pic/czmlpic_6.png)
 
-.gpxファイルをQGISに、ドラックアンドドロップする。
-「ベクタレイヤに名前をつけて保存する」から、CSVファイルで保存する。
+
+次に、エクセルを利用し、カンマなどの配列を整え、A列に秒（何秒で移動するか）をC列に経度、E列に緯度、G列に高さを追加する。全体をコピーする。
 
 ![表示](pic/czmlpic_7.png)
 
-.gpxファイルをQGISに、ドラックアンドドロップする。
-「ベクタレイヤに名前をつけて保存する」から、CSVファイルで保存する。
-A列に秒（何秒で移動するか）をC列に経度、E列に緯度、G列に標高を追加する。全体をコピーする。
+ポイントの表示に使用したczmlファイルを開き、赤枠の箇所を追加する。
 
 ![表示](pic/czmlpic_8.png)
 
-ポイントの表示に使用したczmlファイルを開き、赤枠の箇所を追加する。
+
+データの確認時に、タイマーの速度を変更すると、アイコンの動く速度が変化する。
 
 ![表示](pic/czmlpic_9.png)
 
-タイマーの速度を変更すると、アイコンの動く速度が変化する。
+
 
 [▲メニューへもどる]
 
