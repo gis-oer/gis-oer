@@ -1,4 +1,4 @@
-# GeoJSON（～編集中～）
+# GeoJSON
 　本教材は、WEBマップで利用する代表的なデータであるGeoJSONについて、入門者向けに解説したものです。以下では、テキストエディタを用いて、点、線、面のようなジオメトリやデータの属性情報の記述手法について解説しています。この教材は、北崎 茂 氏が日本語訳した[GeoJSON フォーマット仕様](http://s.kitazaki.name/docs/geojson-spec-ja.html#id4)( geojson-spec.html © 2008 by Howard Butler (Hobu Inc.) , Martin Daly (Cadcorp) , Allan Doyle (MIT),
 Sean Gillies (UNC-Chapel Hill) , Tim Schaub (OpenGeo), Christopher Schmidt (MetaCarta) CC-BY 3.0 US.)を参考に作成したもです。本教材は、入門者向けのものであるため、細かい説明を省略した個所があります。各項目の詳細については、上記のリンク先を参照ください。
 
@@ -204,7 +204,7 @@ GeoJSONで1地点のポイントレイヤを作成する際は、以下のよう
 ## スタイリング
 以下では、GitHubを用いてGeoJSONをスタイリングする手法について解説します。GitHubでは、リポジトリに配置したGeoJSONを地図表示する機能が搭載されています。レイヤは、[mapbox/simplestyle-spec](https://github.com/mapbox/simplestyle-spec/tree/master/1.1.0)の条件でスタイリングすることができます。以下では、このリンクを参考にGeoJSONにスタイルを書き加え、GitHubで表示しています（"features"の下層に、"properties"を追加してスタイリングしている）。
 
-> 詳しくは、https://help.github.com/articles/mapping-geojson-files-on-github/　を参照してください。
+> 詳しくは、https://help.github.com/articles/mapping-geojson-files-on-github を参照してください。
 
 ```JSON
 { "type": "FeatureCollection",
