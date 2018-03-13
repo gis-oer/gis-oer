@@ -20,7 +20,7 @@
 * CZMLは、Cesiumでの空間データの表現に適したデータ形式
 * JSON形式を基本としているため、軽量
 * 3次元のデータや時間データの表現が多彩
-> https://github.com/AnalyticalGraphicsInc/cesium/wiki/CZML-Guideを参考に作成
+> https://github.com/AnalyticalGraphicsInc/cesium/wiki/CZML-Guide を参考に作成
 
 ## <a name="点線面の作成"></a>点線面の作成
 ### 点の作成
