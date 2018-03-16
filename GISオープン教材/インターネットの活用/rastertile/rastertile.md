@@ -43,47 +43,46 @@
 ```html
 <body>
 
-<div id="map0" style="width: 800px; height: 600px;"></div>
-<script>
+	<div id="map0" style="width: 800px; height: 600px;"></div>
+	
+	<script>
+		var map1 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg', {
+		maxZoom: 18,
+		attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>"
+		});
 
+		var layer1 = L.tileLayer('./tile/{z}/{x}/{y}.png', {
+		tms:true,
+		minZoom: 18,
+		maxZoom: 22,
+		attribution: ""
+		});
 
-var map1 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg', {
-maxZoom: 18,
-attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>"
-});
+		var map2 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>"
+		});
 
-var layer1 = L.tileLayer('./tile/{z}/{x}/{y}.png', {
-tms:true,
-minZoom: 18,
-maxZoom: 22,
-attribution: ""
-});
+		var map = L.map('map0',{
+			center:[34.9558,139.8139],
+			zoom:18,
+			layers:[map1,layer1]
+		});
 
-var map2 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {
-maxZoom: 18,
-attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>"
-});
+		var basemaps = {
+		"GSI ort":map1,
+		"GSI std":map2
+		};
 
-var map = L.map('map0',{
-	center:[34.9558,139.8139],
-	zoom:18,
-	layers:[map1,layer1]
-});
+		var layers= {
+		"phot": layer1
+		};
 
-var basemaps = {
-"GSI ort":map1,
-"GSI std":map2
-};
+		L.control.layers(basemaps,layers).addTo(map);
 
-var layers= {
-"phot": layer1
-};
+		L.control.scale({imperial: false}).addTo(map);
 
-L.control.layers(basemaps,layers).addTo(map);
-
-L.control.scale({imperial: false}).addTo(map);
-
-</script>
+	</script>
 
 </body>
 
