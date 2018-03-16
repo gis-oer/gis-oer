@@ -29,11 +29,11 @@
 
 ![ratertile](./pic/rastertile_pic1.png)
 
-1.　QGISを起動し、タイル化したい位置情報つきのラスタデータ（EPSG:3857）を用意する。ない場合は、[サンプル画像]を利用する。
-2.　プラグインの管理とインストールから、QTilesをインストールする。
-3.　プラグイン＞ QTiles＞ QTilesを起動し、出力ファイルを設定する。
-4.　出力場所、出力するレイヤ、ズーミング（ここでは17-22とした）、パラメーター（Background transparsityを0とし、Use TMS tiles convention(Slippy Map by default)とrender tiles outside of layers extents(with in extent) ）を指定し、OKをクリックする。
-5.　OKをクリックすると.zip形式のファイルが出力される。解凍するとズームレベルごとに画像が入ったフォルダが作成されている。
+1. QGISを起動し、タイル化したい位置情報つきのラスタデータ（EPSG:3857）を用意する。ない場合は、[サンプル画像]を利用する。
+2. プラグインの管理とインストールから、QTilesをインストールする。
+3. プラグイン＞ QTiles＞ QTilesを起動し、出力ファイルを設定する。
+4. 出力場所、出力するレイヤ、ズーミング（ここでは17-22とした）、パラメーター（Background transparsityを0とし、Use TMS tiles convention(Slippy Map by default)とrender tiles outside of layers extents(with in extent) ）を指定し、OKをクリックする。
+5. OKをクリックすると.zip形式のファイルが出力される。解凍するとズームレベルごとに画像が入ったフォルダが作成されている。
 
 [▲メニューへもどる]
 
