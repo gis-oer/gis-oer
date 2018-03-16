@@ -20,15 +20,11 @@
 - [KML](./KML/KML.md)
 - [GeoJSON](./GeoJSON/GeoJSON.md)
 
+### 地図タイル入門
+- [地図タイル（ラスタ）](./rastertile/rastertile.md)
+
 ### データ解析入門:準備中
 - [GoogleEarthEngine](#)
-
-### SNSからのデータ取得と処理:準備中
-- [twitter](#)
-- [テキストマインイグ](#)
-
-### 地図タイルの作成入門:準備中
-- [ラスタタイル](./)
 
 ### GitHub
 - [GitHubビギナーズマニュアル](./GitHubビギナーズマニュアル/GitHubビギナーズマニュアル.md)
