@@ -27,7 +27,7 @@
 ## タイルの作成
 以下では、QGISを利用しタイル地図（TMS形式）を作成する手法について解説しています。
 
-![ratertile](./pic/ratertile_pic1.png)
+![ratertile](./pic/rastertile_pic1.png)
 
 1.　QGISを起動し、タイル化したい位置情報つきのラスタデータ（EPSG:3857）を用意する。ない場合は、[サンプル画像]を利用する。
 2.　プラグインの管理とインストールから、QTilesをインストールする。
