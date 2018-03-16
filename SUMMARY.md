@@ -159,6 +159,7 @@
   * [CZML](GISオープン教材/インターネットの活用/CZML/CZML.md)
   * [KML](GISオープン教材/インターネットの活用/KML/KML.md)
   * [GeoJSON](GISオープン教材/インターネットの活用/GeoJSON/GeoJSON.md)
+  * [地図タイル（ラスタ）](GISオープン教材/インターネットの活用/rastertile/rastertile.md)
 
 
 * [課題ページ（全14回）](GISオープン教材/課題/README.md)
