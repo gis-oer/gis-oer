@@ -1,5 +1,5 @@
 # タイル地図入門（ラスタ）：作成中
-本教材は、QGISを利用したラスタタイルの作成とLeafletでの表示手法について解説しています。以下の教材に従って、[完成例]()のようなWEB地図が作成できれば実習完了です。GitHub等の操作法や基本的なプログラミングについての解説はしていません。Leafletの利用法についての解説は、Leafletの教材を参照ください。本教材を使用する際は、[利用規約]をご確認いただき、これらの条件に同意された場合にのみご利用下さい。
+本教材は、QGISを利用したラスタタイルの作成とLeafletでの表示手法について解説しています。以下の教材に従って、[完成例](https://yamauchi-inochu.github.io/tile-test/index.html)のようなWEB地図が作成できれば実習完了です。GitHub等の操作法や基本的なプログラミングについての解説はしていません。Leafletの利用法についての解説は、Leafletの教材を参照ください。本教材を使用する際は、[利用規約]をご確認いただき、これらの条件に同意された場合にのみご利用下さい。
 
 [利用規約]:../../../../master/利用規約.md
 [CZML]:../../インターネットの活用に関する教材/Leaflet/Leaflet.md
@@ -54,8 +54,8 @@ attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='
 
 var layer1 = L.tileLayer('./tile/{z}/{x}/{y}.png', {
 tms:true,
-minZoom: 17,
-maxZoom: 20,
+minZoom: 18,
+maxZoom: 22,
 attribution: ""
 });
 
@@ -65,7 +65,7 @@ attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='
 });
 
 var map = L.map('map0',{
-	center:[34.9558,139.8129],
+	center:[34.9558,139.8139],
 	zoom:18,
 	layers:[map1,layer1]
 });
