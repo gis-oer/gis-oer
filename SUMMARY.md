@@ -151,7 +151,7 @@
   * [Carto](GISオープン教材/インターネットの活用/Carto/Carto.md)
   * [Cesium](GISオープン教材/インターネットの活用/Cesium/Cesium.md)
   * [Googleマイマップ](GISオープン教材/インターネットの活用/Googleマイマップ/Googleマイマップ.md)
-  * [LeafLet](GISオープン教材/インターネットの活用/LeafLet/LeafLet.md)
+  * [Leaflet](GISオープン教材/インターネットの活用/Leaflet/Leaflet.md)
   * [OpenLayers](GISオープン教材/インターネットの活用/OpenLayers/OpenLayers.md)
   * [地理院地図](GISオープン教材/インターネットの活用/地理院地図/地理院地図.md)
   * [D3.js](GISオープン教材/インターネットの活用/D3.js/D3.js.md)

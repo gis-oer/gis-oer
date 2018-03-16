@@ -10,7 +10,7 @@
 - [Googleマイマップ](./Googleマイマップ/Googleマイマップ.md)
 
 ### WEB MAP操作・作成入門 (WEBマップライブラリの利用法)
-- [LeafLet](./LeafLet/LeafLet.md)
+- [Leaflet](./Leaflet/Leaflet.md)
 - [Cesium](./Cesium/Cesium.md)
 - [D3.js](./D3.js/D3.js.md)
 - [OpenLayers](./OpenLayers/OpenLayers.md)

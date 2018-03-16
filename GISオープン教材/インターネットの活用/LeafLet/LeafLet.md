@@ -12,7 +12,7 @@
 * [レイヤのスタイル調整とプラグインのインポート](#レイヤのスタイル調整とプラグインのインポート)
 * [qgis2webを起動する](#qgis2leafを起動する)
 * [index.htmlを編集する](#index.htmlを編集する)
-* [LeafLetのダウンロードと使い方](#LeafLetのダウンロードと使い方)
+* [Leafletのダウンロードと使い方](#Leafletのダウンロードと使い方)
 
 **使用データ**
 実習をはじめる前に以下のデータをダウンロードしてください。
@@ -23,14 +23,14 @@
 
 **スライド教材**
 
-スライドのダウンロードは[こちら](../../../../../raw/master/GISオープン教材/インターネットの活用に関する教材/Leaflet/leaflet.pptx)
+スライドのダウンロードは[こちら](../../../../../raw/master/GISオープン教材/インターネットの活用に関する教材/Leaflet/Leaflet.pptx)
 
 ---
 
 ## Leafletとは？
 Leafletは、WEB地図の作成のためのオープンソースJavaScriptライブラリです。シンプルなコーディングで容易に、モバイルやデスクトップの表示に対応したWEB地図が作成できます。全体のファイルサイズが軽いことや様々な地図表現（マーカやタイル読み込み）ができることが特徴です。Leafletに関する詳しい解説は、以下のリンクを参照してください。
 
-> [LeafLet公式](http://leafletjs.com/)
+> [Leaflet公式](http://Leafletjs.com/)
 > [Wikipedia](https://ja.wikipedia.org/wiki/Leaflet)
 
 
@@ -101,13 +101,13 @@ index.htmlをブラウザで開き、編集内容を確認する。
 
 [▲メニューへもどる]
 
-## LeafLetのダウンロードと使い方
-以下では、QGISのプラグインを使わずに、LeafLetを用いて簡単なWEB地図を作成する手法について解説します。
+## Leafletのダウンロードと使い方
+以下では、QGISのプラグインを使わずに、Leafletを用いて簡単なWEB地図を作成する手法について解説します。
 
-※ この教材を作成するにあたって、[Leaflet](http://leafletjs.com/)のTutorials、Docsを参考にした。
+※ この教材を作成するにあたって、[Leaflet](http://Leafletjs.com/)のTutorials、Docsを参考にした。
 
 ### 導入
-LeafLetを利用する手法はいくつかあるが、以下では、ダウンロード版を用いて解説している。[Leafletのページ](http://leafletjs.com/)から、Leafletのzipファイルをダウンロードし、解凍したフォルダ内に以下の内容でindex.htmlを作成する。
+Leafletを利用する手法はいくつかあるが、以下では、ダウンロード版を用いて解説している。[Leafletのページ](http://Leafletjs.com/)から、Leafletのzipファイルをダウンロードし、解凍したフォルダ内に以下の内容でindex.htmlを作成する。
 
 
 ```html
@@ -118,8 +118,8 @@ LeafLetを利用する手法はいくつかあるが、以下では、ダウン�
   <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico"/>
-  <link rel="stylesheet" href="./leaflet.css" />
-  <script src="./leaflet.js"></script>
+  <link rel="stylesheet" href="./Leaflet.css" />
+  <script src="./Leaflet.js"></script>
 </head>
 <body>
   <!--表示する地図の範囲を記載-->
@@ -298,10 +298,12 @@ $.getJSON("tokyo23ku-cvs.geojson", function (data) {
 }).addTo(map)
 });
 ```
-[サンプルページ](https://yamauchi-inochu.github.io/leaflet-sample/geojson.html)
+[サンプルページ](https://yamauchi-inochu.github.io/Leaflet-sample/geojson.html)
+
+[▲メニューへもどる]
 
 #### ライセンスに関する注意事項
 本教材で利用しているキャプチャ画像の出典やクレジットについては、[その他のライセンスについて]よりご確認ください。
 
 [その他のライセンスについて]:../../その他のライセンスについて.md
-[▲メニューへもどる]:QGISとLeafletの連携.md#menu
+[▲メニューへもどる]:Leaflet.md#menu
