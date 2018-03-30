@@ -1,10 +1,8 @@
 # GitHubビギナーズマニュアル
 
-本サイトで公開している教材は、GitHubで管理しています。
-GISソフトウェアのバージョン変更により、本教材が対応しない場合に利用者による教材の修正案の提出が可能になります。また、教材修正の要望や質問投稿などが行えます。
+本サイトで公開している教材は、GitHubで管理しています。GISソフトウェアのバージョン変更により、本教材が対応しない場合に利用者による教材の修正案の提出が可能になります。また、教材修正の要望や質問投稿などが行えます。
 
-以下では、GitHubの基本操作と本教材の変更方法（Pull request）や質問投稿(Issue)について解説しています。
-教材変更や質問投稿についてのみ知りたい場合は、Pull requestによる教材の変更とIssueによる投稿を参照してください。
+以下では、GitHubの基本操作と本教材の変更方法（Pull request）や質問投稿(Issue)について解説しています。教材変更や質問投稿についてのみ知りたい場合は、Pull requestによる教材の変更とIssueによる投稿を参照してください。
 
 本教材を使用する際は、[利用規約]をご確認いただき、これらの条件に同意された場合にのみご利用下さい。
 
@@ -41,21 +39,23 @@ GISソフトウェアのバージョン変更により、本教材が対応し�
 
 ## <a name="GitHubアカウントの取得"></a>GitHubアカウントの取得
 
-![アカウント](pic/gitpic_1.png)
 [GitHubのサイト]にアクセスしてアカウントを作成する。
-ページ右上の「Sign up」をクリックする。
+ページ右上の`Sign up`をクリックする。
+![アカウント](pic/gitpic_1.png)
+
 [GitHubのサイト]:https://github.com
 
+Free を選択し、`Finish sign up `をクリックする。
 ![アカウント](pic/gitpic_2.png)
-Free を選択し、「Finish sign up 」をクリックする。
 
+GitHubアカウントが作成できた。登録したメールアドレス宛に、確認メールが届いているためそれを開き、`Verify email address`をクリックする。
 ![アカウント](pic/gitpic_3.png)
-GitHubアカウントが作成できた。登録したメールアドレス宛に、確認メールが届いているためそれを開き、「Verify email address」をクリックする。
+
 
 [▲メニューへもどる]
 
 ## 用語の解説
-GitHubの操作中に良く出ている言葉を以下にまとめている。
+GitHubの操作中では、以下の用語が良く利用される。
 
 
 - repository　・・・　プロジェクトが保存される場所、ローカルリポジトリとリモートリポジトリがある。
@@ -80,53 +80,44 @@ GitHubの操作中に良く出ている言葉を以下にまとめている。
 
 [▲メニューへもどる]
 ## クライアントソフトのインストール
-
+クライアントソフトは、ローカルのリポジトリとWebのリポジトリを繋げ、両リポジトリの編集結果をやり取りできる。ソフトウェアはいくつかあるが、環境や作業感に合わせて使いやすいものを選択する。ここでは、GitHub desktopを利用し解説している。[https://desktop.github.com](https://desktop.github.com)にアクセスし、クライアントソフトをインストールする。
 ![クライアントソフト](pic/gitpic_4.png)
-[https://desktop.github.com](https://desktop.github.com)にアクセスし、クライアントソフトをインストールする。
-クライアントソフトは、他にもあるため、環境や作業感に合わせて使いやすいものを選択する。
 
-![クライアントソフト](pic/gitpic_5.png)
-インストールしたクライアントソフトを起動するとこのような画面が表示される。
+インストールしたクライアントソフトを起動すると以下のような画面が表示される。
 ※指定した場所にGitHubフォルダーが作成され、そのフォルダーの変更内容がクライアントソフトと連動する。
+![クライアントソフト](pic/gitpic_5.png)
+
 
 [▲メニューへもどる]
 
 ## <a name="Repositoryの作成"></a>Repositoryの作成
+New repositoryをクリックすると、新規にRepositoryを作成することができる。
 ![リポジトリ](pic/gitpic_6.png)
-+ボタンをクリックし、「New repository」を選択する。
 
-![リポジトリ](pic/gitpic_7.png)
-Repository nameを入力し、READMEをチェックし、「Create Repository」をクリックする。
+
+Repository nameを入力し、READMEをチェックし、`Create Repository`をクリックする。
 echizenとい名前のrepositoryが新規に作成された。
+![リポジトリ](pic/gitpic_7.png)
+
 
 [▲メニューへもどる]
 
 ## <a name="gh-pagesを作成する"></a>gh-pagesを作成する
-![gh-pagesを作成する](pic/gitpic_8.png)
-Repositoryの設定（Settings）をクリックし、gh-pagesのブランチを作成する
-※ gh-pages　Webサイトとして表示できる機能
-
+GitHub Pagesは、静的なWebサイトをテストすることができる機能である。この機能を利用すると、簡易的なWebサイトを構築し、公開することができる。GitHub Pagesの設定は、`Settings` をクリックし、`source > master branch > Save` をクリックして行う。
 ![gh-pagesを作成する](pic/gitpic_9.png)
-「Launch automatic page generator」 をクリックし、
-「Continue to layouts」 をクリックする。
 
-![gh-pagesを作成する](pic/gitpic_10.png)
-「Publish page」をクリックすると、新規にgh-pagesというブランチができている。
+
+GitHub Pagesに`https://yourID.github.io/echizen/`が追加される
 
 [▲メニューへもどる]
 
 ## repositoryをCloneする
+repositoryの編集は、ローカルだけでなくweb上でも編集が可能だが、以下ではローカルで編集したものをWebにアップロードする手法について解説している。`Clone In Desktop` をクリックすると、ローカルにrepositoryを複製することができる。
 ![Cloneする](pic/gitpic_11.png)
-「Clone In Desktop」 をクリックし、ローカルに複製する。
-※repositoryの編集は、ローカルだけでなくweb上でも編集が可能。
 
+クライアントソフトが自動的に立ち上がるので、複製するディレクトリを選択する。自動で立ち上がらない場合は、手動でクライアントソフトを立ち上げる。
 ![Cloneする](pic/gitpic_12.png)
-クライアントソフトが自動的に立ち上がるので、複製するディレクトリを選択する。
-※　自動で立ち上がらない場合は、手動でクライアントソフトを立ち上げる。
 
-![Cloneする](pic/gitpic_13.png)
-クライアントソフトに追加されたことを確認し、masterからgh-pagesに切り替える。
-切り替えに伴って、ローカルに複製したrepository（フォルダ）の内容が変更することを確認する。
 
 ![Cloneする](pic/gitpic_14.png)
 1. ローカルに複製したリポジトリが表示される。
@@ -134,71 +125,69 @@ Repositoryの設定（Settings）をクリックし、gh-pagesのブランチを
 3. リポジトリの内の編集の詳細が表示される。
 4. Webのリポジトリに繁栄させるため、ローカルの変更内容をタイトルと詳細として記入する（コミット）。
 5. Webのリポジトリに変更内容を反映させる（push）。
+6. branchの切り替え。
 
 ### repositoryの編集
-練習として、画像ファイルをリポジトリに追加し、webで表示する。
-（ローカル環境での編集について解説している。）
+ここでは、ローカルからのアップロードの練習として、画像ファイルをリポジトリに追加し、webで表示していく。
+
+リポジトリを複製したディレクトリを開き、画像ファイルを追加する。
 ![repositoryの編集](pic/gitpic_15.png)
-リポジトリを複製したディレクトリを開き、中身を確認する。
 
+フォルダ内に画像を追加したことが、クライアントソフト上で表示される。編集を有効にするには、コミットメッセージを入力し、 `Commit to master`をクリックし、 `Push origin` をクリックする。
 ![repositoryの編集](pic/gitpic_16.png)
-画像を追加したことが、クライアントソフトに表示される。
-コミットメッセージを入力し、 「Commit to gh-pages」をクリックし、 「Sync」 をクリックする。
 
+`Sync`が完了すると、デフォルトの画面が表示される。Webのリポジトリにローカルの編集内容が反映されている。
 ![repositoryの編集](pic/gitpic_17.png)
-「Sync」が完了すると、デフォルトの画面が表示される。
-（Webのリポジトリにローカルの編集内容が反映されている）
 
+GitHubで作成したリポジトリにアクセスし、画像が追加されていることを確認する。
 ![repositoryの編集](pic/gitpic_18.png)
-GitHubで作成したリポジトリにアクセスし、画像が追加されていることを確認する
 
+`Settings`をクリックし、アドレスをコピーし、画像のタイトルと拡張子をつけ、Webブラウザで検索する。
 ![repositoryの編集](pic/gitpic_19.png)
-「Settings」をクリックし、アドレスをコピーし、画像のタイトルと拡張子をつけ、Webブラウザで検索する。
+
 ```
  http://（ユーザー名）.github.io/echizen/echizen_logo.png
 ```
-![repositoryの編集](pic/gitpic_20.png)
+
 Webに画像がアップロードされていることを確認できた
 ※　gh-pagesを利用した、WebでのGISデータの公開などについては、別ページで解説している。
+![repositoryの編集](pic/gitpic_20.png)
+
 
 [▲メニューへもどる]
 
 ## <a name="Pull_requestによる教材修正の提案"></a>Pull_requestによる教材修正の提案
 
-![Pull request](pic/gitpic_21.png)
 GitHubで教材ページのリポジトリを開く。
-「Fork」をクリックすると自分のリポジトリにコピーされる。
-自分のリポジトリに戻り、Forkしたリポジトリを開き、branch名を入力し、編集用のbranchを作成する。
+`Fork`をクリックすると自分のリポジトリにコピーされる。自分のリポジトリに戻り、Forkしたリポジトリを開き、branch名を入力し、編集用のbranchを作成する。
+![Pull request](pic/gitpic_21.png)
 
-![Pull request](pic/gitpic_22.png)
 作成したbranch内の.mdファイルを開き、編集を行う。
 今回は、ベクタの読み込みに一文追加している。
 編集終了後に、Commit changes をクリックする。
+![Pull request](pic/gitpic_22.png)
 
+編集用のリポジトリに戻り、Compare & Pull requestをクリックする。編集内容を入力し、Create pull request をクリックする。
 ![Pull request](pic/gitpic_23.png)
-編集用のリポジトリに戻り、Compare & Pull requestをクリックする。
-編集内容を入力し、Create pull request をクリックする。
 
-![Pull request](pic/gitpic_24.png)
 管理者によってPull requestがマージされると右のような画面が表示される。
+![Pull request](pic/gitpic_24.png)
 
+※ forkしたリポジトリは、fork元のリポジトリの変更は反映されないため、GitコマンドかSourcetreeの追跡機能を利用する必要がある。
 
-※ forkしたリポジトリは、fork元のリポジトリの変更は反映されないため、GitコマンドかSourcetreeの追跡機能を利用することを推奨（[Sourcetreeビギナーズマニュアル]を参照）。
-もしくは、本教材と同じく、編集ごとにForkしたリポジトリを削除する。
-[Sourcetreeビギナーズマニュアル]:Sourcetreeビギナーズマニュアル.md
 [▲メニューへもどる]
 
 ## <a name="Issueによる投稿"></a>Issueによる投稿
+本来はソフトウェア開発等に利用する技術的な意見交換等に利用されるIssueを利用して、質問や教材改良の要望を受け付けている。
 
+教材ページのリポジトリへ行き、New issueをクリックし、issueを立ち上げる。質問や要望などを入力し、submit new issueをクリックする。
 ![Pull request](pic/gitpic_25.png)
-教材ページのリポジトリへいきNew issueをクリックし、issueを立ち上げる。
-質問や要望などを入力し、submit new issueをクリックする。
 
+質問や要望への返答は右の画面のように表示される。issueでは、画像を送ることも可能。
 ![Pull request](pic/gitpic_26.png)
-質問や要望への返答は右の画面のように表示される。
-issueでは、画像を送ることも可能。
 
 [▲メニューへもどる]
+
 
 #### ライセンスに関する注意事項
 本教材で利用しているキャプチャ画像の出典やクレジットについては、[その他のライセンスについて]よりご確認ください。
