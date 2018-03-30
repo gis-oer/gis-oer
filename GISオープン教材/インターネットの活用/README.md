@@ -39,9 +39,9 @@
 |サービス|無償利用|出典・帰属|地図画像（静的地図）の複製・配布|利用時の注意事項|詳細(URL)|
 |:---|:---|:---|:---|:---|:---|
 |地理院タイル|可|「国土地理院」、「地理院タイル」の表記が必要|可（タイルによって申請が必要な場合がある）|国土地理院コンテンツ利用規約の範囲内で利活用が可能。基本測量成果を含むタイルは複製、利用にあたって申請が必要となる場合がある。|[地理院タイルのご利用について](https://maps.gsi.go.jp/help/use.html)|
-|Google Maps|可（一定量を超えると有償）|Google とデータプロバイダの権利帰属を表記（例：「Map data ©2015 Google」）|基本的には不可|利用条件が複雑なため、使用時には深く使用許諾を読み込む必要がある。代表的な注意点として、Webサイト等でGoogle マップ等を画像として利用することができない一方で、Web地図としての埋め込みは可能であること等があげられる。商業利用と個人利用で制約が異なる点にも注意する必要がある。使用する際にはAPIキーを取得する必要がある。|[Google マップ、Google Earth、ストリートビューの使用](https://www.google.co.jp/intl/ja/permissions/geoguidelines.html)|
+|Google Maps|可（一定量を超えると有償）|Google とデータプロバイダの権利帰属を表記（例：「Map data ©2015 Google」）|基本的には不可|利用条件が複雑なため、使用時には深く使用許諾を読み込む必要がある。代表的な注意点として、Webサイト等でGoogle マップ等を画像として利用することができない一方で、Web地図としての埋め込みは可能であること等があげられる。商業利用と個人利用で制約が異なる点にも注意する必要がある。|[Google マップ、Google Earth、ストリートビューの使用](https://www.google.co.jp/intl/ja/permissions/geoguidelines.html)|
 |OpenStreetMap|可（過度なアクセスを制限）|「© OpenStreetMap contributors」の表記|可|OpenStreetMapのサーバは全て寄付によるリソースで運用されているため、ヘビーユースが禁止されている点に注意が必要である。|[JA:タイル利用規約](https://wiki.openstreetmap.org/wiki/JA:タイル利用規約)|
-|Bing Maps|可（有償ライセンスもあり、実装方法に応じたライセンス形態）|ロゴと著作権条項の記載|[Microsoft Print Rights](https://www.microsoft.com/en-us/maps/product/print-rights)に従う|日本語の利用規約が公開されていないため、細かな点の解釈が難しい。使用する際にはAPIキーを取得する必要がある。|[Microsoft® Bing™ Maps Platform APIs' Terms Of Use](https://www.microsoft.com/en-us/maps/product)|
+|Bing Maps|可（有償ライセンスもあり、実装方法に応じたライセンス形態）|ロゴと著作権条項の記載|[Microsoft Print Rights](https://www.microsoft.com/en-us/maps/product/print-rights)に従う|日本語の利用規約が公開されていないため、細かな点の解釈が難しい。|[Microsoft® Bing™ Maps Platform APIs' Terms Of Use](https://www.microsoft.com/en-us/maps/product)|
 
 
 上記の表は、2018年3月現在の情報です。各サービスを利用する場合、利用規約を確認の上、使用してください。また、上記について不適切な表現や誤りがある場合は、この[Markdown](https://github.com/gis-oer/gis-oer/blob/master/GISオープン教材/インターネットの活用/rastertile/rastertile.md)Pull Requestをいただくか、issuesにてコメントをいただけますと幸いです。
