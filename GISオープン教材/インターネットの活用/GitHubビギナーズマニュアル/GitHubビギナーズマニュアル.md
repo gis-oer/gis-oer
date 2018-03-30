@@ -39,14 +39,15 @@
 
 ## <a name="GitHubアカウントの取得"></a>GitHubアカウントの取得
 以下では、GitHubを利用するためのアカウントを取得する手法について解説しています。まず、[GitHubのサイト]にアクセスして、ページ右上の`Sign up`をクリックする。
+
 ![アカウント](pic/gitpic_1.png)
 
-[GitHubのサイト]:https://github.com
-
 Free を選択し、`Finish sign up `をクリックする。
+
 ![アカウント](pic/gitpic_2.png)
 
 GitHubアカウントが作成できた。登録したメールアドレス宛に、確認メールが届いているためそれを開き、`Verify email address`をクリックする。
+
 ![アカウント](pic/gitpic_3.png)
 
 
@@ -191,3 +192,4 @@ GitHubで教材ページのリポジトリを開く。
 
 [▲メニューへもどる]:GitHubビギナーズマニュアル.md#menu
 [その他のライセンスについて]:../../その他のライセンスについて.md
+[GitHubのサイト]:https://github.com
