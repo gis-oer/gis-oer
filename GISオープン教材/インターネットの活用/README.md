@@ -46,7 +46,7 @@
 
 上記の表は、2018年3月現在の情報です。各サービスを利用する場合、利用規約を確認の上、使用してください。また、上記について不適切な表現や誤りがある場合は、この[Markdown](https://github.com/gis-oer/gis-oer/blob/master/GISオープン教材/インターネットの活用/rastertile/rastertile.md)Pull Requestをいただくか、issuesにてコメントをいただけますと幸いです。
 
-> 上記の表の作成にあたって、各サービスの利用規約の他、
+> 上記の表の作成にあたって、各サービスの利用規約の他、  
 [Qiita記事　行政サイトでウェブ地図を使う際の注意点などまとめ（@nyampire氏 作成）](https://qiita.com/nyampire/items/5fd06107f25bc12a526f)、  
 [森林土木memo　地理院の地図コンテンツの利用規約がわかりづらい？](http://koutochas.seesaa.net/article/422316884.html)、  
 [ArcGIS Online ヘルプ 著作権の表示(ESRI社 作成)](http://doc.arcgis.com/ja/arcgis-online/reference/display-copyrights.htm)、  
