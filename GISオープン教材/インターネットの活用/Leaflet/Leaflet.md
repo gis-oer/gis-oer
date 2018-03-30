@@ -298,7 +298,7 @@ $.getJSON("tokyo23ku-cvs.geojson", function (data) {
 }).addTo(map)
 });
 ```
-[サンプルページ](https://yamauchi-inochu.github.io/Leaflet-sample/geojson.html)
+[サンプルページ](https://yamauchi-inochu.github.io/leaflet-sample/geojson.html)
 
 [▲メニューへもどる]
 

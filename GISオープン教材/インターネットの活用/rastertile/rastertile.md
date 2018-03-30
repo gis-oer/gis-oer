@@ -1,5 +1,5 @@
 # タイル地図入門（ラスタ）：作成中
-本教材は、QGISを利用したラスタタイルの作成とLeafletでの表示手法について解説しています。以下の教材に従って、[完成例]()のようなWEB地図が作成できれば実習完了です。GitHub等の操作法や基本的なプログラミングについての解説はしていません。Leafletの利用法についての解説は、Leafletの教材を参照ください。本教材を使用する際は、[利用規約]をご確認いただき、これらの条件に同意された場合にのみご利用下さい。
+本教材は、QGISを利用したラスタタイルの作成とLeafletでの表示手法について解説しています。以下の教材に従って、[完成例](https://yamauchi-inochu.github.io/tile-test/index.html)のようなWEB地図が作成できれば実習完了です。GitHub等の操作法や基本的なプログラミングについての解説はしていません。Leafletの利用法についての解説は、Leafletの教材を参照ください。本教材を使用する際は、[利用規約]をご確認いただき、これらの条件に同意された場合にのみご利用下さい。
 
 [利用規約]:../../../../master/利用規約.md
 [CZML]:../../インターネットの活用に関する教材/Leaflet/Leaflet.md
@@ -29,11 +29,11 @@
 
 ![ratertile](./pic/rastertile_pic1.png)
 
-1.　QGISを起動し、タイル化したい位置情報つきのラスタデータ（EPSG:3857）を用意する。ない場合は、[サンプル画像]を利用する。
-2.　プラグインの管理とインストールから、QTilesをインストールする。
-3.　プラグイン＞ QTiles＞ QTilesを起動し、出力ファイルを設定する。
-4.　出力場所、出力するレイヤ、ズーミング（ここでは17-22とした）、パラメーター（Background transparsityを0とし、Use TMS tiles convention(Slippy Map by default)とrender tiles outside of layers extents(with in extent) ）を指定し、OKをクリックする。
-5.　OKをクリックすると.zip形式のファイルが出力される。解凍するとズームレベルごとに画像が入ったフォルダが作成されている。
+1. QGISを起動し、タイル化したい位置情報つきのラスタデータ（EPSG:3857）を用意する。ない場合は、[サンプル画像]を利用する。
+2. プラグインの管理とインストールから、QTilesをインストールする。
+3. プラグイン＞ QTiles＞ QTilesを起動し、出力ファイルを設定する。
+4. 出力場所、出力するレイヤ、ズーミング（ここでは17-22とした）、パラメーター（Background transparsityを0とし、Use TMS tiles convention(Slippy Map by default)とrender tiles outside of layers extents(with in extent) ）を指定し、OKをクリックする。
+5. OKをクリックすると.zip形式のファイルが出力される。解凍するとズームレベルごとに画像が入ったフォルダが作成されている。
 
 [▲メニューへもどる]
 
@@ -43,47 +43,46 @@
 ```html
 <body>
 
-<div id="map0" style="width: 800px; height: 600px;"></div>
-<script>
+	<div id="map0" style="width: 800px; height: 600px;"></div>
+	
+	<script>
+		var map1 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg', {
+		maxZoom: 18,
+		attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>"
+		});
 
+		var layer1 = L.tileLayer('./tile/{z}/{x}/{y}.png', {
+		tms:true,
+		minZoom: 18,
+		maxZoom: 22,
+		attribution: ""
+		});
 
-var map1 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg', {
-maxZoom: 18,
-attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>"
-});
+		var map2 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>"
+		});
 
-var layer1 = L.tileLayer('./tile/{z}/{x}/{y}.png', {
-tms:true,
-minZoom: 17,
-maxZoom: 20,
-attribution: ""
-});
+		var map = L.map('map0',{
+			center:[34.9558,139.8139],
+			zoom:18,
+			layers:[map1,layer1]
+		});
 
-var map2 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {
-maxZoom: 18,
-attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>"
-});
+		var basemaps = {
+		"GSI ort":map1,
+		"GSI std":map2
+		};
 
-var map = L.map('map0',{
-	center:[34.9558,139.8129],
-	zoom:18,
-	layers:[map1,layer1]
-});
+		var layers= {
+		"phot": layer1
+		};
 
-var basemaps = {
-"GSI ort":map1,
-"GSI std":map2
-};
+		L.control.layers(basemaps,layers).addTo(map);
 
-var layers= {
-"phot": layer1
-};
+		L.control.scale({imperial: false}).addTo(map);
 
-L.control.layers(basemaps,layers).addTo(map);
-
-L.control.scale({imperial: false}).addTo(map);
-
-</script>
+	</script>
 
 </body>
 
@@ -99,3 +98,4 @@ index.htmlを開くと出力したタイル地図と地理院タイルを重ね�
 
 [その他のライセンスについて]:../../その他のライセンスについて.md
 [サンプル画像]:https://github.com/gis-oer/datasets/raw/master/raster/sunayama.tif
+[▲メニューへもどる]:rastertile.md#menu
