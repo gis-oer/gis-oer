@@ -15,9 +15,9 @@
 
 **使用データ**
 
-* [KMLサンプル](https://github.com/gis-oer/datasets/blob/master/vector/kml/cesium/flood_assumed_area.kml?raw=true)
+* [KMLサンプル](https://raw.githubusercontent.com/gis-oer/datasets/master/vector/kml/cesium/flood_assumed_area.kml)
 
-* [CSVサンプル](https://github.com/gis-oer/datasets/blob/master/text/carto/refuge.csv?raw=true)
+* [CSVサンプル](https://raw.githubusercontent.com/gis-oer/datasets/master/text/carto/refuge.csv)
 
 > [越前市オープンデータ] 越前市防災安全課　一次避難場所（風水害）、浸水想定区域（風水害）のデータを加工し、利用。
 

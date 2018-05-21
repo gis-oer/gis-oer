@@ -7,7 +7,7 @@
 **Menu**
 ------
 
-* この実習では、[完成例](https://drive.google.com/open?id=1JrBd5RfTO5a0U_5NV4RtHHVxnsZ01HpG&usp=sharing)のように、JR柏駅―東京大学柏キャンパス間のアクセスマップを作成する。
+* この実習では、[完成例](https://www.google.com/maps/d/viewer?usp=sharing&mid=1JrBd5RfTO5a0U_5NV4RtHHVxnsZ01HpG)のように、JR柏駅―東京大学柏キャンパス間のアクセスマップを作成する。
 
 
 --------

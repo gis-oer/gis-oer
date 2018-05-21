@@ -75,7 +75,7 @@
 [▲メニューへもどる]
 
 ## <a name="OSMの編集"></a>OSMの編集
-　OpenStreetMapでは、背景地図、現地調査、GPSデータを参考に、エディタを使って点、線、面の地物を作成または編集します。以下は、OpenStreetMapで地物を追加する手法について解説したものです。OSMの地物の編集について詳しくは、[OSM wiki](http://wiki.openstreetmap.org/wiki/JA:%E5%9C%B0%E5%9B%B3%E4%BD%9C%E3%82%8A%E3%81%AE%E6%A6%82%E8%A6%81)を参照してください。
+　OpenStreetMapでは、背景地図、現地調査、GPSデータを参考に、エディタを使って点、線、面の地物を作成または編集します。以下は、OpenStreetMapで地物を追加する手法について解説したものです。OSMの地物の編集について詳しくは、[OSM wiki](https://wiki.openstreetmap.org/wiki/JA:%e5%9c%b0%e5%9b%b3%e4%bd%9c%e3%82%8a%e3%81%ae%e6%a6%82%e8%a6%81)を参照してください。
 　以下では、OSMの編集について解説しています。
 
 [OpenStreetMap]にアクセスし、任意の地域を拡大する。
@@ -101,7 +101,7 @@
 。
 
 地物を追加し、左のウィンドウから属性を設定すると一番下にタグ(データに記載される情報)が追加される。
-タグの入力や選択は、[http://wiki.openstreetmap.org/wiki/JA:Map_Features](http://wiki.openstreetmap.org/wiki/JA:Map_Features) を参考にする。
+タグの入力や選択は、[https://wiki.openstreetmap.org/wiki/JA:Map_Features](https://wiki.openstreetmap.org/wiki/JA:Map_Features) を参考にする。
 sourceについて、背景画像から判断できない場合は、現地調査（source = survey）などで取得する。
 道路等のラインを作成する場合は、接合をチェックする。
 ![osm](pic/osmpic_6.png)
@@ -183,7 +183,7 @@ http://overpass-turbo.eu/ にアクセスし、データをダウンロードす
 エクスポートをクリックし、KMLをクリックとデータが保存できる。
 ![osm](pic/osmpic_19.png)
 
-**※データを利用する際は、Map data © OpenStreetMap contributors　などのクレジットが必要となる。詳細は、[http://wiki.openstreetmap.org/wiki/JA:Legal_FAQ](http://wiki.openstreetmap.org/wiki/JA:Legal_FAQ) を確認する。**
+**※データを利用する際は、Map data © OpenStreetMap contributors　などのクレジットが必要となる。詳細は、[https://wiki.openstreetmap.org/wiki/JA:Legal_FAQ](https://wiki.openstreetmap.org/wiki/JA:Legal_FAQ) を確認する。**
 
 [▲メニューへもどる]
 

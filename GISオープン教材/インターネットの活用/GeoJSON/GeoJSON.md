@@ -1,5 +1,5 @@
 # GeoJSON
-　本教材は、WEBマップで利用する代表的なデータであるGeoJSONについて、入門者向けに解説したものです。以下では、テキストエディタを用いて、点、線、面のようなジオメトリやデータの属性情報の記述手法について解説しています。この教材は、北崎 茂 氏が日本語訳した[GeoJSON フォーマット仕様](http://s.kitazaki.name/docs/geojson-spec-ja.html#id4)( geojson-spec.html © 2008 by Howard Butler (Hobu Inc.) , Martin Daly (Cadcorp) , Allan Doyle (MIT),
+　本教材は、WEBマップで利用する代表的なデータであるGeoJSONについて、入門者向けに解説したものです。以下では、テキストエディタを用いて、点、線、面のようなジオメトリやデータの属性情報の記述手法について解説しています。この教材は、北崎 茂 氏が日本語訳した[GeoJSON フォーマット仕様](http://s.kitazaki.name/docs/geojson-spec-ja.html#id4)( GeoJSON-spec.html © 2008 by Howard Butler (Hobu Inc.) , Martin Daly (Cadcorp) , Allan Doyle (MIT),
 Sean Gillies (UNC-Chapel Hill) , Tim Schaub (OpenGeo), Christopher Schmidt (MetaCarta) CC-BY 3.0 US.)を参考に作成したもです。本教材は、入門者向けのものであるため、細かい説明を省略した個所があります。各項目の詳細については、上記のリンク先を参照ください。
 
 　本教材を使用する際は、[利用規約]をご確認いただき、これらの条件に同意された場合にのみご利用下さい。
@@ -17,7 +17,7 @@ Sean Gillies (UNC-Chapel Hill) , Tim Schaub (OpenGeo), Christopher Schmidt (Meta
 
 
 ## <a name="GeoJSONとは">GeoJSONとは</a>
-　GeoJSONは、JavaScript Object Notation (JSON) を基とした、GISデータを記述するためのフォーマットです（地理空間データ交換フォーマット）。この形式では、`Point, LineString, Polygon, MultiPoint, MultiLineString,MultiPolygon,GeometryCollection`をサポートしています。軽量言語であり、WEB GISでの利用例が多く見られます。GitHubには、GeoJSONの地図表示機能があり、リポジトリにデータを配置するだけで可視化が可能です。以下では、GeoJSONで点、線、面を記述する手法について解説します。
+　GeoJSONは、JavaScript Object Notation (JSON) を基とした、GISデータを記述するためのフォーマットです（地理空間データ交換フォーマット）。この形式では、`Point, LineString, Polygon, MultiPoint, MultiLineString,MultiPolygon,GeometryCollection`をサポートしています。軽量言語であり、Web GISでの利用例が多く見られます。GitHubには、GeoJSONの地図表示機能があり、リポジトリにデータを配置するだけで可視化が可能です。以下では、GeoJSONで点、線、面を記述する手法について解説します。
 
 >　GeoJSONについての詳細は、[GeoJSON フォーマット仕様](http://s.kitazaki.name/docs/geojson-spec-ja.html#id4)が詳しいです。
 

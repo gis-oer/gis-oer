@@ -44,14 +44,14 @@
 　QGISは、最新版と1年間のバグ修正のサポートがあるLTR版があります。本教材では、旧LTR版のQGIS2.8を中心に構成しています。下記に従って、QGISをインストールしてください（LTR版2.8を推奨）。
 
 ### 最新版のインストール
-QGISをダウンロードするため、[QGIS](http://qgis.org/ja/site/index.html)の公式ホームページにアクセスする。PCの環境にあわせて、32bit版か64bit版を選択してダウンロードする(LTR版を推奨)。ダウンロードが終了したら、.exeファイルを実行しインストールを行う。
+QGISをダウンロードするため、[QGIS](https://qgis.org/ja/site/index.html)の公式ホームページにアクセスする。PCの環境にあわせて、32bit版か64bit版を選択してダウンロードする(LTR版を推奨)。ダウンロードが終了したら、.exeファイルを実行しインストールを行う。
 ![インストール](pic/Qpic1.png)
 
 
 ### 旧版のインストール
 **本教材は、QGIS2.8を基本に構成しています**
 
-[QGIS](http://qgis.org/ja/site/index.html)の公式ホームページを開き、「ダウンロードする」をクリックする。全てのリリースのタブに切り替えて、「古いバージョンのダウンロード」をクリックする。本教材で中心になっているQSIS2.8版（最終リリース版）をダウンロードする。
+[QGIS](https://qgis.org/ja/site/index.html)の公式ホームページを開き、「ダウンロードする」をクリックする。全てのリリースのタブに切り替えて、「古いバージョンのダウンロード」をクリックする。本教材で中心になっているQSIS2.8版（最終リリース版）をダウンロードする。
 ![インストール](pic/Qpic1-4.png)
 
 [▲メニューへもどる]
@@ -218,7 +218,7 @@ Web：背景地図の設定やweb地図の書き出しができる（プラグ�
 プラグイン＞プラグインの管理とインストールからTileLayerPluginを検索し、プラグインのインストールをクリックする。
 ![TileLayerPlugin](pic/Qpic16-1.png)
 
-インストールが完了したら、地理院タイルをまとめた[gsi-tiles.zip](https://github.com/gis-oer/datasets/raw/master/Tile/gsi-tiles.zip)をダウンロードし、任意の場所に保存し、.zipを解凍する。  
+インストールが完了したら、地理院タイルをまとめた[gsi-tiles.zip](https://raw.githubusercontent.com/gis-oer/datasets/master/Tile/gsi-tiles.zip)をダウンロードし、任意の場所に保存し、.zipを解凍する。  
 
 web>タイルレイヤプラグインから、プラグインを起動する。タイルレイヤプラグインの設定をクリックし、解凍したgsi-tilesフォルダを外部レイヤディレクトリに指定する。OKをクリックすると、地理院タイルの一覧が表示される。地理院タイルを使用する際は、[地理院タイルの利用規約](http://maps.gsi.go.jp/help/use.html)に従ってください。
 ![TileLayerPlugin](pic/Qpic16-2.png)
@@ -332,7 +332,7 @@ CSVは、カンマで区切られたデータ形式である。座標値をも�
 ## 参考ページの紹介
 
 - QGISについて詳しく勉強したい方　QGISユーザーガイド
-1. [http://qgis.org/ja/site/about/index.html](http://qgis.org/ja/site/about/index.html)
+1. [https://qgis.org/ja/site/about/index.html](https://qgis.org/ja/site/about/index.html)
 
 - QGISとPythonについて詳しく勉強したい方　 PyQGIS 開発者用 Cookbook
 2. [http://docs.qgis.org/2.2/ja/docs/pyqgis_developer_cookbook/](http://docs.qgis.org/2.2/ja/docs/pyqgis_developer_cookbook/)
