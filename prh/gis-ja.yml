@@ -31,13 +31,19 @@ rules:
 
   - expected: Shapefile
 
+  - expected: JSON
+    pattern: /^(?!\.)json/
+
   - expected: KML
+    pattern: /^(?!\.)kml/
 
   - expected: GML
 
   - expected: GeoJSON
+    pattern: /^(?!\.)geojson[-_]*/
 
   - expected: GeoTIFF
+    pattern: /^(?!\.)geotiff/
 
   - expected: ESRI
 
