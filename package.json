@@ -18,7 +18,7 @@
     "build": "gitbook build",
     "start": "http-server ./_book/ -io -p 8080",
     "lint": "textlint ./GISオープン教材 ./*.md",
-    "test": "npm run lint & npm run build"
+    "test": "npm run lint && npm run build"
   },
   "repository": {
     "type": "git",
