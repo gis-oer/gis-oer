@@ -331,11 +331,11 @@ CSVは、カンマで区切られたデータ形式である。座標値をも�
 
 ## 参考ページの紹介
 
-- QGISについて詳しく勉強したい方　QGISユーザーガイド
-1. [https://qgis.org/ja/site/about/index.html](https://qgis.org/ja/site/about/index.html)
+- QGISについて詳しく勉強したい方　
+1. [QGISユーザーガイド](https://qgis.org/ja/site/about/index.html)
 
 - QGISとPythonについて詳しく勉強したい方　 PyQGIS 開発者用 Cookbook
-2. [http://docs.qgis.org/2.2/ja/docs/pyqgis_developer_cookbook/](http://docs.qgis.org/2.2/ja/docs/pyqgis_developer_cookbook/)
+2. [QGIS Documentation (QGIS testingを参照)](https://www.qgis.org/en/docs/index.html)
 
 [▲メニューへもどる]
 
