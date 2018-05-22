@@ -44,7 +44,7 @@
 |Bing Maps|可（有償ライセンスもあり、実装方法に応じたライセンス形態）|ロゴと著作権条項の記載|[Microsoft Print Rights](https://www.microsoft.com/en-us/maps/product/print-rights)に従う|日本語の利用規約が公開されていないため、細かな点の解釈が難しい。|[Microsoft® Bing™ Maps Platform APIs' Terms Of Use](https://www.microsoft.com/en-us/maps/product)|
 
 
-上記の表は、2018年3月現在の情報です。各サービスを利用する場合、利用規約を確認の上、使用してください。また、上記について不適切な表現や誤りがある場合は、この[Markdown](https://github.com/gis-oer/gis-oer/blob/master/GISオープン教材/インターネットの活用/rastertile/rastertile.md)へPull Requestをいただくか、issuesにてコメントをいただけますと幸いです。
+上記の表は、2018年3月現在の情報です。各サービスを利用する場合、利用規約を確認の上、使用してください。また、上記について不適切な表現や誤りがある場合は、この[Markdown](./README.md)へPull Requestをいただくか、issuesにてコメントをいただけますと幸いです。
 
 > 上記の表の作成にあたって、各サービスの利用規約の他、  
 [Qiita記事　行政サイトでウェブ地図を使う際の注意点などまとめ（@nyampire氏 作成）](https://qiita.com/nyampire/items/5fd06107f25bc12a526f)、  
