@@ -1,5 +1,5 @@
 # CARTO入門
-本教材は、[CARTO]を用いて空間データを表示する手法について解説しています。以下の教材を参考に[完成例](https://hyamauchi.carto.com/builder/3fceeb57-188b-4e9c-beca-1c05ad67bb71/embed)のような地図が作成できれば実習完了となります。CARTOは無償版のサービスが終了していますが、CartoのTHE MAP ACADEMYという学習向けのサイトが無償で利用できます。以下では、THE MAP ACADEMYの利用しています。
+本教材は、[CARTO]を用いて空間データを表示する手法について解説しています。以下の教材を参考に[完成例](https://sagara1020.carto.com/builder/5d219b3c-08ac-411a-9e57-3f762075046c/embed)のような地図が作成できれば実習完了となります。CARTOは無償版のサービスが終了していますが、CartoのTHE MAP ACADEMYという学習向けのサイトが無償で利用できます。以下では、THE MAP ACADEMYの利用しています。
 
 本教材を使用する際は、[利用規約]をご確認いただき、これらの条件に同意された場合にのみご利用下さい。
 
