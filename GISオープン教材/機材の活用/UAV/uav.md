@@ -28,7 +28,7 @@
 ## デモフライト
 　以下では、フライトデモを動画教材として紹介しています。
 
-※　この下に動画が表示されない場合は、[動画を表示する](https://www.youtube.com/embed/ZLG4tztYh_U)をクリックするか、Gitbookページの[UAVデモフライト](https://gis-oer.github.io/gitbook/book/GISオープン教材/野外/UAV/uav.html#デモフライト)で閲覧してください。
+※　この下に動画が表示されない場合は、[動画を表示する](https://www.youtube.com/embed/ZLG4tztYh_U)をクリックするか、Gitbookページの[UAVデモフライト](https://gis-oer.github.io/gitbook/book/GIS%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E6%95%99%E6%9D%90/%E6%A9%9F%E6%9D%90%E3%81%AE%E6%B4%BB%E7%94%A8/UAV/uav.html)で閲覧してください。
 
 <div style = "text-align: center;">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZLG4tztYh_U" frameborder="0" allowfullscreen></iframe></div>
