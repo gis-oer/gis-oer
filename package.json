@@ -1,24 +1,24 @@
 {
   "name": "gis-oer",
   "version": "0.0.0",
-  "keywords":[
+  "keywords": [
     "GIS",
     "OER"
-    ],
+  ],
   "description": "科学研究費補助金　基盤研究(A) 「GISの標準コアカリキュラムと知識体系を踏まえた実習用オープン教材の開発」プロジェクトにおいて開発した、**「GISオープン教材(試験公開版)」** の公開用リポジトリです。",
   "devDependencies": {
     "gitbook-cli": "^2.3.0",
     "http-server": "^0.9.0",
-    "textlint": "^7.3.0",
-    "textlint-rule-no-dead-link": "KamataRyo/textlint-rule-no-dead-link#release",
-    "textlint-rule-prh": "^3.1.3"
+    "textlint": "^10.2.1",
+    "textlint-rule-no-dead-link": "^4.3.0",
+    "textlint-rule-prh": "^5.0.1"
   },
   "scripts": {
     "install": "gitbook install",
     "build": "gitbook build",
     "start": "http-server ./_book/ -io -p 8080",
-    "lint": "textlint ./GISオープン教材 ./*.md",
-    "test": "npm run lint & npm run build"
+    "lint": "textlint \"./GISオープン教材/**/*.md\" \"./install/**/*.md\" \"./*.md\"",
+    "test": "npm run lint && npm run build"
   },
   "repository": {
     "type": "git",
@@ -29,5 +29,11 @@
     "url": "https://github.com/gis-oer/gis-oer/issues"
   },
   "license": "CC-BY-SA-4.0",
-  "homepage": "https://github.com/gis-oer/gis-oer#readme"
+  "homepage": "https://github.com/gis-oer/gis-oer#readme",
+  "dependencies": {
+    "gitbook-plugin-collapsible-menu": "^1.0.3",
+    "gitbook-plugin-creativecommons": "^1.0.2",
+    "gitbook-plugin-favicon": "0.0.2",
+    "gitbook-plugin-splitter": "0.0.8"
+  }
 }
