@@ -15,7 +15,7 @@
 
 **使用データ**
 
-* [実習データ](https://github.com/gis-oer/datasets/raw/master/vector/echizen.zip)
+* [実習データ](https://raw.githubusercontent.com/gis-oer/datasets/master/vector/echizen.zip)
 > [越前市オープンデータ] 越前市防災安全課　一次避難場所（風水害）、浸水想定区域（風水害）のデータを加工し、利用。
 
 [越前市オープンデータ]:http://www.city.echizen.lg.jp/office/010/021/open-data-echizen.html
@@ -39,7 +39,7 @@ QGISに実習用データを読み込み、スタイルを調整する。次に�
 
 [▲メニューへもどる]
 
-## qgis2webを起動する
+## QGIS2webを起動する
 `Web(W)>qgis2web`をクリックする。以下のような設定を行い、`Update preview`をした後、`Export`をクリックする。
 ![QGIS2Leaf](pic/leafpic_3.png)
 

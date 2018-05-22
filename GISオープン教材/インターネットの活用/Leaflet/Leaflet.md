@@ -17,7 +17,7 @@
 **使用データ**
 実習をはじめる前に以下のデータをダウンロードしてください。
 
-* [東京23区のコンビニエンスストア (c) OpenStreetMap Contributors](https://github.com/gis-oer/datasets/blob/master/vector/tokyo23ku-cvs.zip?raw=true)
+* [東京23区のコンビニエンスストア (c) OpenStreetMap Contributors](https://raw.githubusercontent.com/gis-oer/datasets/master/vector/tokyo23ku-cvs.zip)
 > OpenStreetMapから取得したデータを加工し利用
 
 
@@ -42,7 +42,7 @@ QGISに実習用データを読み込み、スタイルを調整する。次に�
 
 [▲メニューへもどる]
 
-## qgis2webを起動する
+## QGIS2webを起動する
 `Web(W)>qgis2web`をクリックする。以下のような設定を行い、`Update preview`をした後、`Export`をクリックする。
 ![QGIS2Leaf](pic/leafpic_3.png)
 
@@ -104,10 +104,10 @@ index.htmlをブラウザで開き、編集内容を確認する。
 ## Leafletのダウンロードと使い方
 以下では、QGISのプラグインを使わずに、Leafletを用いて簡単なWEB地図を作成する手法について解説します。
 
-※ この教材を作成するにあたって、[Leaflet](http://Leafletjs.com/)のTutorials、Docsを参考にした。
+※ この教材を作成するにあたって、[Leaflet](https://leafletjs.com/)のTutorials、Docsを参考にした。
 
 ### 導入
-Leafletを利用する手法はいくつかあるが、以下では、ダウンロード版を用いて解説している。[Leafletのページ](http://Leafletjs.com/)から、Leafletのzipファイルをダウンロードし、解凍したフォルダ内に以下の内容でindex.htmlを作成する。
+Leafletを利用する手法はいくつかあるが、以下では、ダウンロード版を用いて解説している。[Leafletのページ](https://leafletjs.com/)から、Leafletのzipファイルをダウンロードし、解凍したフォルダ内に以下の内容でindex.htmlを作成する。
 
 
 ```html
@@ -287,7 +287,7 @@ L.control.scale({imperial: false}).addTo(map);
 ```
 
 ### 外部ファイルの追加
-jQueryを利用して、GeoJsonのファイルを読み込む。
+jQueryを利用して、GeoJSONのファイルを読み込む。
 
 ```Javascript
 //GeoJSONの読み込みポイント

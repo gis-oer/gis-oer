@@ -16,7 +16,7 @@
 
 **使用データ**
 
-* [KMLサンプル](https://github.com/gis-oer/datasets/blob/master/vector/kml/cesium/echizen_map.kmz?raw=true)
+* [KMLサンプル](https://raw.githubusercontent.com/gis-oer/datasets/master/vector/kml/cesium/echizen_map.kmz)
 
 > [越前市オープンデータ] 越前市防災安全課　一次避難場所（風水害）、浸水想定区域（風水害）のデータを加工し、利用。
 
@@ -59,7 +59,7 @@ Cesiumのホームページの`Downloads`をクリックし、ダウンロード
 以下では、GitHubでリポジトリを作成して、ダウンロードしたCesiumをローカルからPushして、webで表示しています。Apps>HellowWord.htmlを参考に必要のないファイルを減らしてから、Pushするとスムーズです。下記のようにNodejsの環境下でローカルから実行することも可能です。外部のデータを読み込まずコードのテストのみ行う場合は、上記したトップページの[PLAY WITH THIS CODE]のページが便利です。
 
 ### GitHub
-GitHubに新規のリポジトリを作成し、解凍したcesiumのフォルダをアップロードする。リポジトリのgh-pagesを設定し、インターネット上でダウンロードしたCesiumを表示する（下記のアドレスにアクセスする）。
+GitHubに新規のリポジトリを作成し、解凍したCesiumのフォルダをアップロードする。リポジトリのgh-pagesを設定し、インターネット上でダウンロードしたCesiumを表示する（下記のアドレスにアクセスする）。
 
 ```
 http://（ユーザー名）.github.io/gis-oer_cesium/Apps/HelloWorld.html
@@ -218,7 +218,7 @@ viewer.camera.flyTo({   
 
 
 ## KMLの作成と読み込み
-以下では、KML(KMZ)を作成し、Cesiumで表示する手法について解説しています。KMZの作成は、GoogleEarthで行っています。
+以下では、KML(KMZ)を作成し、Cesiumで表示する手法について解説しています。KMZの作成は、Google Earthで行っています。
 
 ### Google EarthでKMLを作成
 1. Google Earth proでシェープファイルを読み込む。
@@ -246,7 +246,7 @@ viewer.dataSources.add(Cesium.KmlDataSource.load("./KML/echizen_map.kmz"));
 クライアントソフトを通してアップロードし、Webで確認すると↑のように表示される。しかし、ポイントをクリックしても、KMLの属性情報が反映さない。
 
 ### KMLの書き換え
-GoogleEarthから、ポイントレイヤの上で右クリックし、名前をつけて場所を保存から新規にKML(KMZとしない)を保存する。
+Google Earthから、ポイントレイヤの上で右クリックし、名前をつけて場所を保存から新規にKML(KMZとしない)を保存する。
 
 <BalloonStyle></BalloonStyle>を削除する（2箇所）。
 ![KMLの書き換え](pic/cesiumpic_26.png)

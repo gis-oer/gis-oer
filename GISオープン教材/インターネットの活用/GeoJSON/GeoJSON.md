@@ -17,7 +17,7 @@ Sean Gillies (UNC-Chapel Hill) , Tim Schaub (OpenGeo), Christopher Schmidt (Meta
 
 
 ## <a name="GeoJSONとは">GeoJSONとは</a>
-　GeoJSONは、JavaScript Object Notation (JSON) を基とした、GISデータを記述するためのフォーマットです（地理空間データ交換フォーマット）。この形式では、`Point, LineString, Polygon, MultiPoint, MultiLineString,MultiPolygon,GeometryCollection`をサポートしています。軽量言語であり、WEB GISでの利用例が多く見られます。GitHubには、GeoJSONの地図表示機能があり、リポジトリにデータを配置するだけで可視化が可能です。以下では、GeoJSONで点、線、面を記述する手法について解説します。
+　GeoJSONは、JavaScript Object Notation (JSON) を基とした、GISデータを記述するためのフォーマットです（地理空間データ交換フォーマット）。この形式では、`Point, LineString, Polygon, MultiPoint, MultiLineString,MultiPolygon,GeometryCollection`をサポートしています。軽量言語であり、Web GISでの利用例が多く見られます。GitHubには、GeoJSONの地図表示機能があり、リポジトリにデータを配置するだけで可視化が可能です。以下では、GeoJSONで点、線、面を記述する手法について解説します。
 
 >　GeoJSONについての詳細は、[GeoJSON フォーマット仕様](http://s.kitazaki.name/docs/geojson-spec-ja.html#id4)が詳しいです。
 
