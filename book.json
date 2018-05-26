@@ -1,5 +1,5 @@
 {
-    "title": "GIS実習用オープン教材",
+    "title": "GIS実習オープン教材",
     "author": "GIS-Open Educational Resources WG, CC BY-SA 4.0",
     "gitbook": ">= 3.0.0",
     "plugins": [
@@ -7,7 +7,8 @@
         "splitter",
         "collapsible-menu",
         "creativecommons",
-        "favicon"
+        "favicon",
+        "ga"
     ],
     "pluginsConfig": {
     "favicon":{
@@ -18,6 +19,9 @@
             "120x120": "./img/favicon.ico",
             "180x180": "./img/favicon.ico"
         }
+    },
+    "ga": {
+      "token": "UA-113165547-3"
     }
 },
     "styles": {
