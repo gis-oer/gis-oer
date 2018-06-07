@@ -37,4 +37,4 @@
 
 
 ## 地形分野での活用例
-　UAVの地形分野での活用については、地上レーザー等の機器とともに、[地形鮮明化プロジェクト（HD-Topography Project）](http://hdtopography.blogspot.jp/)のWEBサイトで詳しく紹介されています。
+　UAVの地形分野での活用については、地上レーザー等の機器とともに、[地形鮮明化プロジェクト（HD-Topography Project）](http://hdtopography.blogspot.com/)のWEBサイトで詳しく紹介されています。
