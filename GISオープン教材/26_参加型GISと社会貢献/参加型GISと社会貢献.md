@@ -60,7 +60,7 @@
   ライセンス上利用可能な地図や空中写真などを背景に地物をトレースすることができる
 
 * 地物の属性をタグとして付与する
-  >タグの詳細は、[http://wiki.openstreetmap.org/wiki/JA:Map_Features/](http://wiki.openstreetmap.org/wiki/JA:Map_Features/) を参照
+  >タグの詳細は、[http://wiki.openstreetmap.org/wiki/Tags](https://wiki.openstreetmap.org/wiki/Tags) を参照
 
 * Google Mapsなどを用いたOSMの編集は、できない（ソースにする媒体の利用規約などを参照して利用）
 
