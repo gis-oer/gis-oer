@@ -75,7 +75,7 @@
 [▲メニューへもどる]
 
 ## <a name="OSMの編集"></a>OSMの編集
-　OpenStreetMapでは、背景地図、現地調査、GPSデータを参考に、エディタを使って点、線、面の地物を作成または編集します。以下は、OpenStreetMapで地物を追加する手法について解説したものです。OSMの地物の編集について詳しくは、[OSM wiki](https://wiki.openstreetmap.org/wiki/JA:%e5%9c%b0%e5%9b%b3%e4%bd%9c%e3%82%8a%e3%81%ae%e6%a6%82%e8%a6%81)を参照してください。
+　OpenStreetMapでは、背景地図、現地調査、GPSデータを参考に、エディタを使って点、線、面の地物を作成または編集します。以下は、OpenStreetMapで地物を追加する手法について解説したものです。OSMの地物の編集について詳しくは、[OSM wiki](https://wiki.openstreetmap.org/wiki/)を参照してください。
 　以下では、OSMの編集について解説しています。
 
 [OpenStreetMap]にアクセスし、任意の地域を拡大する。
@@ -101,7 +101,7 @@
 。
 
 地物を追加し、左のウィンドウから属性を設定すると一番下にタグ(データに記載される情報)が追加される。
-タグの入力や選択は、[https://wiki.openstreetmap.org/wiki/JA:Map_Features](https://wiki.openstreetmap.org/wiki/JA:Map_Features) を参考にする。
+タグの入力や選択は、[OSM wiki](https://wiki.openstreetmap.org/wiki/) を参考にする。
 sourceについて、背景画像から判断できない場合は、現地調査（source = survey）などで取得する。
 道路等のラインを作成する場合は、接合をチェックする。
 ![osm](pic/osmpic_6.png)
@@ -109,7 +109,7 @@ sourceについて、背景画像から判断できない場合は、現地調�
 ### 編集の保存とアップロード
 以下では、OSMに編集結果をアップロードする手法について解説しています。
 
-「保存」をクリックし変更セットのコメントを入力する。（英文が望ましい。）
+「保存」をクリックし変更セットのコメントを入力する（英文が望ましい。）。
 OSMロゴ画像をクリック or ウインドウを閉じ、編集を終了する。数分後にアップロードが反映される。
 ![osm](pic/osmpic_7.png)
 
