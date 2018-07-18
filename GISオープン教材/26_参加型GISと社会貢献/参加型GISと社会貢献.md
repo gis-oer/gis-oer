@@ -75,7 +75,7 @@
 [▲メニューへもどる]
 
 ## <a name="OSMの編集"></a>OSMの編集
-　OpenStreetMapでは、背景地図、現地調査、GPSデータを参考に、エディタを使って点、線、面の地物を作成または編集します。以下は、OpenStreetMapで地物を追加する手法について解説したものです。OSMの地物の編集について詳しくは、[OSM wiki](https://wiki.openstreetmap.org/wiki/)を参照してください。
+　OpenStreetMapでは、背景地図、現地調査、GPSデータを参考に、エディタを使って点、線、面の地物を作成または編集します。以下は、OpenStreetMapで地物を追加する手法について解説したものです。OSMの地物の編集について詳しくは、`https://wiki.openstreetmap.org/wiki/`を参照してください。
 　以下では、OSMの編集について解説しています。
 
 [OpenStreetMap]にアクセスし、任意の地域を拡大する。
@@ -101,7 +101,7 @@
 。
 
 地物を追加し、左のウィンドウから属性を設定すると一番下にタグ(データに記載される情報)が追加される。
-タグの入力や選択は、[OSM wiki](https://wiki.openstreetmap.org/wiki/) を参考にする。
+タグの入力や選択は、`https://wiki.openstreetmap.org/wiki/`を参考にする。
 sourceについて、背景画像から判断できない場合は、現地調査（source = survey）などで取得する。
 道路等のラインを作成する場合は、接合をチェックする。
 ![osm](pic/osmpic_6.png)
