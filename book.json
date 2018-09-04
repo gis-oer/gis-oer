@@ -4,7 +4,7 @@
     "gitbook": ">= 3.0.0",
     "plugins": [
         "-sharing",
-        "sharing-plus",
+        "-sharing-plus",
         "splitter",
         "collapsible-menu",
         "creativecommons",
