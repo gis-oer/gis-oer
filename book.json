@@ -4,13 +4,36 @@
     "gitbook": ">= 3.0.0",
     "plugins": [
         "-sharing",
+        "sharing-plus",
         "splitter",
         "collapsible-menu",
         "creativecommons",
         "favicon",
-        "ga"
+        "ga",
+        "github",
+        "github-buttons"
     ],
     "pluginsConfig": {
+      "sharing": {
+          "douban": false,
+          "facebook": false,
+          "google": false,
+          "hatenaBookmark": false,
+          "instapaper": false,
+          "line": false,
+          "linkedin": false,
+          "messenger": false,
+          "pocket": false,
+          "qq": false,
+          "qzone": false,
+          "stumbleupon": false,
+          "twitter": true,
+          "viber": false,
+          "vk": false,
+          "weibo": false,
+          "whatsapp": false,
+          "all": ["facebook", "google"]
+      },
     "favicon":{
         "shortcut": "./img/favicon.ico",
         "bookmark": "./img/favicon.ico",
@@ -22,7 +45,19 @@
     },
     "ga": {
       "token": "UA-113165547-3"
-    }
+    },
+    "github": {
+            "url": "https://github.com/gis-oer/gis-oer"
+        },
+        "github-buttons": {
+         "buttons": [{
+           "user": "gis-oer",
+           "repo": "gis-oer",
+           "type": "star",
+           "size": "small",
+           "count": true
+         }]
+       }
 },
     "styles": {
         "website": "styles/website.css"
