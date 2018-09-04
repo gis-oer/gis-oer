@@ -27,7 +27,7 @@
 
 --------
 
-## <a name="ArcGIS_API_for_JavaScriptとは>ArcGIS API for JavaScriptとは？</a>)
+## <a name="ArcGIS_API_for_JavaScriptとは">ArcGIS API for JavaScriptとは？</a>
 　ArcGIS API for JavaScriptとは、ESRI社が開発者向けに、ArcGISの機能をJavaScriptで利用できるように提供するものである。ArcGIS API for JavaScriptの詳細は、[ESRIジャパンのArcGIS API for JavaScript ](https://www.esrij.com/products/arcgis-api-for-javascript/)のページを参照してください。
 
 [▲メニューへもどる]
@@ -40,8 +40,8 @@
 ### ベースマップを作成する
 ArcGIS API for JavaScriptの機能を呼び出すため、以下の2行を<head>内に追加したHTMLを作成してください。
 
-- <link rel="stylesheet" href="https://js.arcgis.com/4.7/esri/css/main.css">
-- <script src="https://js.arcgis.com/4.7/"></script>
+- `<link rel="stylesheet" href="https://js.arcgis.com/4.7/esri/css/main.css">`
+- `<script src="https://js.arcgis.com/4.7/"></script>`
 
 ```html
 <!DOCTYPE html>
@@ -290,7 +290,7 @@ view.ui.add(compass, "up-left");
 
 ```
 
-次に<script>内を以下のようにする。
+次に`<script>`内を以下のようにする。
 
 ```JavaScript
 //requireに"dojo/onを追加し、fuctionにon"を追加する
