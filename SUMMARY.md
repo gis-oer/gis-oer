@@ -1,5 +1,5 @@
 
-* [GISオープン教材とは](README.md)
+* [GIS実習オープン教材とは](README.md)
 * [基礎教材一覧](GISオープン教材/README.md)
 * [初学者コース](GISオープン教材/README.md#gis初学者コース)
 * [GISの基本概念](GISオープン教材/01_GISの基本概念/GISの基本概念.md)
