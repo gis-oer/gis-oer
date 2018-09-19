@@ -19,7 +19,7 @@
 ## 実習3（第14回）
 
 ### 手順
-1.[ArcGIS API for JavaScript](../インターネットの活用/arcgisapi4JavaScript/arcgisapi4JavaScript.md)の教材を参考にWeb地図を作成する。
+1.[ArcGIS API for JavaScript](../インターネットの活用/arcgisapi4js/arcgisapi4js.md)の教材を参考にWeb地図を作成する。
 
 [GISオープン教材について]:../README.md
 [GIS実習用基礎教材一覧]:../README.md
