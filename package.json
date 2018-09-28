@@ -10,8 +10,8 @@
     "gitbook-cli": "^2.3.0",
     "http-server": "^0.9.0",
     "textlint": "^10.2.1",
-    "textlint-rule-no-dead-link": "^4.3.0",
-    "textlint-rule-prh": "^5.0.1"
+    "textlint-rule-no-dead-link": "^4.4.1",
+    "textlint-rule-prh": "^5.2.0"
   },
   "scripts": {
     "install": "gitbook install",
@@ -33,8 +33,12 @@
   "dependencies": {
     "gitbook-plugin-collapsible-menu": "^1.0.3",
     "gitbook-plugin-creativecommons": "^1.0.2",
-    "gitbook-plugin-favicon": "0.0.2",
+    "gitbook-plugin-favicon": "^0.0.2",
     "gitbook-plugin-ga": "^1.0.1",
-    "gitbook-plugin-splitter": "0.0.8"
+    "gitbook-plugin-splitter": "^0.0.8",
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-github-buttons":"^3.0.0",
+    "gitbook-plugin-sharing-plus":"^0.0.2"
+
   }
 }
