@@ -323,7 +323,7 @@ GRASSRGBのフィールドを選択し、列を追加をクリックする。
 
 ## 参考ページの紹介
 ![参考](pic/grasspic_51.png)
-1. https://grass.osgeo.org/
+1.https://grass.osgeo.org/
 2.https://www.osgeo.jp/projects/foss4g-mext
 
 [▲メニューへもどる]
