@@ -14,6 +14,11 @@
 
 ![gis](./img/demo.gif)
 
+### 教材の更新情報
+本教材や関連する教材等の更新履歴は、GitHub [gis-oer](https://github.com/gis-oer)で閲覧することができます。また、Twitter[@gis_oer](https://twitter.com/gis_oer)にて、プロジェクト情報とともに公開してます。
+
+<div align="center"><a class="twitter-timeline" width="700" height="600" data-chrome="noheader nofooter noborders" href="https://twitter.com/gis_oer?ref_src=twsrc%5Etfw">Tweets by gis_oer</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+
 ### 大学等での利用
 　大学の半期分のカリキュラムに合わせて利用する場合は、[こちら](./GISオープン教材/課題/README.md)をご利用ください。
 
