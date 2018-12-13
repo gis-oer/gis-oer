@@ -7,10 +7,10 @@
 ![gis](./img/topimage.png)
 
 ## 本プロジェクトについて
-　プロジェクトは、GIS(Geographic Information System)教育の充実のため、大学の実習授業や個人の自主学習等で利用できる実習用の教材を開発し、オープンな活用を推進することを目的としたものです。詳しくは、[本プロジェクトについて](./本プロジェクトについて.md)をご参照ください。
+　プロジェクトは、GIS(Geographic Information System)教育の充実のため、大学の実習授業や個人の自主学習等で利用できる実習用の教材を開発し、オープンな活用を推進することを目的としたものです。詳しくは、[本プロジェクトについて](./about.md)をご参照ください。
 
 ## 本教材について
-　本教材は、誰もが自由に活用できるGISの実習用オープン教材です。大学の実習授業や個人学習したい内容に応じて[GIS実習教材](./GISオープン教材/README.md)をご利用ください。**GIS初学者は、上記リンク内の初学者コースをご活用ください。**
+　本教材は、誰もが自由に活用できるGISの実習用オープン教材です。大学の実習授業や個人学習したい内容に応じて[GIS実習教材](./materials/README.md)をご利用ください。**GIS初学者は、上記リンク内の初学者コースをご活用ください。**
 
 ![gis](./img/demo.gif)
 
@@ -20,7 +20,7 @@
 <div align="center"><a class="twitter-timeline" width="700" height="600" data-chrome="noheader nofooter noborders" href="https://twitter.com/gis_oer?ref_src=twsrc%5Etfw">Tweets by gis_oer</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
 
 ### 大学等での利用
-　大学の半期分のカリキュラムに合わせて利用する場合は、[こちら](./GISオープン教材/課題/README.md)をご利用ください。
+　大学の半期分のカリキュラムに合わせて利用する場合は、[こちら](./materials/tasks/README.md)をご利用ください。
 
 ### GitBook形式での提供
 　本教材は、閲覧や操作性に優れた[GIS-OER  book](https://gis-oer.github.io/gitbook/book/)での提供を行っています。
@@ -55,6 +55,71 @@
 
 
 [旧リポジトリ]:https://github.com/yamauchi-inochu/demo
-[その他のライセンス]:./GISオープン教材/その他のライセンスについて.md
-[教材編集について]:./GISオープン教材/教材編集について.md
-[利用規約]:./利用規約.md
+[その他のライセンス]:./materials/license.md
+[教材編集について]:./materials/modification_rule.md
+[利用規約]:./policy.md
+[利用規約]:../../policy.md
+[その他のライセンスについて]:../license.md
+[よくある質問とエラー]:../questions/questions.md
+
+[GISの基本概念]:../00/00.md
+[QGISビギナーズマニュアル]:../QGIS/QGIS.md
+[GRASSビギナーズマニュアル]:../GRASS/GRASS.md
+[リモートセンシングとその解析]:../06/06.md
+[既存データの地図データと属性データ]:../07/07.md
+[空間データ]:../08/08.md
+[空間データベース]:../09/09.md
+[空間データの統合・修正]:../10/10.md
+[基本的な空間解析]:../11/11.md
+[ネットワーク分析]:../12/12.md
+[領域分析]:../13/13.md
+[点データの分析]:../14/14.md
+[ラスタデータの分析]:../15/15.md
+[傾向面分析]:../16/16.md
+[空間的自己相関]:../17/17.md
+[空間補間]:../18/18.md
+[空間相関分析]:../19/19.md
+[空間分析におけるスケール]:../20/20.md
+[視覚的伝達]:../21/21.md
+[参加型GISと社会貢献]:../26/26.md
+
+[地理院地図]:https://maps.gsi.go.jp
+[e-Stat]:https://www.e-stat.go.jp/
+[国土数値情報]:http://nlftp.mlit.go.jp/ksj/
+[基盤地図情報]:http://www.gsi.go.jp/kiban/
+[地理院タイル]:http://maps.gsi.go.jp/development/ichiran.html
+
+
+[スライド_GISの基本概念]:https://github.com/gis-oer/gis-oer/raw/master/materials/00/00.pptx
+[スライド_QGISビギナーズマニュアル]:https://github.com/gis-oer/gis-oer/raw/master/materials/QGIS/QGIS.pptx
+[スライド_GRASSビギナーズマニュアル]:https://github.com/gis-oer/gis-oer/raw/master/materials/GRASS/GRASS.pptx
+[スライド_リモートセンシングとその解析]:https://github.com/gis-oer/gis-oer/raw/master/materials/06/06.pptx
+[スライド_既存データの地図データと属性データ]:https://github.com/gis-oer/gis-oer/raw/master/materials/07/07.pptx
+[スライド_空間データ]:https://github.com/gis-oer/gis-oer/raw/master/materials/08/08.pptx
+[スライド_空間データベース]:https://github.com/gis-oer/gis-oer/raw/master/materials/09/09.pptx
+[スライド_空間データの統合・修正]:https://github.com/gis-oer/gis-oer/raw/master/materials/10/10.pptx
+[スライド_基本的な空間解析]:https://github.com/gis-oer/gis-oer/raw/master/materials/11/11.pptx
+[スライド_ネットワーク分析]:https://github.com/gis-oer/gis-oer/raw/master/materials/12/12.pptx
+[スライド_領域分析]:https://github.com/gis-oer/gis-oer/raw/master/materials/13/13.pptx
+[スライド_点データの分析]:https://github.com/gis-oer/gis-oer/raw/master/materials/14/14.pptx
+[スライド_ラスタデータの分析]:https://github.com/gis-oer/gis-oer/raw/master/materials/15/15.pptx
+[スライド_空間補間]:https://github.com/gis-oer/gis-oer/raw/master/materials/18/18.pptx
+[スライド_視覚的伝達]:https://github.com/gis-oer/gis-oer/raw/master/materials/21/21.pptx
+[スライド_参加型GISと社会貢献]:https://github.com/gis-oer/gis-oer/raw/master/materials/26/26.pptx
+
+[課題ページ_QGISビギナーズマニュアル]:../tasks/t_qgis_entry.md
+[課題ページ_GRASSビギナーズマニュアル]:../tasks/t_grass_entry.md
+[課題ページ_リモートセンシングとその解析]:../tasks/t_06.md
+[課題ページ_既存データの地図データと属性データ]:../tasks/t_07.md
+[課題ページ_空間データ]:../tasks/t_08.md
+[課題ページ_空間データベース]:../tasks/t_09.md
+[課題ページ_空間データの統合・修正]:../tasks/t_10.md
+[課題ページ_基本的な空間解析]:../tasks/t_11.md
+[課題ページ_ネットワーク分析]:../tasks/t_12.md
+[課題ページ_基本的な空間解析]:../tasks/t_13.md
+[課題ページ_点データの分析]:../tasks/t_14.md
+[課題ページ_ラスタデータの分析]:../tasks/t_15.md
+[課題ページ_空間補間]:../tasks/t_18.md
+[課題ページ_視覚的伝達]:../tasks/t_21.md
+[課題ページ_参加型GISと社会貢献]:../tasks/t_26.md
+<h2 style="background-color:#F8F5FD;text-align:center;">教材の利用に関するアンケート</h2>　本プロジェクトでは、教材の改良を目的とした任意アンケートを実施しています。ご協力いただける方は、<a href="https://customform.jp/form/input/14328/">アンケート</a>にお進みください。ご協力のほどよろしくお願いいたします。<br><br>※ 本アンケートの成果は、教材の改良のほか、学会での発表等の研究目的でも利用します。また、本アンケートでは、個人が特定できるような質問は設けておりません。

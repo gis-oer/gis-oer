@@ -17,7 +17,7 @@
     "install": "gitbook install",
     "build": "gitbook build",
     "start": "http-server ./_book/ -io -p 8080",
-    "lint": "textlint \"./GISオープン教材/**/*.md\" \"./install/**/*.md\" \"./*.md\"",
+    "lint": "textlint \"./materials/**/*.md\" \"./install/**/*.md\" \"./*.md\"",
     "test": "npm run lint && npm run build"
   },
   "repository": {
@@ -37,7 +37,8 @@
     "gitbook-plugin-ga": "^1.0.1",
     "gitbook-plugin-splitter": "^0.0.8",
     "gitbook-plugin-github": "^2.0.0",
-    "gitbook-plugin-github-buttons": "^3.0.0",
-    "gitbook-plugin-sharing-plus": "^0.0.2"
+    "gitbook-plugin-github-buttons":"^3.0.0",
+    "gitbook-plugin-sharing-plus":"^0.0.2"
+
   }
 }
