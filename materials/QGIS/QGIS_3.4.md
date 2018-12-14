@@ -26,7 +26,7 @@
 
 　実習をはじめる前に、以下のデータをダウンロードしてください。
 
-* [東京_データセット](https://github.com/gis-oer/datasets/blob/master/tokyo.zip?raw=true)
+* [東京_データセット]
 
 **スライド教材**
 
@@ -400,6 +400,7 @@ CSVは、カンマで区切られたデータ形式である。座標値をも�
 [▲メニューへもどる]:./QGIS.md#Menu
 
 [QGIS API Documentation]:http://www.qgis.org/api/index.html
+[東京_データセット]:https://github.com/gis-oer/datasets/raw/master/tokyo.zip
 [利用規約]:../../policy.md
 [その他のライセンスについて]:../license.md
 [よくある質問とエラー]:../questions/questions.md
