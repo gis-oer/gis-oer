@@ -34,7 +34,7 @@
 
 |元画像|権利者/クレジット表記|URL|
 |---|---|---|
-|SAM公式サイト|Thiago Fernando Rangel, José Alexandre F. Diniz-Filho, FLS and Luis Mauricio Bini |https://www.ecoevol.ufg.br/sam/ |
+|SAM公式サイト|Thiago Fernando Rangel, José Alexandre F. Diniz-Filho, FLS and Luis Mauricio Bini |`https://www.ecoevol.ufg.br/sam/` |
 
 
 ## 空間的自己相関
