@@ -31,7 +31,7 @@
 　以下では、フライトデモを動画教材として紹介しています。
 
 ### 操作解説
-※　この下に動画が表示されない場合は、[動画を表示する](https://www.youtube.com/embed/ZLG4tztYh_U)をクリックするか、Gitbookページの[UAVデモフライト](https://gis-oer.github.io/gitbook/book/GIS%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E6%95%99%E6%9D%90/%E6%A9%9F%E6%9D%90%E3%81%AE%E6%B4%BB%E7%94%A8/UAV/uav.html)で閲覧してください。
+※　この下に動画が表示されない場合は、[動画を表示する](https://www.youtube.com/embed/ZLG4tztYh_U)をクリックするか、Gitbookページの[UAVデモフライト](https://gis-oer.github.io/gitbook/book/materials/equipments/uav/uav.html)で閲覧してください。
 
 <div style = "text-align: center;">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZLG4tztYh_U" frameborder="0" allowfullscreen></iframe></div>
@@ -39,7 +39,7 @@
 >JGU秋の学校2015(2015年10月 東京大学検見川総合運動場にて実施)<br>主催：日本地形学連合（JGU）<br>共催：東京大学空間情報科学研究センター（CSIS） ，地形鮮明化プロジェクト
 
 ### 映像紹介
-※　この下に動画が表示されない場合は、[動画を表示する](https://www.youtube.com/embed/xwtJeFfiNHo)をクリックするか、Gitbookページの[UAVデモフライト](https://gis-oer.github.io/gitbook/book/GIS%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E6%95%99%E6%9D%90/%E6%A9%9F%E6%9D%90%E3%81%AE%E6%B4%BB%E7%94%A8/UAV/uav.html)で閲覧してください。
+※　この下に動画が表示されない場合は、[動画を表示する](https://www.youtube.com/embed/xwtJeFfiNHo)をクリックするか、Gitbookページの[UAVデモフライト](https://gis-oer.github.io/gitbook/book/materials/equipments/uav/uav.html)で閲覧してください。
 
 <div style = "text-align: center;">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xwtJeFfiNHo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
