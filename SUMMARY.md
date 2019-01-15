@@ -166,7 +166,7 @@
 
 
 * [インターネットの活用に関する教材](./materials/web_gis/README.md)
-  * [Carto](./materials/web_gis/Carto/Carto.md)
+  * [CARTO](./materials/web_gis/CARTO/CARTO.md)
   * [Cesium](./materials/web_gis/Cesium/Cesium.md)
   * [Googleマイマップ](./materials/web_gis/Google_mymap/Google_mymap.md)
   * [Leaflet](./materials/web_gis/Leaflet/Leaflet.md)
