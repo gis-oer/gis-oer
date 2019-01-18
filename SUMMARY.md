@@ -183,7 +183,7 @@
 
 * [GISと関連した機材の活用](./materials/equipments/README.md)
  * [UAVの操作法](./materials/equipments/uav/uav.md)
- * [3Dプリンタで地形模型の製作](./materials/equipments/3Dprinter/3Dprinter.md)
+ * [3Dプリンタで地形模型の製作](./materials/equipments/3dprinter/3dprinter.md)
  * [スマートフォンで野外調査](./materials/equipments/mobile/mobile.md)
  * [タブレットでトレース](./materials/equipments/tablet/tablet.md)
 
