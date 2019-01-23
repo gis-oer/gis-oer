@@ -34,10 +34,10 @@
 |学習順|教材名|所要時間（目安）|
 |---|---|---|
 |1|[GISの基本概念]|30分|
-|2|[QGISビギナーズマニュアル]|90分|
-|3|[既存データの地図データと属性データ]|60分|
+|2|[QGISビギナーズマニュアル]|120分|
+|3|[既存データの地図データと属性データ]|120分|
 |4|[空間データ]|120分|
-|5|[空間データの統合・修正]|90分|
+|5|[空間データの統合・修正]|180分|
 |6|[視覚的伝達]|90分|
 |7|[基本的な空間解析]|90分|
 |8|[GRASSビギナーズマニュアル]|120分|
@@ -131,7 +131,6 @@
 [基盤地図情報]:http://www.gsi.go.jp/kiban/
 [地理院タイル]:http://maps.gsi.go.jp/development/ichiran.html
 
-
 [スライド_GISの基本概念]:https://github.com/gis-oer/gis-oer/raw/master/materials/00/00.pptx
 [スライド_QGISビギナーズマニュアル]:https://github.com/gis-oer/gis-oer/raw/master/materials/QGIS/QGIS.pptx
 [スライド_GRASSビギナーズマニュアル]:https://github.com/gis-oer/gis-oer/raw/master/materials/GRASS/GRASS.pptx
@@ -149,19 +148,4 @@
 [スライド_視覚的伝達]:https://github.com/gis-oer/gis-oer/raw/master/materials/21/21.pptx
 [スライド_参加型GISと社会貢献]:https://github.com/gis-oer/gis-oer/raw/master/materials/26/26.pptx
 
-[課題ページ_QGISビギナーズマニュアル]:../tasks/t_qgis_entry.md
-[課題ページ_GRASSビギナーズマニュアル]:../tasks/t_grass_entry.md
-[課題ページ_リモートセンシングとその解析]:../tasks/t_06.md
-[課題ページ_既存データの地図データと属性データ]:../tasks/t_07.md
-[課題ページ_空間データ]:../tasks/t_08.md
-[課題ページ_空間データベース]:../tasks/t_09.md
-[課題ページ_空間データの統合・修正]:../tasks/t_10.md
-[課題ページ_基本的な空間解析]:../tasks/t_11.md
-[課題ページ_ネットワーク分析]:../tasks/t_12.md
-[課題ページ_基本的な空間解析]:../tasks/t_13.md
-[課題ページ_点データの分析]:../tasks/t_14.md
-[課題ページ_ラスタデータの分析]:../tasks/t_15.md
-[課題ページ_空間補間]:../tasks/t_18.md
-[課題ページ_視覚的伝達]:../tasks/t_21.md
-[課題ページ_参加型GISと社会貢献]:../tasks/t_26.md
 <h2 style="background-color:#F8F5FD;text-align:center;">教材の利用に関するアンケート</h2>　本プロジェクトでは、教材の改良を目的とした任意アンケートを実施しています。ご協力いただける方は、<a href="https://customform.jp/form/input/14328/">アンケート</a>にお進みください。ご協力のほどよろしくお願いいたします。<br><br>※ 本アンケートの成果は、教材の改良のほか、学会での発表等の研究目的でも利用します。また、本アンケートでは、個人が特定できるような質問は設けておりません。
