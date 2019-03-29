@@ -166,7 +166,6 @@
 
 
 * [インターネットの活用に関する教材](./materials/web_gis/README.md)
-  * [CARTO](./materials/web_gis/CARTO/CARTO.md)
   * [Cesium](./materials/web_gis/Cesium/Cesium.md)
   * [Googleマイマップ](./materials/web_gis/Google_mymap/Google_mymap.md)
   * [Leaflet](./materials/web_gis/Leaflet/Leaflet.md)
@@ -181,11 +180,11 @@
   * [地図タイル（ラスタ）](./materials/web_gis/rastertile/rastertile.md)
 
 
-* [GISと関連した機材の活用](./materials/equipments/README.md)
- * [UAVの操作法](./materials/equipments/uav/uav.md)
- * [3Dプリンタで地形模型の製作](./materials/equipments/3dprinter/3dprinter.md)
- * [スマートフォンで野外調査](./materials/equipments/mobile/mobile.md)
- * [タブレットでトレース](./materials/equipments/tablet/tablet.md)
+* [GISと関連した機材の活用](./materials/equipment/README.md)
+ * [UAVの操作法](./materials/equipment/uav/uav.md)
+ * [3Dプリンタで地形模型の製作](./materials/equipment/3dprinter/3dprinter.md)
+ * [スマートフォンで野外調査](./materials/equipment/mobile/mobile.md)
+ * [タブレットでトレース](./materials/equipment/tablet/tablet.md)
 
 
 * [課題ページ（全14回）](./materials/tasks/README.md)

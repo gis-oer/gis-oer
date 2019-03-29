@@ -4,7 +4,6 @@
 ## 教材一覧
 
 ### WEB MAP操作・作成入門 (WEBマップGUIツール、サービスの利用法)
-- [CARTO](./CARTO/CARTO.md)
 - [地理院地図](./gsimap/gsimap.md)
 - [OpenStreetMap(= 参加型GISと社会貢献の教材)](../26/26.md)
 - [Googleマイマップ](./Google_mymap/Google_mymap.md)
