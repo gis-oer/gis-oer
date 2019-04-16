@@ -4,7 +4,7 @@
 
 　GIS初学者が本教材を利用する場合は、[GIS初学者コース](README.md#gis初学者コース)の順で学習を進めてください。
 
-## [GIS実習教材](./README.md)
+## GIS実習教材一覧
 
 * [QGISビギナーズマニュアル]
 * [GRASSビギナーズマニュアル]
@@ -25,6 +25,10 @@
 * [空間分析におけるスケール]
 * [視覚的伝達]
 * [参加型GISと社会貢献]
+* GISと関連した機材の活用
+* インターネットにおけるGIS技術の活用
+* QGISと連携して利用できるPython入門
+* 高校教員向け教材
 
 ## GIS初学者コース
 　このコースは、GIS初学者が本教材を利用して学習を進めることを想定し、教材を進めていく順番を示したものです。学習の所要時間には、各教材に設定されている課題の作成も含めています。個人の自主学習などの際にご活用ください。
@@ -103,49 +107,3 @@
 [利用規約]:../../policy.md
 [その他のライセンスについて]:../license.md
 [よくある質問とエラー]:../questions/questions.md
-
-[GISの基本概念]:../00/00.md
-[QGISビギナーズマニュアル]:../QGIS/QGIS.md
-[GRASSビギナーズマニュアル]:../GRASS/GRASS.md
-[リモートセンシングとその解析]:../06/06.md
-[既存データの地図データと属性データ]:../07/07.md
-[空間データ]:../08/08.md
-[空間データベース]:../09/09.md
-[空間データの統合・修正]:../10/10.md
-[基本的な空間解析]:../11/11.md
-[ネットワーク分析]:../12/12.md
-[領域分析]:../13/13.md
-[点データの分析]:../14/14.md
-[ラスタデータの分析]:../15/15.md
-[傾向面分析]:../16/16.md
-[空間的自己相関]:../17/17.md
-[空間補間]:../18/18.md
-[空間相関分析]:../19/19.md
-[空間分析におけるスケール]:../20/20.md
-[視覚的伝達]:../21/21.md
-[参加型GISと社会貢献]:../26/26.md
-
-[地理院地図]:https://maps.gsi.go.jp
-[e-Stat]:https://www.e-stat.go.jp/
-[国土数値情報]:http://nlftp.mlit.go.jp/ksj/
-[基盤地図情報]:http://www.gsi.go.jp/kiban/
-[地理院タイル]:http://maps.gsi.go.jp/development/ichiran.html
-
-[スライド_GISの基本概念]:https://github.com/gis-oer/gis-oer/raw/master/materials/00/00.pptx
-[スライド_QGISビギナーズマニュアル]:https://github.com/gis-oer/gis-oer/raw/master/materials/QGIS/QGIS.pptx
-[スライド_GRASSビギナーズマニュアル]:https://github.com/gis-oer/gis-oer/raw/master/materials/GRASS/GRASS.pptx
-[スライド_リモートセンシングとその解析]:https://github.com/gis-oer/gis-oer/raw/master/materials/06/06.pptx
-[スライド_既存データの地図データと属性データ]:https://github.com/gis-oer/gis-oer/raw/master/materials/07/07.pptx
-[スライド_空間データ]:https://github.com/gis-oer/gis-oer/raw/master/materials/08/08.pptx
-[スライド_空間データベース]:https://github.com/gis-oer/gis-oer/raw/master/materials/09/09.pptx
-[スライド_空間データの統合・修正]:https://github.com/gis-oer/gis-oer/raw/master/materials/10/10.pptx
-[スライド_基本的な空間解析]:https://github.com/gis-oer/gis-oer/raw/master/materials/11/11.pptx
-[スライド_ネットワーク分析]:https://github.com/gis-oer/gis-oer/raw/master/materials/12/12.pptx
-[スライド_領域分析]:https://github.com/gis-oer/gis-oer/raw/master/materials/13/13.pptx
-[スライド_点データの分析]:https://github.com/gis-oer/gis-oer/raw/master/materials/14/14.pptx
-[スライド_ラスタデータの分析]:https://github.com/gis-oer/gis-oer/raw/master/materials/15/15.pptx
-[スライド_空間補間]:https://github.com/gis-oer/gis-oer/raw/master/materials/18/18.pptx
-[スライド_視覚的伝達]:https://github.com/gis-oer/gis-oer/raw/master/materials/21/21.pptx
-[スライド_参加型GISと社会貢献]:https://github.com/gis-oer/gis-oer/raw/master/materials/26/26.pptx
-
-<h2 style="background-color:#F8F5FD;text-align:center;">教材の利用に関するアンケート</h2>　本プロジェクトでは、教材の改良を目的とした任意アンケートを実施しています。ご協力いただける方は、<a href="https://customform.jp/form/input/14328/">アンケート</a>にお進みください。ご協力のほどよろしくお願いいたします。<br><br>※ 本アンケートの成果は、教材の改良のほか、学会での発表等の研究目的でも利用します。また、本アンケートでは、個人が特定できるような質問は設けておりません。
