@@ -7,7 +7,7 @@
 
 |元画像|権利者/クレジット表記|URL|
 |---|---|---|
-|産業総合研究所 LandBrowser|本教材に記載|https://landbrowser.airc.aist.go.jp/landbrowser/
+|産業総合研究所 LandBrowser|本教材に記載|`https://landbrowser.airc.aist.go.jp/landbrowser/`
 |MultuSpec公式サイト|Copyright © 1994-2016 Purdue Research Foundation.|https://engineering.purdue.edu/~biehl/MultiSpec/ |
 
 

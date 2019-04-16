@@ -24,7 +24,9 @@
 ![natural_earth](./00/pic/0pic-1.png)
 
 ### ラスターデータ
-- [sample_image.tif](https://github.com/gis-oer/datasets/raw/master/sample.zip)
+- [sample_image.tif]
+
+[sample_image.tif]:https://github.com/gis-oer/datasets/raw/master/sample.zip
 
 本教材では、ErthExplorerからダウンローしたLandsat8のデータを編集・使用しています。 "The source data were downloaded from USGS's ErthExplorer, (https://earthexplorer.usgs.gov/). Landsat 8 data courtesy of the U.S. Geological Survey."
 
