@@ -2,6 +2,7 @@
 　GISでは、地理空間情報の可視化、編集、分析などができます。この実習はGIS入門として、QGISを用いて地図の作成を行うものです。この教材は、GIS初学者およびQGISの初心者向けです。各課題の手順とGISオープン教材の[QGISビギナーズマニュアル]を参考に、完成例のような地図が作成できれば、完了となります。GIS初学者は、本教材を進める前に[GISの基本概念]教材を確認しておいてください。
 
 ### 実習用データ
+
 * [fkuchiyama_sample.zip]
 
 [fkuchiyama_sample.zip]:https://raw.githubusercontent.com/gis-oer/datasets/master/vector/fkuchiyama_sample.zip　
