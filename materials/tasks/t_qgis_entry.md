@@ -1,11 +1,8 @@
 # 課題：GIS入門
 　GISでは、地理空間情報の可視化、編集、分析などができます。この実習はGIS入門として、QGISを用いて地図の作成を行うものです。この教材は、GIS初学者およびQGISの初心者向けです。各課題の手順とGISオープン教材の[QGISビギナーズマニュアル]を参考に、完成例のような地図が作成できれば、完了となります。GIS初学者は、本教材を進める前に[GISの基本概念]教材を確認しておいてください。
 
-### 実習用データ
-
-* [fkuchiyama_sample.zip]
-
-[fkuchiyama_sample.zip]:https://raw.githubusercontent.com/gis-oer/datasets/master/vector/fkuchiyama_sample.zip　
+### 課題用データ
+課題用データ[fkuchiyama_sample.zip]をダウンロードしてください。
 
 ## QGIS入門
 　この実習は、QGISとサンプルデータを用いたデータの可視化や地図のレイアウトに関するものです。QGISは、無償で利用できるオープンソースのGISです。[QGISビギナーズマニュアル]を参考にインストールした後、実習を進めてください。本課題と対応する教材は、[QGISビギナーズマニュアル]です。
@@ -41,6 +38,7 @@
 [利用規約]:../../../policy.md
 [その他のライセンスについて]:../../license.md
 [よくある質問とエラー]:../../questions/questions.md
+[fkuchiyama_sample.zip]:https://raw.githubusercontent.com/gis-oer/datasets/master/vector/fkuchiyama_sample.zip
 
 [GISの基本概念]:../../00/00.md
 [QGISビギナーズマニュアル]:../../QGIS/QGIS.md

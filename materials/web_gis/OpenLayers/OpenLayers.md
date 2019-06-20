@@ -7,7 +7,7 @@
 
 **Menu**
 ------
-* [OpenLayersとは？](#OpenLayersとは)
+* [OpenLayersとは？](#openlayersとは)
 * [レイヤのスタイル調整とプラグインのインポート](#レイヤのスタイル調整とプラグインのインポート)
 * [qgis2webを起動する](#qgis2leafを起動する)
 * [index.htmlを編集する](#index.htmlを編集する)

@@ -5,7 +5,7 @@
 
 **Menu**
 ------
-* [ArcGIS API for JavaScriptとは？](#ArcGIS_API_for_JavaScriptとは)
+* [ArcGIS API for JavaScriptとは？](#arcgis_api_for_javascriptとは？)
 * [地図を作成する](#地図を作成する)
 
 
@@ -21,7 +21,7 @@
 
 --------
 
-## <a name="ArcGIS_API_for_JavaScriptとは">ArcGIS API for JavaScriptとは？</a>
+## ArcGIS_API_for_JavaScriptとは？
 　ArcGIS API for JavaScriptとは、ESRI社が開発者向けに、ArcGISの機能をJavaScriptで利用できるように提供するものである。ArcGIS API for JavaScriptの詳細は、[ESRIジャパンのArcGIS API for JavaScript ](https://www.esrij.com/products/arcgis-api-for-javascript/)のページを参照してください。
 
 [▲メニューへもどる]

@@ -8,19 +8,19 @@
 
 **Menu**
 ------
-- [GituHubとは？](#GitHubとは？)
-- [GitHubアカウントの取得](#GitHubアカウントの取得)
+- [GituHubとは？](#gitHubとは？)
+- [GitHubアカウントの取得](#gitHubアカウントの取得)
 - [用語の解説](#用語の解説)
 - [クライアントソフトのインストール](#クライアントソフトのインストール)
-- [Repositoryの作成](#Repositoryの作成)
+- [Repositoryの作成](#repositoryの作成)
 - [gh-pagesを作成する](#gh-pagesを作成する)
-- [Repositoryをcloneする](#Repositoryをcloneする)
-- [Pull_requestによる教材修正の提案](#Pull_requestによる教材修正の提案)
-- [Issueによる投稿](#Issueによる投稿)
+- [Repositoryをcloneする](#repositoryをcloneする)
+- [Pull_requestによる教材修正の提案](#pull_requestによる教材修正の提案)
+- [Issueによる投稿](#issueによる投稿)
 
 ----------
 
-## <a name="GitHubとは？"></a>GitHubとは？
+## GitHubとは？
 - Git(バージョン管理システム)をホスティングするサービス
 - 複数人による開発（リモート作業）が可能
 - コラボレーションツールによる、円滑なコミュニケーション
@@ -30,7 +30,7 @@
 
 [▲メニューへもどる]
 
-## <a name="GitHubアカウントの取得"></a>GitHubアカウントの取得
+## GitHubアカウントの取得
 以下では、GitHubを利用するためのアカウントを取得する手法について解説しています。まず、[GitHubのサイト]にアクセスして、ページ右上の`Sign up`をクリックする。
 
 ![アカウント](pic/gitpic_1.png)
@@ -81,7 +81,7 @@ GitHubの操作中では、以下の用語が良く利用される。
 
 [▲メニューへもどる]
 
-## <a name="Repositoryの作成"></a>Repositoryの作成
+## Repositoryの作成
 New repositoryをクリックすると、新規にRepositoryを作成することができる。
 ![リポジトリ](pic/gitpic_6.png)
 
@@ -93,7 +93,7 @@ echizenとい名前のrepositoryが新規に作成された。
 
 [▲メニューへもどる]
 
-## <a name="gh-pagesを作成する"></a>gh-pagesを作成する
+## gh-pagesを作成する
 GitHub Pagesは、静的なWebサイトをテストすることができる機能である。この機能を利用すると、簡易的なWebサイトを構築し、公開することができる。GitHub Pagesの設定は、`Settings` をクリックし、`source > master branch > Save` をクリックして行う。
 ![gh-pagesを作成する](pic/gitpic_9.png)
 
@@ -147,7 +147,7 @@ Webに画像がアップロードされていることを確認できた
 
 [▲メニューへもどる]
 
-## <a name="Pull_requestによる教材修正の提案"></a>Pull_requestによる教材修正の提案
+## Pull_requestによる教材修正の提案
 
 GitHubで教材ページのリポジトリを開く。
 `Fork`をクリックすると自分のリポジトリにコピーされる。自分のリポジトリに戻り、Forkしたリポジトリを開き、branch名を入力し、編集用のbranchを作成する。
@@ -168,7 +168,7 @@ GitHubで教材ページのリポジトリを開く。
 
 [▲メニューへもどる]
 
-## <a name="Issueによる投稿"></a>Issueによる投稿
+## Issueによる投稿
 本来はソフトウェア開発等に利用する技術的な意見交換等に利用されるIssueを利用して、質問や教材改良の要望を受け付けている。
 
 教材ページのリポジトリへ行き、New issueをクリックし、issueを立ち上げる。質問や要望などを入力し、submit new issueをクリックする。
