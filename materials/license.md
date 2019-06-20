@@ -15,7 +15,7 @@
 
 |元画像|権利者/クレジット表記|URL|
 |---|---|---|
-|国土地理院、基盤地図情報|Copyright. Geospatial Information Authority of Japan.|http://www.gsi.go.jp/LAW/2930-index.html |
+|国土地理院、基盤地図情報|Copyright. Geospatial Information Authority of Japan.|`http://www.gsi.go.jp/LAW/2930-index.html` |
 |基盤地図情報ビューア|Copyright ©　国土交通省　国土地理院|　　|
 |国土数値情報|Copyright(c) 1974-2016 National Information Dividion, National and Regional Policy Bureau, MILT of Japan.|[http://nlftp.mlit.go.jp/ksj/other/yakkan.html](http://nlftp.mlit.go.jp/ksj/other/yakkan.html) |
 |生物多様性情報システム|Copyright Ministry of the Environment.|http://www.biodic.go.jp/copyright/index.html?&_ga=1.65628974.1027264632.1458710772#link |
