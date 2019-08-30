@@ -2,7 +2,7 @@
 
 ## 2019年更新
 * [QGISビギナーズマニュアル]
-* [GRASSビギナーズマニュアル](https://github.com/gis-oer/gis-oer/blob/master/materials/archive/previous_contents/GRASS_7_1/GRASS_7_1.md)
+* [GRASSビギナーズマニュアル](https://github.com/gis-oer/gis-oer/blob/master/materials/archive/previous_contents/GRASS/GRASS_7_1.md)
 * [リモートセンシングとその解析]
 * [既存データの地図データと属性データ](https://github.com/gis-oer/gis-oer/blob/master/materials/archive/previous_contents/07/07_qgis2_8.md)
 * [空間データ](https://github.com/gis-oer/gis-oer/blob/master/materials/archive/previous_contents/08/08_qgis2_8.md)
