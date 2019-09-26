@@ -15,7 +15,7 @@
 * [ラスタデータの分析](https://github.com/gis-oer/gis-oer/blob/master/materials/archive/previous_contents/15/15_qgis2_8.md)
 * [傾向面分析]
 * [空間的自己相関]
-* [空間補間]
+* [空間補間](https://github.com/gis-oer/gis-oer/blob/master/materials/archive/previous_contents/18/18_qgis2_8.md)
 * [空間相関分析]
 * [空間分析におけるスケール]
 * [視覚的伝達](https://github.com/gis-oer/gis-oer/blob/master/materials/archive/previous_contents/21/21_qgis2_8.md)
