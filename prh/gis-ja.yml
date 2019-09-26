@@ -47,11 +47,11 @@ rules:
 
   - expected: ESRI
 
-  - expected: Web GIS
-    pattern: /[WwＷｗ][EeＥｅ][BbＢｂ][ 　]*[GgＧｇ][IiＩｉ][SsＳｓ]/
+  - expected: WebGIS
+    pattern: /[WwＷｗ][EeＥｅ][BbＢｂ][GgＧｇ][IiＩｉ][SsＳｓ]/
     specs:
       - from: webgis
-        to: Web GIS
+        to: WebGIS
 
   - expected: pgAdmin III
     pattern: /[PpＰｐ][GgＧｇ][AaＡａ][DdＤｄ][MmＭｍ][IiＩｉ][NnＮｎ][ 　]*([3３ⅲⅢ]|iii|III)/
