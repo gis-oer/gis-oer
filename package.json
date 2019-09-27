@@ -10,12 +10,14 @@
     "gitbook-cli": "^2.3.0",
     "http-server": "^0.9.0",
     "textlint": "^10.2.1",
-    "textlint-rule-no-dead-link": "^4.4.1",
-    "textlint-rule-prh": "^5.2.0"
+    "textlint-rule-no-dead-link": "^4.6.1",
+    "textlint-rule-prh": "^5.2.1"
   },
   "scripts": {
     "install": "gitbook install",
     "build": "gitbook build",
+    "pdf": "gitbook pdf",
+    "epub": "gitbook epub",
     "start": "http-server ./_book/ -io -p 8080",
     "lint": "textlint \"./materials/**/*.md\" \"./install/**/*.md\" \"./*.md\"",
     "test": "npm run lint && npm run build"

@@ -1,7 +1,9 @@
 {
     "title": "GIS実習オープン教材",
-    "author": "GIS-Open Educational Resources WG, CC BY-SA 4.0",
+    "author": "GIS-Open Educational Resources WG",
     "gitbook": ">= 3.0.0",
+    "language": "ja",
+    "root": ".",
     "plugins": [
         "-sharing",
         "-sharing-plus",
