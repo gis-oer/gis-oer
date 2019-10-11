@@ -20,9 +20,9 @@
 ### この課題を動画で学ぶ
 　上記の手順を動画にまとめています。GISの操作に自信がない方におすすめの学習法です。動画はYoutubeで公開しています。画面の大きさや再生速度等を調節して、ご利用ください（動画はQGIS3.4）。
 <div style = "text-align: center;">
-<iframe width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dxON6QwP2Tg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 
-[動画が再生されない場合はこちら](https://www.youtube.com/watch?v=xWmSe04Ubl4)
+[動画が再生されない場合はこちら](https://www.youtube.com/embed/dxON6QwP2Tg)
 
 > この動画は、GIS実習オープン教材の内容を援用して作成したものです。教材の更新が動画内容の更新よりも優先されるため、紹介するサイトのレイアウト等が異なる箇所は、適宜GIS実習オープン教材を参照してください。動画内では第3者の著作物を引用という形で使用しています。著作者からの異議申し立てがあった場合は、速やかに当該部分を削除します。
 
