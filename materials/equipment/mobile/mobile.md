@@ -1,5 +1,5 @@
 # スマーフォンを用いた野外調査
-以下では、Android用のスマートフォンアプリであるGeopaparazziを野外調査に活用する手法を解説しています。この教材は、Koichi Kita氏が公開している[Geopaparazziの説明資料（Geopaparazziハンズオン）](https://www.slideshare.net/KouichiKita/2016-07-08)と[Geopaparazziの使い方解説（Ver4）](https://sites.google.com/site/geopapakaisetu/)を参考に作成しました。各機能の詳しい説明は、上記の資料や[Geopaparazzi Reference Manual](https://geopaparazzi.github.io/geopaparazzi/)を参照ください。また、以下ではオフライン環境での調査を想定しています。オンライン環境で調査を行う場合は、デフォルトのmapurlファイルを利用するため、前半部分は読み飛ばしてください。
+以下では、Android用のスマートフォンアプリであるGeopaparazziを野外調査に活用する手法を解説しています。この教材は、Koichi Kita氏が公開している[Geopaparazziの説明資料（Geopaparazziハンズオン）](https://www.slideshare.net/KouichiKita/2016-07-08)と[Geopaparazziの使い方解説（Ver4）](https://sites.google.com/site/geopapakaisetu/)を参考に作成しました。各機能の詳しい説明は、上記の資料や[Geopaparazzi wiki](https://github.com/geopaparazzi/geopaparazzi/wiki)を参照ください。また、以下ではオフライン環境での調査を想定しています。オンライン環境で調査を行う場合は、デフォルトのmapurlファイルを利用するため、前半部分は読み飛ばしてください。
 
 ※iPhone向けの野外調査アプリとして、iGISなどがあります。iGISによる野外調査法については、農研機構が発行している「モバイルGISアプリ「iGIS」とGoogle Earthを用いた荒廃農地の踏査手法マニュアル」`http://www.naro.affrc.go.jp/publicity_report/pub2016_or_later/pamphlet/tech-pamph/077715.html`で詳しく解説されています。
 
@@ -180,18 +180,12 @@ GPSをキャッチできる環境で、上の右図のGPSログを開始する�
 ### Google Earthに読み込む
 出力したKMZファイルを開き、Google Earthで表示する。Google Earthがインストールされた環境で、KMZファイルをダブルクリックし、実行する。または、Google Earthにドラッグ&ドロップする。
 
-### Cesiumで表示する
-KMZファイルを[Cesium viewer](https://cesiumjs.org/Cesium/Build/Apps/CesiumViewer/)にドラッグ&ドロップし、表示する。
-
 ### GPX
 GPSのデータは、GPXファイルとして出力される。出力したデータを、QGISへドラッグ&ドロップするとラインデータとして表示することができる（Multi line stringsを選択する）。
-
 ![fwmap](./pic/fw_pic10.png)
 
 #### QGISで表示する
-KMZは、拡張子を.zipに変更して、.zipを解凍する。そうするとkmlと撮影した写真が表示できる。
-
-KMLファイルをQGISへドラッグ&ドロップし、データを表示する。ただし、属性情報は、一つのフィールド内に連続して記録されるため、分析等で使えるように加工する必要がある。
+KMZは、拡張子を.zipに変更して、.zipを解凍する。そうするとkmlと撮影した写真が表示できる。KMLファイルをQGISへドラッグ&ドロップし、データを表示できる。ただし、属性情報は、一つのフィールド内に連続して記録されるため、分析等で使えるように加工する必要がある。
 
 [▲メニューへもどる]
 

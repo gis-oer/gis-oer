@@ -68,7 +68,7 @@
 
 |元画像|権利者/クレジット表記|URL|
 |---|---|---|
-|Cesium公式サイト|Cesium |https://cesiumjs.org/index.html |
+|Cesium公式サイト|Cesium |https://cesium.com/index.html |
 |CartoDB公式サイト|CartoDB |https://carto.com/ |
 |GitHub公式サイト|Copyright © 2016 GitHub, Inc.|https://github.com/ |
 |ATOM|Copyright (c) 2016 GitHub Inc.| |
