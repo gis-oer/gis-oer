@@ -1,13 +1,13 @@
 # CZML入門
-本教材は、Cesiumで利用できるCZMLファイルの作成手法について解説したものです。[完成例](https://yamauchi-inochu.github.io/cesium-test/Apps/test_c.html)のようなデータの作成やアニメーション表示などを行います。この教材は、[cesiumのサンプルページ]を参考に作成したものである。
+本教材は、Cesiumで利用できるCZMLファイルの作成手法について解説したものです。[完成例](https://yamauchi-inochu.github.io/cesium-test/Apps/test_c.html)のようなデータの作成やアニメーション表示などを行います。この教材は、[Cesiumのサンプルページ]を参考に作成したものである。
 
-[cesiumのサンプルページ]:https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/index.html
+[Cesiumのサンプルページ]:https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/index.html
 
 本教材を使用する際は、[利用規約]をご確認いただき、これらの条件に同意された場合にのみご利用下さい。
 
 **Menu**
 -------
-* [CZMLとは?](#CZMLとは？)
+* [CZMLとは?](#czmlとは？)
 * [点線面の作成](#点線面の作成)
 * [実装する](#実装する)
 * [オリジナルのアイコンによるポイント表示](#オリジナルのアイコンによるポイント表示)
@@ -215,7 +215,7 @@
 ```
 
 ### その他の表現
-円ポリゴンの作成などその他の表現については、[cesiumのサンプルページ]が詳しい
+円ポリゴンの作成などその他の表現については、[Cesiumのサンプルページ]が詳しい
 
 ## 実装する
 ![表示](pic/czmlpic_3.png)
