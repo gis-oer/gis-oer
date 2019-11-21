@@ -194,7 +194,7 @@
  * [3Dプリンタで地形模型の製作](./materials/equipment/3dprinter/3dprinter.md)
  * [スマートフォンで野外調査](./materials/equipment/mobile/mobile.md)
  * [タブレットでトレース](./materials/equipment/tablet/tablet.md)
-
+ * [位置情報付き写真の地図表示](./materials/equipment/camera/camera.md)
 
 * [課題ページ（全14回）](./materials/tasks/README.md)
     * [地形環境分析のためのQGIS入門](./materials/tasks/1day/1day.md)
