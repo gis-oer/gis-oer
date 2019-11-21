@@ -9,7 +9,9 @@
 - [地図表示](#地図表示)
 
 ## 位置情報付き写真の取得
-　本実習をはじめる前に、スマートフォンで位置情報付きの写真を複数枚撮影してください。写真の撮影が難しい場合は、[実習用写真_kanto_photos](https://github.com/gis-oer/datasets/raw/master/kanto_photos.zip)をダウンロードし、.zipを展開してご利用ください。
+　本実習をはじめる前に、スマートフォンで位置情報付きの写真を複数枚撮影してください。写真の撮影が難しい場合は、[実習用写真_kanto_photos]をダウンロードし、.zipを展開してご利用ください。
+
+[実習用写真_kanto_photos]:https://github.com/gis-oer/datasets/raw/master/kanto_photos.zip
 
 ## ImportPhotosのインストール
 　次に、QGISを起動し、`プラグイン＞プラグインの管理とインストール`から`ImportPhotos`を検索しインストールしてください。
