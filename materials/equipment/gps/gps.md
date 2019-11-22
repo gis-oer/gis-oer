@@ -14,7 +14,7 @@
 [▲メニューへもどる]
 
 ### スマートフォンでのGPSログの取得
-　多くのスマートフォンには、GPSの受信機が内蔵されているため、対応するアプリケーションで位置情報（地点や移動経路）を収集することができます。GPSログを収集できるアプリケーションとして、Androidでは、Geopaparazzi、Open GPS Tracker、iOSでは、Open GPX Tracker等があります。Geopaparazziの使用法は、本教材の[スマーフォンを用いた野外調査]で解説しています。
+　スマートフォンの多くは、GPS機能があり、アプリケーションを利用して位置情報（地点や移動経路）を収集することができます。GPSログを収集できるアプリケーションとして、Androidでは、Geopaparazzi、Open GPS Tracker、iOSでは、Open GPX Tracker等があります。Geopaparazziの使用法は、本教材の[スマーフォンを用いた野外調査]で解説しています。
 
 [▲メニューへもどる]
 
