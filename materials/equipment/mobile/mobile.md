@@ -181,7 +181,7 @@ GPSをキャッチできる環境で、上の右図のGPSログを開始する�
 出力したKMZファイルを開き、Google Earthで表示する。Google Earthがインストールされた環境で、KMZファイルをダブルクリックし、実行する。または、Google Earthにドラッグ&ドロップする。
 
 ### GPX
-GPSのデータは、GPXファイルとして出力される。出力したデータを、QGISへドラッグ&ドロップするとラインデータとして表示することができる（Multi line stringsを選択する）。
+GPSのデータは、GPXファイルとして出力される。出力したデータを、QGISへドラッグ&ドロップするとラインデータとして表示することができる（Multi line stringsを選択する）。GPSの詳しい解説は、[GPSログの活用]を参照する。
 ![fwmap](./pic/fw_pic10.png)
 
 #### QGISで表示する
@@ -232,18 +232,4 @@ KMZは、拡張子を.zipに変更して、.zipを解凍する。そうすると
 [基盤地図情報]:http://www.gsi.go.jp/kiban/
 [地理院タイル]:http://maps.gsi.go.jp/development/ichiran.html
 
-[課題ページ_QGISビギナーズマニュアル]:../../tasks/t_qgis_entry.md
-[課題ページ_GRASSビギナーズマニュアル]:../../tasks/t_grass_entry.md
-[課題ページ_リモートセンシングとその解析]:../../tasks/t_06.md
-[課題ページ_既存データの地図データと属性データ]:../../tasks/t_07.md
-[課題ページ_空間データ]:../../tasks/t_08.md
-[課題ページ_空間データベース]:../../tasks/t_09.md
-[課題ページ_空間データの統合・修正]:../../tasks/t_10.md
-[課題ページ_基本的な空間解析]:../../tasks/t_11.md
-[課題ページ_ネットワーク分析]:../../tasks/t_12.md
-[課題ページ_基本的な空間解析]:../../tasks/t_13.md
-[課題ページ_点データの分析]:../../tasks/t_14.md
-[課題ページ_ラスタデータの分析]:../../tasks/t_15.md
-[課題ページ_空間補間]:../../tasks/t_18.md
-[課題ページ_視覚的伝達]:../../tasks/t_21.md
-[課題ページ_参加型GISと社会貢献]:../../tasks/t_26.md
+[GPSログの活用]:../../equipment/gps/gps.md
