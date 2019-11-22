@@ -23,9 +23,6 @@
 ### タイル地図入門
 - [タイル地図（ラスタ）](./rastertile/rastertile.md)
 
-### データ解析入門:準備中
-- [GoogleEarthEngine](#)
-
 ### GitHub
 - [GitHubビギナーズマニュアル](./GitHub/GitHub.md)
 
