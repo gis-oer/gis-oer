@@ -8,7 +8,7 @@
 - [スマートフォンで野外調査](./mobile/mobile.md)
 - [タブレットでトレース](./tablet/tablet.md)
 - [位置情報付き写真の地図表示](./camera/camera.md)
-- [GPSログの活用](./equipment/gps/gps.md)
+- [GPSログの活用](./gps/gps.md)
 
 ## [地形鮮明化プロジェクト](http://hdtopography.blogspot.com/)と共同で整備した教材
 下記では、野外で取得したデータの処理法として、CloudCompareの基本操作、SfM多視点ステレオ写真測量による地形モデリングの基礎、RTKLIBによる解析等がまとめられています。
