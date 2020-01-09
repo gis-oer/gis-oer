@@ -23,8 +23,6 @@
 <div style = "text-align: center;">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ACRC1SkGNSI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 
-[動画が再生されない場合はこちら](https://www.youtube.com/watch?v=ACRC1SkGNSI)
-
 > この動画は、GIS実習オープン教材の内容を援用して作成したものです。教材の更新が動画内容の更新よりも優先されるため、紹介するサイトのレイアウト等が異なる箇所は、適宜GIS実習オープン教材を参照してください。動画内では、第3者の著作物を引用という形で使用しています。著作者からの異議申し立てがあった場合は、速やかに当該部分を削除します。
 
 ## 実習2:世界の境界データを用いた統計情報の可視化(第3回)
@@ -45,7 +43,6 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ljT_Cxy56pg" frameborder="0" allow="autoplay; encrypted-media"
  allowfullscreen></iframe></div>
 
-[動画が再生されない場合はこちら](https://www.youtube.com/watch?v=ljT_Cxy56pg)
 > この動画は、GIS実習オープン教材の内容を援用して作成したものです。教材の更新が動画内容の更新よりも優先されるため、紹介するサイトのレイアウト等が異なる箇所は、適宜GIS実習オープン教材を参照してください。動画内では、第3者の著作物を引用という形で使用しています。著作者からの異議申し立てがあった場合は、速やかに当該部分を削除します。
 
 
