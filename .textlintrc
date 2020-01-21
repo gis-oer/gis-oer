@@ -4,7 +4,8 @@
             "rulePaths" :["./prh/gis-ja.yml"]
         },
         "no-dead-link": {
-          "checkRelative": false
+          "checkRelative": false,
+          "ignoreRedirects": false
         }
     }
 }
