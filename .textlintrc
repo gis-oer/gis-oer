@@ -5,7 +5,7 @@
         },
         "no-dead-link": {
           "checkRelative": false,
-          "ignoreRedirects": false
+          "ignoreRedirects": true
         }
     }
 }
