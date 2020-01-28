@@ -102,8 +102,6 @@ Meshmixerでモデルの切断をする場合、以下のように行う。
 ## プリントデモ
 以下では、UP BOX+を用いて地形模型出力する様子を動画教材で解説しています。この教材では、出力した模型が分かりやすいように高さ倍率を2倍にしています。
 
-※　この下に動画が表示されない場合は、[動画を表示する](https://www.youtube.com/embed/cH0pr-dIQkc)をクリックしてください。
-
 <div style = "text-align: center;">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cH0pr-dIQkc" frameborder="0" allowfullscreen></iframe></div>
 

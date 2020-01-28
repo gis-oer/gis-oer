@@ -9,7 +9,10 @@
 - [標高グラフの作成](#標高グラフの作成)
 
 ## GPSとは
-　GPS（Global Positioning System）は、アメリカの人工衛星を用いた全地球測位システムを指します。4つ以上のGPS衛星の信号を受信し、地球上の現在位置を取得できます。各国の衛星測位システム（GNSS）として、QZSS（日本）、GLONASS（ロシア）、GALILEO（EU）、北斗（中国）があります。GPSの仕組みや応用例は、[GPSの仕組み ©首都大Channel](https://www.youtube.com/watch?v=3oYW8iyQtgc)や[【仕様】GPSとは？ ©Garmin Japan](https://www.youtube.com/watch?v=oBQMV1D2eKA)が詳しいので、そちらを参照してください。
+　GPS（Global Positioning System）は、アメリカの人工衛星を用いた全地球測位システムを指します。4つ以上のGPS衛星の信号を受信し、地球上の現在位置を取得できます。各国の衛星測位システム（GNSS）として、QZSS（日本）、GLONASS（ロシア）、GALILEO（EU）、北斗（中国）があります。GPSの仕組みや応用例は、[GPSの仕組み ©首都大Channel]や[【仕様】GPSとは？ ©Garmin Japan]が詳しいので、そちらを参照してください。
+
+[GPSの仕組み ©首都大Channel]:https://www.youtube.com/watch?v=3oYW8iyQtgc
+[【仕様】GPSとは？ ©Garmin Japan]:https://www.youtube.com/watch?v=oBQMV1D2eKA
 
 [▲メニューへもどる]
 
