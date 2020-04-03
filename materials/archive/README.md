@@ -1,7 +1,7 @@
 # アーカイブ教材一覧
 
 ## 2019年更新
-* [QGISビギナーズマニュアル]
+* [QGISビギナーズマニュアル](https://github.com/gis-oer/gis-oer/blob/master/materials/archive/previous_contents/QGIS/QGIS_2.8.md)
 * [GRASSビギナーズマニュアル](https://github.com/gis-oer/gis-oer/blob/master/materials/archive/previous_contents/GRASS/GRASS_qgis2_8.md)
 * [リモートセンシングとその解析](https://github.com/gis-oer/gis-oer/blob/master/materials/archive/previous_contents/06/06_qgis2_8.md)
 * [既存データの地図データと属性データ](https://github.com/gis-oer/gis-oer/blob/master/materials/archive/previous_contents/07/07_qgis2_8.md)
