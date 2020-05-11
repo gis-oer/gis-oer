@@ -387,7 +387,7 @@ QGISでは、独自のPython関数が用意されており、それを読み込�
 #アクティブレイヤ（レイヤウインドウで選択した）をtokyoに代入する
 tokyo = iface.activeLayer()
 
-レイヤの個数を取得する（tokyo）
+地物の個数を取得する（tokyo）
 tokyo.featureCount()
 
 ```
