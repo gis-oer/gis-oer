@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/gis-oer/gis-oer.svg?branch=master)](https://travis-ci.org/gis-oer/gis-oer)
 
-　科学研究費補助金　基盤研究(A) 「GISの標準コアカリキュラムと知識体系を踏まえた実習用オープン教材の開発」プロジェクトにおいて開発した、**「GIS実習オープン教材(試験公開版)」** の[公開用リポジトリ](https://github.com/gis-oer/gis-oer/)です。
+　科学研究費補助金　基盤研究(A) 「GISの標準コアカリキュラムと知識体系を踏まえた実習用オープン教材の開発」プロジェクトにおいて開発した、**「GIS実習オープン教材」** の[公開用リポジトリ](https://github.com/gis-oer/gis-oer/)です。
 
 ![gis](./img/topimage.png)
 
