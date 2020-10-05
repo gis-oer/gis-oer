@@ -22,9 +22,7 @@ D3.jsでどんなことができるかを知りたい方は、[D3.jsのGallery](
  [▲メニューへもどる]
 
 ## 人口表示地図の作成
-以下では、D3.jsの利用例として、地図をクリックすると人口が表示されるWEBアプリケーションを作成する手法について解説しています。
-
-※　解説では[e-stat]からダウンロードした熊本県球磨郡相良村の世界測地系のシェープファイルを使用しています。
+D3.jsの利用例として、地図をクリックすると人口が表示されるWEBアプリケーションを作成する手法について解説しています。解説では[e-stat]からダウンロードした熊本県球磨郡相良村の世界測地系のシェープファイルをJSONファイルに加工して使用しています。
 
 [▲メニューへもどる]
 
@@ -66,7 +64,7 @@ testフォルダの中に、index.htmlとGeoJSONを入れたdataファイルを�
         .scale(100000)
     )
 
-    d3.json("./data/s2.json",function(error, pref){
+    d3.json("./s2.json",function(error, pref){
       d3.select("#myGraph")
         .selectAll("path")
         .data(pref.features)
@@ -85,7 +83,7 @@ testフォルダの中に、index.htmlとGeoJSONを入れたdataファイルを�
 ### 単色塗りと値による塗り分け
 
 ```JavaScript
-d3.json("./data/s2.json",function(error, pref){
+d3.json("./s2.json",function(error, pref){
   d3.select("#myGraph")
     .selectAll("path")
     .data(pref.features)
@@ -141,7 +139,7 @@ d3.select(this)
 上記のように記述していくと、以下のようにindex.htmlを表示できます。
 ![d3](pic/d3_pic3.png)
 
-[コード全体を表示](./sample.html)
+[コード全体を表示](https://yamauchi-inochu.github.io/d3js-sample/sample.html)
 
 [▲メニューへもどる]
 
@@ -155,21 +153,21 @@ QGISには、D3.jsを使って簡単に地図アプリケーションを作成�
 WEB(W)＞d3 Mapをクリックし、パラメータを指定する。
 ![d3](pic/d3_pic5.png)
 
-①　任意のタイトルを入力する。
-②　入力したレイヤを指定する。
-③　ProjectionをMercatorにする。
-④　出力するフォルダを指定する。
-⑤　次のタブをクリックする。
+1. 任意のタイトルを入力する。
+2. 入力したレイヤを指定する。
+3. ProjectionをMercatorにする。
+4. 出力するフォルダを指定する。
+5. 次のタブをクリックする。
 ![d3](pic/d3_pic6.png)
 
-⑥　Allow zoom and panにチェックをする。
-⑦　Include a legendにチェックをする。
-⑧　次のタブをクリックする。
+6. Allow zoom and panにチェックをする。
+7. Include a legendにチェックをする。
+8. 次のタブをクリックする。
 ![d3](pic/d3_pic7.png)
 
-⑨　Include information popup にチェックをする。
-⑩　ポップアップで表示したい項目（人口、面積、大字名等）にチェックをする。
-⑪　OKをクリックする。
+9. Include information popup にチェックをする。
+10. ポップアップで表示したい項目（人口、面積、大字名等）にチェックをする。
+11. OKをクリックする。
 ![d3](pic/d3_pic8.png)
 
 ローカルサーバーを立ち上げ、出力したindex.htmlを開くと作成したファイルが表示される。
