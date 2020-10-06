@@ -11,16 +11,18 @@
 * [GeoJSONの出力](#geojsonの出力)
 * [コードの記述](#コードの記述)
 * [QGISで作成](#QGISで作成)
+* [書籍の紹介](#書籍の紹介)
 
 ## D3.jsとは
  [D3.js](https://d3js.org/)(Data-Driven Documents)は、データをビジュアライズするためのJavaScriptライブラリです。様々なグラフの作成やアニメーションを付けた表示などができます。また、GISデータにも対応しているため、地図のビジュアライズにも用いることができます。
 
 D3.jsでどんなことができるかを知りたい方は、[D3.jsのGallery](https://github.com/d3/d3/wiki/Gallery)を参照してください。
 
+
  [▲メニューへもどる]
 
 ## 人口表示地図の作成
-D3.jsの利用方法を地図をクリックすると人口が表示されるWEBアプリ（[完成例](https://yamauchi-inochu.github.io/d3js-sample/sample.html)）の作成を通じて解説します。解説では[e-stat]からダウンロードした熊本県球磨郡相良村の世界測地系のシェープファイルをGeoJSONファイルに加工して使用しています。前半では実際にコードの記載方法を紹介し、後半ではQGISのプラグインで地図を作成するする方法を解説します。
+D3.jsの利用例として、地図をクリックすると人口が表示されるWEBアプリケーションを作成する手法について解説しています。解説では[e-stat]からダウンロードした熊本県球磨郡相良村の世界測地系のシェープファイルをJSONファイルに加工して使用しています。
 
 [▲メニューへもどる]
 
@@ -29,106 +31,78 @@ GeoJSON形式のデータをD3.jsで読み込むため、QGISでデータ変換�
 
 [▲メニューへもどる]
 
-## 地図の表示
-index.htmlと同じディレクトリにGeoJSONを配置（以下では、s3.geojsonと表記）する。また、ローカル環境でのindex.htmlの表示にはローカルサーバーを立ち上げる必要があるため、任意のものを準備する。
 
-### D3.jsのインポートとWeb pageの説明
-以下のようにindex.htmlを記述していく。
+## コードの記述
+testフォルダの中に、index.htmlとGeoJSONを入れたdataファイルを作成する。そのあとで、.geojsonの拡張子を.jsonに変更しておく。また、index.htmlの表示にはローカルサーバーを立ち上げる必要がある。
+
+### プラグインと地図表示
+以下のようにindex.htmlを記述する。
 
 ```html
 <!DOCTYPE html>
   <head>
     <meta charset="utf8">
-    <title></title>
-    <meta charset="UTF-8">
-    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <title>D3.jsの練習</title>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf8"></script> //D3.jsの呼び出し
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script> //地図表示のためのプラグインの呼び出し
     <style>
     svg{width:700px; height:700px; border:1px; background-color: white; text-align: left;}
     path{fill:white; stroke:black; stroke-width:0.25;}
     h1,p {text-align: left;}
     </style>
   </head>
+  <body>
+    <h1>熊本県球磨郡相良村の人口マップ</h1>
+      <p>地図をクリックすると人口が表示されます。<br>※濃い緑の地域には、人が住んでいません。</p>
+    <svg id ="myGraph"></svg>
+    <script>
+     var w = 500;
+     var l = 500;
+     var path = d3.geo.path()
+      .projection(d3.geo.mercator()
+        .center([131.00,32.26])
+        .scale(100000)
+    )
 
+    d3.json("./s2.json",function(error, pref){
+      d3.select("#myGraph")
+        .selectAll("path")
+        .data(pref.features)
+        .enter()
+        .append("path")
+        .attr("d",path)
+    });
+
+    </script>
+  </body>
+</html>
 ```
-
-続けて以下のような紹介文を記載する。
-
-```html
-<body>
-  <h1>熊本県球磨郡相良村の人口マップ</h1>
-    <p>地図をクリックすると人口が表示されます。<br>※濃い緑の地域には、人が住んでいません。</p>
-
-<!--
-ここに<script></script>が記載される。
--->
-
-</body>
-```
-
-次に、表示設定(描画範囲、プロジェクション、パス)を記載していく。
-
-```html
-  <script>
-  //drawing area
-   var width = 500;
-   var height = 500;
-
-  // add svg
-  var svg = d3.select("body").append("svg").attr("width", width).attr("height", height);
-
-  //projection
-  var projection = d3.geoMercator()
-      .center([131.00,32.26])
-      .scale(100000)
-
-  // path
-  var path = d3.geoPath(projection);
-
-  </script>
-```
-
-geojsonファイルを用いて、地図を表示する。
-
-```Javascript
-
-// loarding geojson
-    d3.json("s3.geojson").then(function(json) {
-        svg.append("g").selectAll("path")
-            .data(json.features)
-            .enter()
-            .append("path")
-            .attr("d", path)
-
-```
-
-ブラウザで表示して以下のようになっていることを確認する。
+上記のように記述すると以下のようになる。
 ![d3](pic/d3_pic1.png)
 
 ### 単色塗りと値による塗り分け
 
 ```JavaScript
-d3.json("s3.geojson").then(function(json) {
-    svg.append("g").selectAll("path")
-        .data(json.features)
-        .enter()
-        .append("path")
-        .attr("d", path)
-        .style("fill","red") //styleの記述を追加し単色で地図を塗りつぶす
+d3.json("./s2.json",function(error, pref){
+  d3.select("#myGraph")
+    .selectAll("path")
+    .data(pref.features)
+    .enter()
+    .append("path")
+    .attr("d",path)
+    .style("fill","red") //styleの記述を追加し単色で地図を塗りつぶす
 });
 
 ```
 
-`.style`の記述を変更し、人口の値によって配色をかえる。ここでは、人口0の場合を緑とし、それ以外を薄い緑とする。人口の値は、GeoJSONの属性値を参照する。
-
 ```JavaScript
+//.styleの記述を変更し、人口の値によって配色をかえる。ここでは、人口0の場合を緑とし、それ以外を薄い緑とした。
 .style("fill",function(d,i){
-      if(d.properties.JINKO=="0"){
-        return "#298A08";
-      }
-      return "#CEF6CE";
-      })
-    });
-
+    if(d.properties.JINKO=="0"){
+      return "#298A08";
+    }
+    return "#CEF6CE";
+  })
 ```
 
 上記のように記述すると以下のようになる。
@@ -138,14 +112,12 @@ d3.json("s3.geojson").then(function(json) {
 .styleの下に以下を記述し、alertでクリックした地点の大字名と人口を表示する。
 
 ```JavaScript
-.on('click', function(event,d){
-            alert(d.properties.MOJI+"の人口は"+d.properties.JINKO+"人です。")
-        })
-});
+.on('click', function(d){
+    alert(d.properties.MOJI+"の人口は"+d.properties.JINKO+"人です。")
+})
 ```
 
 ### マウスオーバーとアウトの機能を追加する。
-選択する場所を分かりやすくするために、マウスオーバーとアウトの機能を追加します。
 
 ```JavaScript
 .on('mouseover', function(){
@@ -161,14 +133,13 @@ d3.select(this)
     return "#CEF6CE";
   })
 })
-});
 ```
 
 ### 表示例とサンプルコード
 上記のように記述していくと、以下のようにindex.htmlを表示できます。
 ![d3](pic/d3_pic3.png)
 
-[コード全体を表示](https://github.com/yamauchi-inochu/d3js-sample/blob/main/sample.html)
+[コード全体を表示](https://yamauchi-inochu.github.io/d3js-sample/sample.html)
 
 [▲メニューへもどる]
 
@@ -255,11 +226,10 @@ Width,Height,Color,Text
 
 [▲メニューへもどる]
 
-## 参考書籍・ページ
-本教材は、公式ページの他に、以下の書籍とページを参考に作成しました。
-
+## 書籍の紹介
+この教材は、以下の書籍を参考に作成しました。
 - 古籏一浩(2014)『データビジュアライゼーションのためのD3.js徹底入門』SBクリエイティブ
-- @napinoco 氏 [d3.js (v5) を使って白地図を描く](https://qiita.com/napinoco/items/230737128f490f277247)
+
 
 [▲メニューへもどる]
 
