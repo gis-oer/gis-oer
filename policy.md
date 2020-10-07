@@ -9,7 +9,7 @@
 　本規約において、「本サイト」とは、「GISの標準コアカリキュラムと知識体系を踏まえた実習用オープン教材の開発　プロジェクト」サイトを言います。「教材」とは、本サイトで公開されている教材に含まれるすべての文章、図、注記の説明文等のすべてを言います。「利用者」とは、本サイト及び教材を利用する者を言います。
 
 ## 3. 著作権等
-<span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">GIS Open Educational Resources WG</span> 作『<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">GIS実習オープン教材(試験公開版)</span>』は<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">クリエイティブ・コモンズ 表示 - 継承 4.0 国際 ライセンス</a>で提供されています。</br>
+<span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">GIS Open Educational Resources WG</span> 作『<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">GIS実習オープン教材</span>』は<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">クリエイティブ・コモンズ 表示 - 継承 4.0 国際 ライセンス</a>で提供されています。</br>
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
 
 **第三者の著作権**
