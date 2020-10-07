@@ -85,7 +85,7 @@ index.htmlと同じディレクトリにGeoJSONを配置（以下では、`s3.ge
   </script>
 ```
 
-geojsonファイルを用いて、地図を表示する。
+GeoJSONファイルを用いて、地図を表示する。
 
 ```Javascript
 
