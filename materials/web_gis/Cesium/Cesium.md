@@ -76,7 +76,7 @@ $ node server.js
 [▲メニューへもどる]
 
 ## 地図を表示する
-以下では、`Apps>HellowWord.html`を編集しながら、Cesiumの基本操作について解説しています。最初にダウンロードしたCesiumのフォルダを開き、Apps>HellowWord.htmlをテキストエディたで開く。以下のように、<body>内にCesiumを読み込むコードである`var viewer = new Cesium.Viewer('cesiumContainer');`があることを確認する。
+以下では、`Apps>HellowWord.html`を編集しながら、Cesiumの基本操作について解説しています。最初にダウンロードしたCesiumのフォルダを開き、Apps>HellowWord.htmlをテキストエディタで開く。以下のように、<body>内にCesiumを読み込むコードである`var viewer = new Cesium.Viewer('cesiumContainer');`があることを確認する。
 
 
 ```html
