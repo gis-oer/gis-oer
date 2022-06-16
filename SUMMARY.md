@@ -185,6 +185,18 @@
   * [GPSログの活用](./materials/equipment/gps/gps.md)
 
 
+* [地理情報を用いたVRアプリ開発入門](./materials/vr/README.md)
+  * [Unityのインストールと初期設定](./materials/vr/vr1.md)
+  * [Unityの基本画面と操作方法](./materials/vr/vr2.md)
+  * [地理情報の取り込みと表示設定](./materials/vr/vr3.md)
+  * [アセットの利用とアプリの調整](./materials/vr/vr4.md)
+  * [テストとビルド](./materials/vr/vr5.md)
+  * [VR開発の概要とMeta Quest 2の設定](./materials/vr/vr6.md)
+  * [Meta Quest 2向けのUnityの初期設定](./materials/vr/vr7.md)
+  * [歩行機能のプログラミング](./materials/vr/vr8.md)
+  * [Meta Quest 2への転送と動作確認](./materials/vr/vr9.md)
+
+
 * [課題ページ（全14回）](./materials/tasks/README.md)
   * [地形環境分析のためのQGIS入門](./materials/tasks/1day/1day.md)
   * [第1回・QGIS入門](./materials/tasks/t_qgis_entry.md)
