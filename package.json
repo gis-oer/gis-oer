@@ -8,7 +8,7 @@
   "description": "科学研究費補助金　基盤研究(A) 「GISの標準コアカリキュラムと知識体系を踏まえた実習用オープン教材の開発」プロジェクトにおいて開発した、**「GISオープン教材(試験公開版)」** の公開用リポジトリです。",
   "devDependencies": {
     "honkit": "^3.7.1",
-    "http-server": "^0.9.0",
+    "http-server": "^14.1.1",
     "textlint": "^10.2.1",
     "textlint-rule-no-dead-link": "^4.6.1",
     "textlint-rule-prh": "^5.2.1"
