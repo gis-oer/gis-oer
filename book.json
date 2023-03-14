@@ -7,7 +7,6 @@
     "plugins": [
         "-sharing",
         "-sharing-plus",
-        "splitter",
         "collapsible-menu",
         "creativecommons",
         "favicon",
