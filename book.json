@@ -1,7 +1,7 @@
 {
     "title": "GIS実習オープン教材",
     "author": "GIS-Open Educational Resources WG",
-    "honkit": ">= 3.7.1",
+    "honkit": ">= 4.0.4",
     "language": "ja",
     "root": ".",
     "plugins": [
