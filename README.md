@@ -50,7 +50,7 @@
 「GISオープン教材（試験公開版）」は、科学研究費補助金　基盤研究(A) 「GISの標準コアカリキュラムと知識体系を踏まえた実習用オープン教材の開発」 （研究代表者：小口 高　研究課題/領域番号	15H01782） のプロジェクトによって制作されたものです。
 
 
-{% creativecommons type="by-sa" %}
+{% creativecommons type="by-nc-sa" %}
 {% endcreativecommons %}
 
 

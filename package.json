@@ -7,17 +7,16 @@
   ],
   "description": "科学研究費補助金　基盤研究(A) 「GISの標準コアカリキュラムと知識体系を踏まえた実習用オープン教材の開発」プロジェクトにおいて開発した、**「GISオープン教材(試験公開版)」** の公開用リポジトリです。",
   "devDependencies": {
-    "gitbook-cli": "^2.3.0",
+    "honkit": "^3.7.1",
     "http-server": "^0.9.0",
     "textlint": "^10.2.1",
     "textlint-rule-no-dead-link": "^4.6.1",
     "textlint-rule-prh": "^5.2.1"
   },
   "scripts": {
-    "install": "gitbook install",
-    "build": "gitbook build",
-    "pdf": "gitbook pdf",
-    "epub": "gitbook epub",
+    "build": "honkit build",
+    "pdf": "honkit pdf",
+    "epub": "honkit epub",
     "start": "http-server ./_book/ -io -p 8080",
     "lint": "textlint \"./materials/**/*.md\" \"./install/**/*.md\" \"./*.md\"",
     "test": "npm run lint && npm run build"
@@ -30,7 +29,7 @@
   "bugs": {
     "url": "https://github.com/gis-oer/gis-oer/issues"
   },
-  "license": "CC-BY-NC-SA-4.0",
+  "license": "CC-BY-SA-NC-4.0",
   "homepage": "https://github.com/gis-oer/gis-oer#readme",
   "dependencies": {
     "gitbook-plugin-collapsible-menu": "^1.0.3",
