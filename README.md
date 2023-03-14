@@ -22,7 +22,7 @@
 ### 大学等での利用
 　大学の半期分のカリキュラムに合わせて利用する場合は、[こちら](./materials/tasks/README.md)を参考にご利用ください。
 
-### GitBook形式での提供
+### 電子ブック形式での提供
 　本教材は、閲覧や操作性に優れた[GIS-OER  book](https://gis-oer.github.io/gitbook/book/)での提供を行っています。
 
 ## ライセンス
