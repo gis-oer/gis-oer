@@ -1,13 +1,12 @@
 {
     "title": "GIS実習オープン教材",
     "author": "GIS-Open Educational Resources WG",
-    "gitbook": ">= 3.0.0",
+    "honkit": ">= 4.0.4",
     "language": "ja",
     "root": ".",
     "plugins": [
         "-sharing",
         "-sharing-plus",
-        "splitter",
         "collapsible-menu",
         "creativecommons",
         "favicon",

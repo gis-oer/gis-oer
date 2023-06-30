@@ -20,13 +20,13 @@
 <div align="center"><a class="twitter-timeline" width="700" height="600" data-chrome="noheader nofooter noborders" href="https://twitter.com/gis_oer?ref_src=twsrc%5Etfw">Tweets by gis_oer</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
 
 ### 大学等での利用
-　大学の半期分のカリキュラムに合わせて利用する場合は、[こちら](./materials/tasks/README.md)をご利用ください。
+　大学の半期分のカリキュラムに合わせて利用する場合は、[こちら](./materials/tasks/README.md)を参考にご利用ください。
 
-### GitBook形式での提供
+### 電子ブック形式での提供
 　本教材は、閲覧や操作性に優れた[GIS-OER  book](https://gis-oer.github.io/gitbook/book/)での提供を行っています。
 
 ## ライセンス
-　本教材は、**© GIS Open Educational Resources WG, CC BY-SA 4.0**　で提供しています。教材の利用（閲覧、使用、複製、配布、改変など）については、[利用規約]をご確認ください。
+　本教材は、**© GIS Open Educational Resources WG, CC BY-NC-SA 4.0**　で提供しています。教材の利用（閲覧、使用、複製、配布、改変など）については、[利用規約]をご確認ください。
 
 　本教材ではGISの操作手法の解説のため、第3者が作成したソフトウェアやウェブサイト等のキャプチャー画像を**著作法上許可されている引用**の範囲に基づき、使用しております。本教材中で引用している画像等の一覧は、[その他のライセンス]のページにて確認できます。
 
@@ -50,7 +50,7 @@
 「GISオープン教材（試験公開版）」は、科学研究費補助金　基盤研究(A) 「GISの標準コアカリキュラムと知識体系を踏まえた実習用オープン教材の開発」 （研究代表者：小口 高　研究課題/領域番号	15H01782） のプロジェクトによって制作されたものです。
 
 
-{% creativecommons type="by-sa" %}
+{% creativecommons type="by-nc-sa" %}
 {% endcreativecommons %}
 
 
