@@ -10,7 +10,6 @@
         "collapsible-menu",
         "creativecommons",
         "favicon",
-        "ga",
         "github",
         "github-buttons"
     ],
@@ -43,9 +42,6 @@
             "120x120": "./img/favicon.ico",
             "180x180": "./img/favicon.ico"
         }
-    },
-    "ga": {
-      "token": "G-24NFQ32TDR"
     },
     "github": {
             "url": "https://github.com/gis-oer/gis-oer"
