@@ -1,7 +1,5 @@
 # 「GIS実習オープン教材」
 
-[![Build Status](https://travis-ci.org/gis-oer/gis-oer.svg?branch=master)](https://travis-ci.org/gis-oer/gis-oer)
-
 　科学研究費補助金　基盤研究(A) 「GISの標準コアカリキュラムと知識体系を踏まえた実習用オープン教材の開発」プロジェクトにおいて開発した、**「GIS実習オープン教材」** の[公開用リポジトリ](https://github.com/gis-oer/gis-oer/)です。
 
 ![gis](./img/topimage.png)
@@ -14,10 +12,8 @@
 
 ![gis](./img/demo.gif)
 
-### 教材の更新情報
-本教材や関連する教材等の更新履歴は、GitHub [gis-oer](https://github.com/gis-oer)で閲覧することができます。また、Twitter[@gis_oer](https://twitter.com/gis_oer)にて、プロジェクト情報とともに公開してます。
-
-<div align="center"><a class="twitter-timeline" width="700" height="600" data-chrome="noheader nofooter noborders" href="https://twitter.com/gis_oer?ref_src=twsrc%5Etfw">Tweets by gis_oer</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+### 本プロジェクトの情報
+本プロジェクトの情報は、[X　@gis_oer](https://twitter.com/gis_oer)で発信しています。
 
 ### 大学等での利用
 　大学の半期分のカリキュラムに合わせて利用する場合は、[こちら](./materials/tasks/README.md)を参考にご利用ください。
