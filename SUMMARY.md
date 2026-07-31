@@ -155,7 +155,6 @@
 
 * [インターネットの活用に関する教材](./materials/web_gis/README.md)
   * [Cesium](./materials/web_gis/Cesium/Cesium.md)
-  * [Googleマイマップ](./materials/web_gis/Google_mymap/Google_mymap.md)
   * [Leaflet](./materials/web_gis/Leaflet/Leaflet.md)
   * [ArcGIS API for JavaScript](./materials/web_gis/arcgisapi4js/arcgisapi4js.md)
   * [OpenLayers](./materials/web_gis/OpenLayers/OpenLayers.md)
@@ -211,18 +210,16 @@
 * [高校教員向け教材](./materials/high_school/README.md)
   - [日本と世界の統計情報の可視化](./materials/high_school/statistics.md)
   - [地形と土地利用のオーバーレイ分析](./materials/high_school/kyodofan.md)
-  - [衛星画像を用いた環境変化地図の作成](./materials/high_school/aralsea.md)
   - [身近な地域の調査のためのフィールドワーク](./materials/high_school/fieldwork.md)
-  - [防災教育で利活用可能な簡易Web地図の作成](./materials/high_school/webmap.md)
 
 
 * [講義用教材](./materials/lecture/README.md)
 
 
-* [本プロジェクトについて](about.md)
+* [本プロジェクトについて](./about.md)
 
 
-* [利用規約](policy.md)
+* [利用規約](./policy.md)
 
 
 * [教材編集について](./materials/modification_rule.md)
